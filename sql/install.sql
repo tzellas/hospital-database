@@ -1,3 +1,44 @@
+DROP TABLE IF EXISTS
+assistant_procedure_staff,
+doctor_review,
+hospitalization_review,
+prescription,
+lab_test,
+procedure_room_schedule,
+medical_procedure,
+triage_case,
+hospitalization,
+emergency_contact,
+allergy,
+duty_shift_staff,
+duty_shift,
+doctor_department,
+bed,
+entity_image,
+administrative,
+nurse,
+doctor,
+staff,
+patient,
+procedure_room,
+department,
+drug_active_substance,
+drug,
+active_substance,
+icd10_diagnosis,
+ken
+CASCADE;
+
+
+
+
+
+
+
+
+
+
+
 CREATE TABLE department (
     department_id SERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL UNIQUE,
@@ -195,7 +236,7 @@ CREATE TABLE emergency_contact (
 CREATE TABLE icd10_diagnosis (
     icd10_code VARCHAR(20) PRIMARY KEY,
     description TEXT NOT NULL,
-    category VARCHAR(100)
+    category VARCHAR(3) GENERATED ALWAYS AS (LEFT(icd10_code, 3)) STORED
 );
 
 CREATE TABLE ken (
@@ -203,11 +244,13 @@ CREATE TABLE ken (
     description TEXT NOT NULL,
     base_cost NUMERIC(10,2) NOT NULL,
     average_length_of_stay INT NOT NULL,
-    extra_daily_charge NUMERIC(10,2) NOT NULL,
+    extra_daily_charge NUMERIC(10,2)
+        GENERATED ALWAYS AS (
+            base_cost / average_length_of_stay
+        ) STORED,
 
     CHECK (base_cost >= 0),
-    CHECK (average_length_of_stay > 0),
-    CHECK (extra_daily_charge >= 0)
+    CHECK (average_length_of_stay > 0)
 );
 
 CREATE TABLE hospitalization (
