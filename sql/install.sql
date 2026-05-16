@@ -3,9 +3,11 @@ assistant_procedure_staff,
 doctor_review,
 hospitalization_review,
 prescription,
-lab_test,
+all_lab_tests,
+hospitalization_lab_test,
 procedure_room_schedule,
-medical_procedure,
+all_medical_procedures,
+hospitalization_medical_procedure,
 triage_case,
 hospitalization,
 emergency_contact,
@@ -28,13 +30,6 @@ active_substance,
 icd10_diagnosis,
 ken
 CASCADE;
-
-
-
-
-
-
-
 
 
 
@@ -341,22 +336,29 @@ CREATE TABLE triage_case (
     )
 );
 
+CREATE TABLE all_lab_tests (
+    test_code VARCHAR(50) PRIMARY KEY,
+    test_name VARCHAR(255) NOT NULL,
+    test_type VARCHAR(100) NOT NULL,
+    default_cost NUMERIC(10,2) NOT NULL,
 
-CREATE TABLE lab_test (
+    CHECK (default_cost >= 0)
+);
+
+CREATE TABLE hospitalization_lab_test (
     lab_test_id SERIAL PRIMARY KEY,
 
     hospitalization_id INT NOT NULL,
     ordered_by_doctor_id INT NOT NULL,
-
     test_code VARCHAR(50) NOT NULL,
-    test_type VARCHAR(100) NOT NULL,
+
     test_date TIMESTAMP NOT NULL,
 
     result_text TEXT,
     result_value NUMERIC(12,3),
     result_unit VARCHAR(50),
 
-    cost NUMERIC(10,2) NOT NULL,
+    actual_cost NUMERIC(10,2) NOT NULL,
 
     FOREIGN KEY (hospitalization_id)
         REFERENCES hospitalization(hospitalization_id)
@@ -365,12 +367,13 @@ CREATE TABLE lab_test (
     FOREIGN KEY (ordered_by_doctor_id)
         REFERENCES doctor(staff_id),
 
-    CHECK (cost >= 0),
-    CHECK (
-        result_text IS NOT NULL
-        OR result_value IS NOT NULL
-    )
+    FOREIGN KEY (test_code)
+        REFERENCES all_lab_tests(test_code),
+
+    CHECK (actual_cost >= 0),
+    CHECK (result_text IS NOT NULL OR result_value IS NOT NULL)
 );
+
 
 CREATE TABLE active_substance (
     substance_id SERIAL PRIMARY KEY,
@@ -422,28 +425,40 @@ CREATE TABLE procedure_room (
     CHECK (room_type IN ('OPERATING_ROOM', 'PROCEDURE_ROOM'))
 );
 
-CREATE TABLE medical_procedure (
+CREATE TABLE all_medical_procedures (
+    procedure_code VARCHAR(50) PRIMARY KEY,
+    procedure_name VARCHAR(255) NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    default_duration_minutes INT NOT NULL,
+    default_cost NUMERIC(10,2) NOT NULL,
+
+    CHECK (category IN ('SURGICAL', 'DIAGNOSTIC', 'THERAPEUTIC')),
+    CHECK (default_duration_minutes > 0),
+    CHECK (default_cost >= 0)
+);
+
+CREATE TABLE hospitalization_medical_procedure (
     procedure_id SERIAL PRIMARY KEY,
 
     hospitalization_id INT NOT NULL,
+    procedure_code VARCHAR(50) NOT NULL,
     main_doctor_id INT NOT NULL,
 
-    procedure_code VARCHAR(50) NOT NULL,
-    procedure_name VARCHAR(255) NOT NULL,
-    category VARCHAR(50) NOT NULL,
-    duration_minutes INT NOT NULL,
-    cost NUMERIC(10,2) NOT NULL,
+    actual_duration_minutes INT,
+    actual_cost NUMERIC(10,2) NOT NULL,
 
     FOREIGN KEY (hospitalization_id)
         REFERENCES hospitalization(hospitalization_id)
         ON DELETE CASCADE,
 
+    FOREIGN KEY (procedure_code)
+        REFERENCES all_medical_procedures(procedure_code),
+
     FOREIGN KEY (main_doctor_id)
         REFERENCES doctor(staff_id),
 
-    CHECK (category IN ('SURGICAL', 'DIAGNOSTIC', 'THERAPEUTIC')),
-    CHECK (duration_minutes > 0),
-    CHECK (cost >= 0)
+    CHECK (actual_duration_minutes IS NULL OR actual_duration_minutes > 0),
+    CHECK (actual_cost >= 0)
 );
 
 CREATE TABLE procedure_room_schedule (
@@ -456,7 +471,7 @@ CREATE TABLE procedure_room_schedule (
     PRIMARY KEY (procedure_id, room_id, start_datetime),
 
     FOREIGN KEY (procedure_id)
-        REFERENCES medical_procedure(procedure_id)
+        REFERENCES hospitalization_medical_procedure(procedure_id)
         ON DELETE CASCADE,
 
     FOREIGN KEY (room_id)
@@ -484,13 +499,8 @@ CREATE TABLE entity_image (
         'PATIENT',
         'HOSPITALIZATION',
         'TRIAGE_CASE',
-        'LAB_TEST',
-        'MEDICAL_PROCEDURE',
         'PROCEDURE_ROOM',
-        'DRUG',
-        'ACTIVE_SUBSTANCE',
-        'ICD10_DIAGNOSIS',
-        'KEN'
+        'DRUG'
     ))
 );
 
@@ -567,7 +577,7 @@ CREATE TABLE assistant_procedure_staff (
     PRIMARY KEY (procedure_id, staff_id),
 
     FOREIGN KEY (procedure_id)
-        REFERENCES medical_procedure(procedure_id)
+        REFERENCES hospitalization_medical_procedure(procedure_id)
         ON DELETE CASCADE,
 
     FOREIGN KEY (staff_id)
