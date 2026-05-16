@@ -1,4 +1,6 @@
 DROP TABLE IF EXISTS
+all_lab_tests,
+hospitalization_lab_test,
 assistant_procedure_staff,
 doctor_review,
 hospitalization_review,
@@ -338,11 +340,10 @@ CREATE TABLE triage_case (
 
 CREATE TABLE all_lab_tests (
     test_code VARCHAR(50) PRIMARY KEY,
-    test_name VARCHAR(255) NOT NULL,
-    test_type VARCHAR(100) NOT NULL,
-    default_cost NUMERIC(10,2) NOT NULL,
+    description TEXT NOT NULL,
+    cost NUMERIC(10,2) NOT NULL,
 
-    CHECK (default_cost >= 0)
+    CHECK (cost >= 0)
 );
 
 CREATE TABLE hospitalization_lab_test (
@@ -427,14 +428,12 @@ CREATE TABLE procedure_room (
 
 CREATE TABLE all_medical_procedures (
     procedure_code VARCHAR(50) PRIMARY KEY,
-    procedure_name VARCHAR(255) NOT NULL,
-    category VARCHAR(50) NOT NULL,
-    default_duration_minutes INT NOT NULL,
-    default_cost NUMERIC(10,2) NOT NULL,
+    description TEXT NOT NULL,
+    category VARCHAR(255) NOT NULL,
+    cost NUMERIC(10,2) NOT NULL,
 
     CHECK (category IN ('SURGICAL', 'DIAGNOSTIC', 'THERAPEUTIC')),
-    CHECK (default_duration_minutes > 0),
-    CHECK (default_cost >= 0)
+    CHECK (cost >= 0)
 );
 
 CREATE TABLE hospitalization_medical_procedure (

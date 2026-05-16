@@ -26,7 +26,9 @@ prescription,
 procedure_room,
 procedure_room_schedule,
 staff,
-triage_case
+triage_case,
+hospitalization_lab_test,
+hospitalization_medical_procedure
 RESTART IDENTITY CASCADE;
 
 \encoding UTF8
@@ -36,4 +38,10 @@ RESTART IDENTITY CASCADE;
 
 -- KEN --
 \copy ken(ken_code, description, base_cost, average_length_of_stay) FROM 'data/ken.csv' WITH (FORMAT csv, DELIMITER ',', QUOTE '"', ENCODING 'UTF8'); 
+
+-- LAB_TESTS --
+\copy all_lab_tests(test_code, description, cost) FROM 'data/lab_tests.csv' WITH (FORMAT csv, DELIMITER ',', QUOTE '"', ENCODING 'UTF8'); 
+
+-- MEDICAL_PROCEDURES --
+\copy all_medical_procedures(procedure_code, description, category, cost) FROM 'data/medical_procedures.csv' WITH (FORMAT csv, DELIMITER ',', QUOTE '"', ENCODING 'UTF8'); 
 
