@@ -28,7 +28,9 @@ procedure_room_schedule,
 staff,
 triage_case,
 hospitalization_lab_test,
-hospitalization_medical_procedure
+hospitalization_medical_procedure,
+all_lab_tests,
+all_medical_procedures
 RESTART IDENTITY CASCADE;
 
 \encoding UTF8
@@ -45,3 +47,26 @@ RESTART IDENTITY CASCADE;
 -- MEDICAL_PROCEDURES --
 \copy all_medical_procedures(procedure_code, description, category, cost) FROM 'data/medical_procedures.csv' WITH (FORMAT csv, DELIMITER ',', QUOTE '"', ENCODING 'UTF8'); 
 
+-- DRUGS --
+\copy drug(ema_name, route_of_administration, marketing_authorisation_holder, pharmacovigilance_system_master_file_location, pharmacovigilance_enquiries_email_address, pharmacovigilance_enquiries_telephone_number) FROM 'data/drug.csv' WITH (FORMAT csv, DELIMITER ',', QUOTE '"', ENCODING 'UTF8', HEADER true);
+
+-- ACTIVE_SUBSTANCES --
+\copy active_substance(substance_name) FROM 'data/active_substances_unique.csv' WITH (FORMAT csv, DELIMITER ',', QUOTE '"', ENCODING 'UTF8'); 
+
+-- DRUGS - ACTIVE_SUBSTANCES BRIDGE --
+CREATE TEMP TABLE drug_active_substances_stage (
+    drug_id INT,
+    active_substance TEXT
+);
+
+\copy drug_active_substances_stage(drug_id, active_substance) FROM 'data/drug_active_substances_stage.csv' WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
+
+INSERT INTO drug_active_substance(drug_id, substance_id)
+SELECT DISTINCT
+    s.drug_id,
+    a.substance_id
+FROM drug_active_substances_stage s
+JOIN active_substance a
+    ON a.substance_name = s.active_substance
+JOIN drug d
+    ON d.drug_id = s.drug_id;

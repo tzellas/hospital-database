@@ -383,8 +383,12 @@ CREATE TABLE active_substance (
 
 CREATE TABLE drug (
     drug_id SERIAL PRIMARY KEY,
-    ema_code VARCHAR(100) UNIQUE,
-    drug_name VARCHAR(255) NOT NULL
+    ema_name VARCHAR(255) NOT NULL,
+    route_of_administration VARCHAR(255) NOT NULL,
+    marketing_authorisation_holder VARCHAR(255) NOT NULL,
+    pharmacovigilance_system_master_file_location VARCHAR(255) NOT NULL,
+    pharmacovigilance_enquiries_email_address VARCHAR(255) NOT NULL,
+    pharmacovigilance_enquiries_telephone_number VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE prescription (
