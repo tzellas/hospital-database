@@ -1,0 +1,61 @@
+department_name,specialty
+Emergency Department,Emergency Medicine
+Emergency Department,Internal Medicine
+Emergency Department,General Surgery
+Emergency Department,Anesthesiology
+Cardiology,Cardiology
+Cardiology,Interventional Cardiology
+Cardiology,Internal Medicine
+Cardiology,Intensive Care Medicine
+General Surgery,General Surgery
+General Surgery,Anesthesiology
+General Surgery,Surgical Oncology
+General Surgery,Trauma Surgery
+Orthopedics,Orthopedics
+Orthopedics,Traumatology
+Orthopedics,Sports Medicine
+Orthopedics,General Surgery
+Neurology,Neurology
+Neurology,Clinical Neurophysiology
+Neurology,Stroke Medicine
+Neurology,Intensive Care Medicine
+Neurosurgery,Neurosurgery
+Neurosurgery,Spine Surgery
+Neurosurgery,Neurocritical Care
+Neurosurgery,Neurology
+Pediatrics,Pediatrics
+Pediatrics,Neonatology
+Pediatrics,Pediatric Endocrinology
+Pediatrics,Emergency Medicine
+Oncology,Oncology
+Oncology,Hematology
+Oncology,Radiation Oncology
+Oncology,Surgical Oncology
+Intensive Care Unit,Intensive Care Medicine
+Intensive Care Unit,Anesthesiology
+Intensive Care Unit,Pulmonology
+Intensive Care Unit,Emergency Medicine
+Radiology,Radiology
+Radiology,Interventional Radiology
+Radiology,Neuroradiology
+Radiology,Oncology
+Pathology,Pathology
+Pathology,Laboratory Medicine
+Pathology,Cytopathology
+Pathology,Hematology
+Pulmonology,Pulmonology
+Pulmonology,Respiratory Medicine
+Pulmonology,Sleep Medicine
+Pulmonology,Intensive Care Medicine
+Gastroenterology,Gastroenterology
+Gastroenterology,Hepatology
+Gastroenterology,Digestive Endoscopy
+Gastroenterology,Internal Medicine
+Urology,Urology
+Urology,Endourology
+Urology,Urologic Oncology
+Urology,General Surgery
+Obstetrics and Gynecology,Obstetrics and Gynecology
+Obstetrics and Gynecology,Maternal-Fetal Medicine
+Obstetrics and Gynecology,Gynecologic Oncology
+Obstetrics and Gynecology,Emergency Medicine

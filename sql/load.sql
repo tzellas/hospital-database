@@ -67,7 +67,7 @@ SELECT DISTINCT
     a.substance_id
 FROM drug_active_substances_stage s
 JOIN active_substance a
-    ON a.substance_name = s.active_substance
+    ON a.substance_name = s.active_substance;
 
 -- PATIENTS --
 \copy patient(amka,first_name,last_name,father_name,age,gender,weight,height,address_street,address_num,postal_code,city,phone,email,occupation,nationality,insurance_provider) FROM 'data/patients.csv' DELIMITER ',' CSV HEADER;
@@ -78,5 +78,107 @@ JOIN active_substance a
 -- STAFF --
 \copy staff(amka,first_name,last_name,age,email,phone,hire_date,staff_type) FROM 'data/staff.csv' DELIMITER ',' CSV HEADER;
 
+-- DIRECTOR --
+\copy doctor(staff_id,medical_license_num,specialty,rank,supervisor_doc_id) FROM 'data/directors.csv' DELIMITER ',' CSV HEADER;
+
 -- DEPARTMENTS --
---\copy department(name,description,bed_count,floor,building,phone) FROM 'data/departments.csv' DELIMITER ',' CSV HEADER;
+\copy department(name,description,bed_count,floor,building,phone,manager_id) FROM 'data/departments.csv' DELIMITER ',' CSV HEADER;
+
+-- DOCTOR --
+/* Doctor data are loaded in a temporary table except staff_id and supervisor_doc_id.*/
+CREATE TEMP TABLE tmp_doctor_data (
+    rn SERIAL PRIMARY KEY,
+    medical_license_num VARCHAR(50),
+    specialty VARCHAR(100),
+    rank VARCHAR(50)
+);
+
+\copy tmp_doctor_data(medical_license_num, specialty, rank) FROM 'data/doctors.csv' DELIMITER ',' CSV HEADER;
+
+INSERT INTO doctor (
+    staff_id,
+    medical_license_num,
+    specialty,
+    rank,
+    supervisor_doc_id
+)
+SELECT
+    s.staff_id,
+    d.medical_license_num,
+    d.specialty,
+    d.rank,
+    CASE
+        WHEN d.rank = 'RESIDENT' THEN (
+            SELECT d2.staff_id
+            FROM doctor d2
+            WHERE d2.rank IN ('CONSULTANT_B', 'CONSULTANT_A', 'DIRECTOR')
+            ORDER BY random()
+            LIMIT 1
+        )
+        ELSE NULL
+    END
+FROM (
+    SELECT
+        staff_id,
+        ROW_NUMBER() OVER (ORDER BY staff_id) AS rn
+    FROM staff
+    WHERE staff_type = 'DOCTOR'
+      AND staff_id NOT IN (
+          SELECT staff_id FROM doctor
+      )
+) s
+JOIN tmp_doctor_data d
+  ON d.rn = s.rn
+WHERE s.rn <= 65;
+
+/* Here we assign supervisors based on rank to the consultants.*/
+WITH supervisor_choices AS (
+    SELECT
+        d.staff_id AS doctor_id,
+        (
+            SELECT d2.staff_id
+            FROM doctor d2
+            WHERE d2.staff_id <> d.staff_id
+              AND (
+                  (d.rank = 'CONSULTANT_B' AND d2.rank IN ('CONSULTANT_A', 'DIRECTOR'))
+                  OR
+                  (d.rank = 'CONSULTANT_A' AND d2.rank = 'DIRECTOR')
+              )
+            ORDER BY random()
+            LIMIT 1
+        ) AS supervisor_id
+    FROM doctor d
+    WHERE d.rank IN ('CONSULTANT_B', 'CONSULTANT_A')
+      AND d.supervisor_doc_id IS NULL
+)
+UPDATE doctor d
+SET supervisor_doc_id = sc.supervisor_id
+FROM supervisor_choices sc
+WHERE d.staff_id = sc.doctor_id
+  AND sc.supervisor_id IS NOT NULL;
+
+/*Here we assign every doctor to a department based on a csv map of department and specialty.*/
+CREATE TEMP TABLE tmp_dept_specialty_map (
+    department_name VARCHAR(100),
+    specialty VARCHAR(100)
+);
+
+\copy tmp_dept_specialty_map(department_name, specialty) FROM 'data/dept_specialty_map.csv' DELIMITER ',' CSV HEADER;
+
+INSERT INTO doctor_department(doctor_id, department_id)
+SELECT DISTINCT
+    doc.staff_id,
+    dep.department_id
+FROM doctor doc
+JOIN tmp_dept_specialty_map m
+  ON m.specialty = doc.specialty
+JOIN department dep
+  ON dep.name = m.department_name
+ON CONFLICT DO NOTHING;
+
+
+INSERT INTO doctor_department(doctor_id, department_id)
+SELECT manager_id, department_id
+FROM department
+WHERE manager_id IS NOT NULL
+ON CONFLICT DO NOTHING;

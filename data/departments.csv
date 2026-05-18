@@ -1,16 +1,16 @@
-name,description,bed_count,floor,building,phone
-Emergency Department,Provides immediate emergency medical assessment and urgent care for incoming patients.,20,0,Central Building,709-288-8929
-Cardiology,Specializes in the diagnosis and treatment of heart and cardiovascular diseases.,39,1,Central Building,685-920-6439
-General Surgery,Performs a wide range of surgical procedures and postoperative care.,47,2,Central Building,716-605-2915
-Orthopedics,"Treats musculoskeletal injuries, fractures, and bone-related conditions.",61,3,Central Building,901-890-9252
-Neurology,"Focuses on disorders of the brain, spinal cord, and nervous system.",47,4,Central Building,419-168-8237
-Neurosurgery,Provides surgical treatment for neurological and spinal conditions.,62,0,East Wing,456-905-2364
-Pediatrics,"Delivers healthcare services for infants, children, and adolescents.",24,1,East Wing,984-462-0935
-Oncology,Diagnoses and treats patients with cancer and related diseases.,76,2,East Wing,862-844-9590
-Intensive Care Unit,Provides critical care and continuous monitoring for severely ill patients.,25,3,East Wing,531-857-6361
-Radiology,"Performs diagnostic imaging examinations including X-rays, CT, and MRI scans.",0,4,East Wing,194-378-6803
-Pathology,Conducts laboratory analysis and pathological examinations for disease diagnosis.,37,0,West Wing,320-390-8354
-Pulmonology,Treats respiratory system diseases and pulmonary disorders.,57,1,West Wing,692-251-3286
-Gastroenterology,Specializes in digestive system disorders and gastrointestinal treatments.,21,2,West Wing,106-790-1135
-Urology,Treats urinary tract disorders and male reproductive system conditions.,68,3,West Wing,536-361-2802
-Obstetrics and Gynecology,"Provides healthcare services related to pregnancy, childbirth, and gynecological care.",34,4,West Wing,751-875-6690
+name,description,bed_count,floor,building,phone,manager_id
+Emergency Department,Provides immediate emergency medical assessment and urgent care for incoming patients.,20,0,Central Building,709-288-8929,9
+Cardiology,Specializes in the diagnosis and treatment of heart and cardiovascular diseases.,39,1,Central Building,685-920-6439,26
+General Surgery,Performs a wide range of surgical procedures and postoperative care.,47,2,Central Building,716-605-2915,53
+Orthopedics,"Treats musculoskeletal injuries, fractures, and bone-related conditions.",61,3,Central Building,901-890-9252,70
+Neurology,"Focuses on disorders of the brain, spinal cord, and nervous system.",47,4,Central Building,419-168-8237,79
+Neurosurgery,Provides surgical treatment for neurological and spinal conditions.,62,0,East Wing,456-905-2364,82
+Pediatrics,"Delivers healthcare services for infants, children, and adolescents.",24,1,East Wing,984-462-0935,90
+Oncology,Diagnoses and treats patients with cancer and related diseases.,76,2,East Wing,862-844-9590,101
+Intensive Care Unit,Provides critical care and continuous monitoring for severely ill patients.,25,3,East Wing,531-857-6361,111
+Radiology,"Performs diagnostic imaging examinations including X-rays, CT, and MRI scans.",0,4,East Wing,194-378-6803,115
+Pathology,Conducts laboratory analysis and pathological examinations for disease diagnosis.,37,0,West Wing,320-390-8354,128
+Pulmonology,Treats respiratory system diseases and pulmonary disorders.,57,1,West Wing,692-251-3286,131
+Gastroenterology,Specializes in digestive system disorders and gastrointestinal treatments.,21,2,West Wing,106-790-1135,134
+Urology,Treats urinary tract disorders and male reproductive system conditions.,68,3,West Wing,536-361-2802,141
+Obstetrics and Gynecology,"Provides healthcare services related to pregnancy, childbirth, and gynecological care.",34,4,West Wing,751-875-6690,142

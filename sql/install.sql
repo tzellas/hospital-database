@@ -63,7 +63,7 @@ CREATE TABLE staff (
 
 CREATE TABLE doctor (
     staff_id INT PRIMARY KEY,
-    doctor_num VARCHAR(30) NOT NULL UNIQUE,
+    doctor_num SERIAL UNIQUE,
     medical_license_num VARCHAR(50) NOT NULL UNIQUE,
     specialty VARCHAR(100) NOT NULL,
     rank VARCHAR(50) NOT NULL,
