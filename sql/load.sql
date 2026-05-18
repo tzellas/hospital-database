@@ -42,10 +42,10 @@ RESTART IDENTITY CASCADE;
 \copy ken(ken_code, description, base_cost, average_length_of_stay) FROM 'data/ken.csv' WITH (FORMAT csv, DELIMITER ',', QUOTE '"', ENCODING 'UTF8'); 
 
 -- LAB_TESTS --
-\copy all_lab_tests(test_code, description, cost) FROM 'data/lab_tests.csv' WITH (FORMAT csv, DELIMITER ',', QUOTE '"', ENCODING 'UTF8'); 
+\copy all_lab_tests(test_code, description, default_cost) FROM 'data/lab_tests.csv' WITH (FORMAT csv, DELIMITER ',', QUOTE '"', ENCODING 'UTF8'); 
 
 -- MEDICAL_PROCEDURES --
-\copy all_medical_procedures(procedure_code, description, category, cost) FROM 'data/medical_procedures.csv' WITH (FORMAT csv, DELIMITER ',', QUOTE '"', ENCODING 'UTF8'); 
+\copy all_medical_procedures(procedure_code, description, category, default_cost) FROM 'data/medical_procedures.csv' WITH (FORMAT csv, DELIMITER ',', QUOTE '"', ENCODING 'UTF8'); 
 
 -- DRUGS --
 \copy drug(ema_name, route_of_administration, marketing_authorisation_holder, pharmacovigilance_system_master_file_location, pharmacovigilance_enquiries_email_address, pharmacovigilance_enquiries_telephone_number) FROM 'data/drug.csv' WITH (FORMAT csv, DELIMITER ',', QUOTE '"', ENCODING 'UTF8', HEADER true);
@@ -68,5 +68,15 @@ SELECT DISTINCT
 FROM drug_active_substances_stage s
 JOIN active_substance a
     ON a.substance_name = s.active_substance
-JOIN drug d
-    ON d.drug_id = s.drug_id;
+
+-- PATIENTS --
+\copy patient(amka,first_name,last_name,father_name,age,gender,weight,height,address_street,address_num,postal_code,city,phone,email,occupation,nationality,insurance_provider) FROM 'data/patients.csv' DELIMITER ',' CSV HEADER;
+
+-- EMERGENCY_CONTACTS --
+\copy emergency_contact(patient_id,contact_num,first_name,last_name,age,relationship,phone,email) FROM 'data/emergency_contacts.csv' DELIMITER ',' CSV HEADER;
+
+-- STAFF --
+\copy staff(amka,first_name,last_name,age,email,phone,hire_date,staff_type) FROM 'data/staff.csv' DELIMITER ',' CSV HEADER;
+
+-- DEPARTMENTS --
+\copy department(name,description,bed_count,floor,building,phone) FROM 'data/departments.csv' DELIMITER ',' CSV HEADER;
