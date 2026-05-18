@@ -79,4 +79,4 @@ JOIN active_substance a
 \copy staff(amka,first_name,last_name,age,email,phone,hire_date,staff_type) FROM 'data/staff.csv' DELIMITER ',' CSV HEADER;
 
 -- DEPARTMENTS --
-\copy department(name,description,bed_count,floor,building,phone) FROM 'data/departments.csv' DELIMITER ',' CSV HEADER;
+--\copy department(name,description,bed_count,floor,building,phone) FROM 'data/departments.csv' DELIMITER ',' CSV HEADER;
