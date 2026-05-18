@@ -341,9 +341,9 @@ CREATE TABLE triage_case (
 CREATE TABLE all_lab_tests (
     test_code VARCHAR(50) PRIMARY KEY,
     description TEXT NOT NULL,
-    cost NUMERIC(10,2) NOT NULL,
+    default_cost NUMERIC(10,2) NOT NULL,
 
-    CHECK (cost >= 0)
+    CHECK (default_cost >= 0)
 );
 
 CREATE TABLE hospitalization_lab_test (
@@ -430,10 +430,10 @@ CREATE TABLE all_medical_procedures (
     procedure_code VARCHAR(50) PRIMARY KEY,
     description TEXT NOT NULL,
     category VARCHAR(255) NOT NULL,
-    cost NUMERIC(10,2) NOT NULL,
+    default_cost NUMERIC(10,2) NOT NULL,
 
     CHECK (category IN ('SURGICAL', 'DIAGNOSTIC', 'THERAPEUTIC')),
-    CHECK (cost >= 0)
+    CHECK (default_cost >= 0)
 );
 
 CREATE TABLE hospitalization_medical_procedure (
