@@ -638,6 +638,49 @@ CREATE TABLE doctor_review (
 );
 
 --------------------------------------------------
+-- Indexes
+--------------------------------------------------
+
+/*
+Βοηθά το Q04:
+Γρήγορη αναζήτηση όλων των αξιολογήσεων
+ενός συγκεκριμένου ιατρού.
+Χρησιμοποιείται στο JOIN και στο WHERE
+με βάση το doctor_id.
+*/
+CREATE INDEX idx_doctor_review_doctor_id
+ON doctor_review(doctor_id);
+
+
+
+/*
+Βοηθά τα Q04 και Q06:
+Επιταχύνει το JOIN μεταξύ doctor_review
+και hospitalization_review μέσω των πεδίων:
+(patient_id, hospitalization_id).
+
+Χρήσιμο επειδή οι αξιολογήσεις συνδέονται
+με συγκεκριμένη νοσηλεία ασθενούς.
+*/
+CREATE INDEX idx_doctor_review_patient_hospitalization
+ON doctor_review(patient_id, hospitalization_id);
+
+
+
+/*
+Βοηθά τα Q04 και Q06:
+Επιταχύνει την αναζήτηση αξιολογήσεων νοσηλείας
+ανά ασθενή και νοσηλεία.
+
+Χρησιμοποιείται σε JOIN operations
+και μειώνει το κόστος αναζήτησης
+σε μεγάλους πίνακες αξιολογήσεων.
+*/
+CREATE INDEX idx_hospitalization_review_patient_hospitalization
+ON hospitalization_review(patient_id, hospitalization_id);
+
+
+--------------------------------------------------
 --  Triggers            
 --------------------------------------------------
 
