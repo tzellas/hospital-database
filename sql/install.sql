@@ -141,7 +141,7 @@ REFERENCES doctor(staff_id);
 
 CREATE TABLE bed (
     department_id INT NOT NULL,
-    bed_num VARCHAR(20) NOT NULL,
+    bed_num VARCHAR(20) NOT NULL UNIQUE,
     bed_type VARCHAR(50) NOT NULL,
     status VARCHAR(50) NOT NULL,
 
@@ -793,9 +793,10 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
-CREATE TRIGGER trg_check_shift_staffing
+CREATE CONSTRAINT TRIGGER trg_check_shift_staffing
 AFTER INSERT OR DELETE
 ON duty_shift_staff
+DEFERRABLE INITIALLY DEFERRED
 FOR EACH ROW
 EXECUTE FUNCTION check_shift_staffing();
 

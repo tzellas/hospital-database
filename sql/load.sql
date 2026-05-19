@@ -130,8 +130,7 @@ FROM (
       )
 ) s
 JOIN tmp_doctor_data d
-  ON d.i = s.i
-WHERE s.i <= 65;
+  ON d.i = s.i;
 
 /* Here we assign supervisors based on rank to the consultants.*/
 WITH supervisor_choices AS (
@@ -237,3 +236,207 @@ JOIN tmp_admin_data m
     ON s.i = m.i
 JOIN department d
     ON d.name = m.department;
+
+-- BEDS --
+CREATE TEMP TABLE tmp_bed_data (
+    i SERIAL PRIMARY KEY,
+    bed_num VARCHAR(20) NOT NULL UNIQUE,
+    bed_type VARCHAR(50) NOT NULL,
+    status VARCHAR(50) NOT NULL,
+    department VARCHAR(100) NOT NULL
+);
+
+\copy tmp_bed_data(bed_num, bed_type, status, department) FROM 'data/beds.csv' DELIMITER ',' CSV HEADER;
+
+INSERT INTO bed(department_id, bed_num, bed_type, status)
+SELECT
+    d.department_id,
+    m.bed_num,
+    m.bed_type,
+    m.status
+FROM tmp_bed_data m
+JOIN department d
+  ON d.name = m.department;
+
+-- DUTY_SHIFTS --
+\copy duty_shift(department_id, shift_date, shift_type, start_time, end_time) FROM 'data/duty_shifts.csv' DELIMITER ',' CSV HEADER;
+
+
+
+BEGIN;
+
+ALTER TABLE duty_shift_staff DISABLE TRIGGER ALL;
+
+CREATE TEMP TABLE tmp_doctor_shift_staff (
+    shift_type VARCHAR(20),
+    department_name VARCHAR(100),
+    shift_date DATE,
+    medical_license_num VARCHAR(50)
+);
+
+\copy tmp_doctor_shift_staff FROM 'data/doctor_shift_assignments_by_license.csv' DELIMITER ',' CSV HEADER;
+
+INSERT INTO duty_shift_staff (duty_shift_id, staff_id)
+SELECT ds.duty_shift_id, d.staff_id
+FROM tmp_doctor_shift_staff t
+JOIN department dep ON dep.name = t.department_name
+JOIN duty_shift ds
+    ON ds.department_id = dep.department_id
+   AND ds.shift_date = t.shift_date
+   AND ds.shift_type = t.shift_type
+JOIN doctor d ON d.medical_license_num = t.medical_license_num;
+
+
+CREATE TEMP TABLE tmp_nurse_shift_staff (
+    shift_type VARCHAR(20),
+    department_name VARCHAR(100),
+    shift_date DATE,
+    nurse_amka VARCHAR(20)
+);
+
+\copy tmp_nurse_shift_staff FROM 'data/nurse_shift_assignments_by_amka.csv' DELIMITER ',' CSV HEADER;
+
+INSERT INTO duty_shift_staff (duty_shift_id, staff_id)
+SELECT ds.duty_shift_id, s.staff_id
+FROM tmp_nurse_shift_staff t
+JOIN department dep ON dep.name = t.department_name
+JOIN duty_shift ds
+    ON ds.department_id = dep.department_id
+   AND ds.shift_date = t.shift_date
+   AND ds.shift_type = t.shift_type
+JOIN staff s ON s.amka = t.nurse_amka
+JOIN nurse n ON n.staff_id = s.staff_id;
+
+
+CREATE TEMP TABLE tmp_admin_shift_staff (
+    shift_type VARCHAR(20),
+    department_name VARCHAR(100),
+    shift_date DATE,
+    admin_amka VARCHAR(20)
+);
+
+\copy tmp_admin_shift_staff FROM 'data/admin_shift_assignments_by_amka.csv' DELIMITER ',' CSV HEADER;
+
+INSERT INTO duty_shift_staff (duty_shift_id, staff_id)
+SELECT ds.duty_shift_id, s.staff_id
+FROM tmp_admin_shift_staff t
+JOIN department dep ON dep.name = t.department_name
+JOIN duty_shift ds
+    ON ds.department_id = dep.department_id
+   AND ds.shift_date = t.shift_date
+   AND ds.shift_type = t.shift_type
+JOIN staff s ON s.amka = t.admin_amka
+JOIN administrative a ON a.staff_id = s.staff_id;
+
+ALTER TABLE duty_shift_staff ENABLE TRIGGER ALL;
+
+COMMIT;
+
+-- 1. exact staffing: 3 doctors, 6 nurses, 2 admins
+SELECT dep.name, ds.shift_date, ds.shift_type,
+       COUNT(doc.staff_id) doctors,
+       COUNT(n.staff_id) nurses,
+       COUNT(a.staff_id) admins
+FROM duty_shift ds
+JOIN department dep ON dep.department_id = ds.department_id
+LEFT JOIN duty_shift_staff dss ON dss.duty_shift_id = ds.duty_shift_id
+LEFT JOIN doctor doc ON doc.staff_id = dss.staff_id
+LEFT JOIN nurse n ON n.staff_id = dss.staff_id
+LEFT JOIN administrative a ON a.staff_id = dss.staff_id
+GROUP BY dep.name, ds.shift_date, ds.shift_type
+HAVING COUNT(doc.staff_id) <> 3
+    OR COUNT(n.staff_id) <> 6
+    OR COUNT(a.staff_id) <> 2;
+
+-- 2. monthly limits
+SELECT s.staff_id, s.staff_type,
+       DATE_TRUNC('month', ds.shift_date)::date AS month,
+       COUNT(*) shifts
+FROM duty_shift_staff dss
+JOIN duty_shift ds ON ds.duty_shift_id = dss.duty_shift_id
+JOIN staff s ON s.staff_id = dss.staff_id
+GROUP BY s.staff_id, s.staff_type, DATE_TRUNC('month', ds.shift_date)
+HAVING (s.staff_type = 'DOCTOR' AND COUNT(*) > 15)
+    OR (s.staff_type = 'NURSE' AND COUNT(*) > 20)
+    OR (s.staff_type = 'ADMINISTRATIVE' AND COUNT(*) > 25);
+
+-- 3. minimum 8h rest
+WITH x AS (
+  SELECT dss.staff_id,
+         ds.shift_date,
+         ds.shift_type,
+         ds.shift_date + ds.start_time AS start_ts,
+         CASE WHEN ds.end_time <= ds.start_time
+              THEN ds.shift_date + ds.end_time + INTERVAL '1 day'
+              ELSE ds.shift_date + ds.end_time
+         END AS end_ts
+  FROM duty_shift_staff dss
+  JOIN duty_shift ds ON ds.duty_shift_id = dss.duty_shift_id
+),
+y AS (
+  SELECT *, LAG(end_ts) OVER (PARTITION BY staff_id ORDER BY start_ts) prev_end
+  FROM x
+)
+SELECT *
+FROM y
+WHERE prev_end IS NOT NULL
+  AND start_ts - prev_end < INTERVAL '8 hours';
+
+-- 4. max 3 consecutive nights
+WITH nights AS (
+  SELECT dss.staff_id,
+         ds.shift_date,
+         ds.shift_date - ROW_NUMBER() OVER (
+           PARTITION BY dss.staff_id ORDER BY ds.shift_date
+         )::int AS grp
+  FROM duty_shift_staff dss
+  JOIN duty_shift ds ON ds.duty_shift_id = dss.duty_shift_id
+  WHERE ds.shift_type = 'NIGHT'
+),
+streaks AS (
+  SELECT staff_id, MIN(shift_date) start_date, MAX(shift_date) end_date, COUNT(*) nights
+  FROM nights
+  GROUP BY staff_id, grp
+)
+SELECT *
+FROM streaks
+WHERE nights > 3;
+
+-- 5. resident doctor always with senior
+SELECT dep.name, ds.shift_date, ds.shift_type
+FROM duty_shift ds
+JOIN department dep ON dep.department_id = ds.department_id
+JOIN duty_shift_staff dss ON dss.duty_shift_id = ds.duty_shift_id
+JOIN doctor d ON d.staff_id = dss.staff_id
+GROUP BY dep.name, ds.shift_date, ds.shift_type
+HAVING COUNT(*) FILTER (WHERE d.rank = 'RESIDENT') > 0
+   AND COUNT(*) FILTER (WHERE d.rank IN ('CONSULTANT_A', 'DIRECTOR')) = 0;
+
+-- 6. doctors work only in departments they belong to
+SELECT dep.name, d.medical_license_num, d.specialty
+FROM duty_shift_staff dss
+JOIN duty_shift ds ON ds.duty_shift_id = dss.duty_shift_id
+JOIN department dep ON dep.department_id = ds.department_id
+JOIN doctor d ON d.staff_id = dss.staff_id
+LEFT JOIN doctor_department dd
+  ON dd.doctor_id = d.staff_id
+ AND dd.department_id = dep.department_id
+WHERE dd.doctor_id IS NULL;
+
+-- 7. nurses work only in their own department
+SELECT dep.name, s.staff_id, s.amka
+FROM duty_shift_staff dss
+JOIN duty_shift ds ON ds.duty_shift_id = dss.duty_shift_id
+JOIN department dep ON dep.department_id = ds.department_id
+JOIN staff s ON s.staff_id = dss.staff_id
+JOIN nurse n ON n.staff_id = s.staff_id
+WHERE n.department_id <> dep.department_id;
+
+-- 8. administrative staff work only in their own department
+SELECT dep.name, s.staff_id, s.amka
+FROM duty_shift_staff dss
+JOIN duty_shift ds ON ds.duty_shift_id = dss.duty_shift_id
+JOIN department dep ON dep.department_id = ds.department_id
+JOIN staff s ON s.staff_id = dss.staff_id
+JOIN administrative a ON a.staff_id = s.staff_id
+WHERE a.department_id <> dep.department_id;

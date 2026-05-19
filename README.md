@@ -1,18 +1,32 @@
 # HospitalDatabase
 
-Darabase setup instruuctions
+## Database Setup Instructions
 
-from gitbash/linux style terminal. UTF_8 encoded file
-create the database 
+Run the following commands from a Git Bash / Linux-style terminal.
+
+> All SQL and CSV files are expected to be UTF-8 encoded.
+
+### 1. Create the database
+
+```bash
 createdb -U postgres hospital_db
+```
 
-from project root
-build the databse 
+### 2. Build the database schema
+
+Run from the project root:
+
+```bash
 psql -U postgres -d hospital_db -f sql/install.sql
+```
 
-fill the database 
+### 3. Load the database data
+
+Run from the project root:
+
+```bash
 psql -U postgres -d hospital_db -f sql/load.sql
-
+```
 ## Παραδοχές και Υποθέσεις Δεδομένων
 
 | Κατηγορία | Παραδοχή / Υπόθεση |
@@ -34,3 +48,8 @@ psql -U postgres -d hospital_db -f sql/load.sql
 | Ιατρικές Πράξεις | Οι inactive πράξεις και εξετάσεις (`ΑΝΕΝΕΡΓΟΣ`) εξαιρέθηκαν από το dataset. |
 | Ιατρικές Πράξεις | Τα duplicate αφαιρέθηκαν με deduplication. |
 | Ιατρικές Πράξεις | Τα default costs των ιατρικών πράξεων και εργαστηριακών εξετάσεων δημιουργήθηκαν συνθετικά μέσω deterministic random generation με `random.seed(42)`, επειδή οι επίσημες πηγές δεν παρέχουν κόστος. |
+
+
+
+
+
