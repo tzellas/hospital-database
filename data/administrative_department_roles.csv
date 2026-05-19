@@ -1,0 +1,121 @@
+role,office,department
+Patient Registration Clerk,CB-001,Emergency Department
+Triage Desk Coordinator,CB-002,Emergency Department
+Emergency Admissions Officer,CB-003,Emergency Department
+Insurance Verification Clerk,CB-004,Emergency Department
+Shift Scheduling Assistant,CB-005,Emergency Department
+Medical Records Clerk,CB-006,Emergency Department
+Front Desk Supervisor,CB-007,Emergency Department
+Patient Registration Clerk,CB-008,Emergency Department
+Triage Desk Coordinator,CB-009,Emergency Department
+Emergency Admissions Officer,CB-010,Emergency Department
+Insurance Verification Clerk,CB-011,Emergency Department
+Shift Scheduling Assistant,CB-012,Emergency Department
+Department Secretary,CB-101,Cardiology
+Appointment Coordinator,CB-102,Cardiology
+Billing Assistant,CB-103,Cardiology
+Medical Records Clerk,CB-104,Cardiology
+Insurance Verification Clerk,CB-105,Cardiology
+Department Secretary,CB-106,Cardiology
+Appointment Coordinator,CB-107,Cardiology
+Billing Assistant,CB-108,Cardiology
+Surgical Scheduling Coordinator,CB-201,General Surgery
+Operating Room Administrative Assistant,CB-202,General Surgery
+Department Secretary,CB-203,General Surgery
+Billing Assistant,CB-204,General Surgery
+Medical Records Clerk,CB-205,General Surgery
+Preoperative Admissions Clerk,CB-206,General Surgery
+Surgical Scheduling Coordinator,CB-207,General Surgery
+Operating Room Administrative Assistant,CB-208,General Surgery
+Department Secretary,CB-209,General Surgery
+Department Secretary,CB-301,Orthopedics
+Appointment Coordinator,CB-302,Orthopedics
+Insurance Verification Clerk,CB-303,Orthopedics
+Billing Assistant,CB-304,Orthopedics
+Medical Records Clerk,CB-305,Orthopedics
+Department Secretary,CB-306,Orthopedics
+Appointment Coordinator,CB-307,Orthopedics
+Insurance Verification Clerk,CB-308,Orthopedics
+Department Secretary,CB-401,Neurology
+Appointment Coordinator,CB-402,Neurology
+Medical Records Clerk,CB-403,Neurology
+Insurance Verification Clerk,CB-404,Neurology
+Referral Coordinator,CB-405,Neurology
+Department Secretary,CB-406,Neurology
+Appointment Coordinator,CB-407,Neurology
+Surgical Scheduling Coordinator,EW-001,Neurosurgery
+Department Secretary,EW-002,Neurosurgery
+Medical Records Clerk,EW-003,Neurosurgery
+Insurance Verification Clerk,EW-004,Neurosurgery
+Preoperative Admissions Clerk,EW-005,Neurosurgery
+Surgical Scheduling Coordinator,EW-006,Neurosurgery
+Department Secretary,EW-007,Neurosurgery
+Department Secretary,EW-101,Pediatrics
+Appointment Coordinator,EW-102,Pediatrics
+Family Support Administrator,EW-103,Pediatrics
+Medical Records Clerk,EW-104,Pediatrics
+Insurance Verification Clerk,EW-105,Pediatrics
+Department Secretary,EW-106,Pediatrics
+Appointment Coordinator,EW-107,Pediatrics
+Family Support Administrator,EW-108,Pediatrics
+Treatment Scheduling Coordinator,EW-201,Oncology
+Patient Services Administrator,EW-202,Oncology
+Department Secretary,EW-203,Oncology
+Insurance Verification Clerk,EW-204,Oncology
+Billing Assistant,EW-205,Oncology
+Chemotherapy Appointment Coordinator,EW-206,Oncology
+Treatment Scheduling Coordinator,EW-207,Oncology
+Patient Services Administrator,EW-208,Oncology
+Department Secretary,EW-209,Oncology
+ICU Ward Clerk,EW-301,Intensive Care Unit
+Bed Management Coordinator,EW-302,Intensive Care Unit
+Shift Scheduling Assistant,EW-303,Intensive Care Unit
+Medical Records Clerk,EW-304,Intensive Care Unit
+Department Secretary,EW-305,Intensive Care Unit
+ICU Ward Clerk,EW-306,Intensive Care Unit
+Bed Management Coordinator,EW-307,Intensive Care Unit
+Shift Scheduling Assistant,EW-308,Intensive Care Unit
+Imaging Appointment Coordinator,EW-401,Radiology
+Radiology Reception Clerk,EW-402,Radiology
+Medical Records Clerk,EW-403,Radiology
+Billing Assistant,EW-404,Radiology
+Insurance Verification Clerk,EW-405,Radiology
+Imaging Appointment Coordinator,EW-406,Radiology
+Radiology Reception Clerk,EW-407,Radiology
+Laboratory Reception Clerk,WW-001,Pathology
+Specimen Administration Clerk,WW-002,Pathology
+Medical Records Clerk,WW-003,Pathology
+Department Secretary,WW-004,Pathology
+Billing Assistant,WW-005,Pathology
+Laboratory Reception Clerk,WW-006,Pathology
+Specimen Administration Clerk,WW-007,Pathology
+Department Secretary,WW-101,Pulmonology
+Appointment Coordinator,WW-102,Pulmonology
+Insurance Verification Clerk,WW-103,Pulmonology
+Medical Records Clerk,WW-104,Pulmonology
+Respiratory Clinic Coordinator,WW-105,Pulmonology
+Department Secretary,WW-106,Pulmonology
+Appointment Coordinator,WW-107,Pulmonology
+Endoscopy Scheduling Coordinator,WW-201,Gastroenterology
+Department Secretary,WW-202,Gastroenterology
+Billing Assistant,WW-203,Gastroenterology
+Medical Records Clerk,WW-204,Gastroenterology
+Insurance Verification Clerk,WW-205,Gastroenterology
+Endoscopy Scheduling Coordinator,WW-206,Gastroenterology
+Department Secretary,WW-207,Gastroenterology
+Department Secretary,WW-301,Urology
+Appointment Coordinator,WW-302,Urology
+Insurance Verification Clerk,WW-303,Urology
+Medical Records Clerk,WW-304,Urology
+Procedure Scheduling Coordinator,WW-305,Urology
+Department Secretary,WW-306,Urology
+Appointment Coordinator,WW-307,Urology
+Maternity Admissions Clerk,WW-401,Obstetrics and Gynecology
+Appointment Coordinator,WW-402,Obstetrics and Gynecology
+Department Secretary,WW-403,Obstetrics and Gynecology
+Insurance Verification Clerk,WW-404,Obstetrics and Gynecology
+Medical Records Clerk,WW-405,Obstetrics and Gynecology
+Birth Records Clerk,WW-406,Obstetrics and Gynecology
+Maternity Admissions Clerk,WW-407,Obstetrics and Gynecology
+Appointment Coordinator,WW-408,Obstetrics and Gynecology
+Department Secretary,WW-409,Obstetrics and Gynecology

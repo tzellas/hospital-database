@@ -85,9 +85,11 @@ JOIN active_substance a
 \copy department(name,description,bed_count,floor,building,phone,manager_id) FROM 'data/departments.csv' DELIMITER ',' CSV HEADER;
 
 -- DOCTOR --
-/* Doctor data are loaded in a temporary table except staff_id and supervisor_doc_id.*/
+/* Doctor data are loaded in a temporary table except staff_id and supervisor_doc_id. The doctors that don't yet exist
+(those that aren't directors) are created using a staff_id with from staff with DOCTOR staff_type.*/
+
 CREATE TEMP TABLE tmp_doctor_data (
-    rn SERIAL PRIMARY KEY,
+    i SERIAL PRIMARY KEY,
     medical_license_num VARCHAR(50),
     specialty VARCHAR(100),
     rank VARCHAR(50)
@@ -120,7 +122,7 @@ SELECT
 FROM (
     SELECT
         staff_id,
-        ROW_NUMBER() OVER (ORDER BY staff_id) AS rn
+        ROW_NUMBER() OVER (ORDER BY staff_id) AS i
     FROM staff
     WHERE staff_type = 'DOCTOR'
       AND staff_id NOT IN (
@@ -128,8 +130,8 @@ FROM (
       )
 ) s
 JOIN tmp_doctor_data d
-  ON d.rn = s.rn
-WHERE s.rn <= 65;
+  ON d.i = s.i
+WHERE s.i <= 65;
 
 /* Here we assign supervisors based on rank to the consultants.*/
 WITH supervisor_choices AS (
@@ -174,11 +176,64 @@ JOIN tmp_dept_specialty_map m
   ON m.specialty = doc.specialty
 JOIN department dep
   ON dep.name = m.department_name
+WHERE doc.rank <> 'DIRECTOR'
 ON CONFLICT DO NOTHING;
 
-
+/* We give the managers/directors a proper doctor - department relationship.*/
 INSERT INTO doctor_department(doctor_id, department_id)
 SELECT manager_id, department_id
 FROM department
 WHERE manager_id IS NOT NULL
 ON CONFLICT DO NOTHING;
+
+-- NURSE --
+CREATE TEMP TABLE tmp_nurse_data (
+    i SERIAL PRIMARY KEY,
+    rank VARCHAR(50),
+    department VARCHAR(100)
+);
+
+\copy tmp_nurse_data(rank, department) FROM 'data/nurse_department_rank.csv' DELIMITER ',' CSV HEADER;
+
+INSERT INTO nurse(staff_id, rank, department_id)
+SELECT
+    s.staff_id,
+    m.rank,
+    d.department_id
+FROM (
+    SELECT staff_id,
+        ROW_NUMBER() OVER (ORDER BY staff_id) AS i
+    FROM staff
+    WHERE staff_type = 'NURSE'
+) s
+JOIN tmp_nurse_data m
+    ON s.i = m.i
+JOIN department d
+    ON d.name = m.department;
+
+-- ADMINISTRATIVE --
+CREATE TEMP TABLE tmp_admin_data (
+    i SERIAL PRIMARY KEY,
+    role VARCHAR(50),
+    office VARCHAR(50) NOT NULL,
+    department VARCHAR(100)
+);
+
+\copy tmp_admin_data(role, office, department) FROM 'data/administrative_department_roles.csv' DELIMITER ',' CSV HEADER;
+
+INSERT INTO administrative(staff_id, role, office, department_id)
+SELECT
+    s.staff_id,
+    m.role,
+    m.office,
+    d.department_id
+FROM (
+    SELECT staff_id,
+        ROW_NUMBER() OVER (ORDER BY staff_id) AS i
+    FROM staff
+    WHERE staff_type = 'ADMINISTRATIVE'
+) s
+JOIN tmp_admin_data m
+    ON s.i = m.i
+JOIN department d
+    ON d.name = m.department;

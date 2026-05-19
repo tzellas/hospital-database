@@ -1,0 +1,451 @@
+rank,department
+HEAD_NURSE,Emergency Department
+HEAD_NURSE,Emergency Department
+HEAD_NURSE,Emergency Department
+HEAD_NURSE,Emergency Department
+HEAD_NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+NURSE,Emergency Department
+ASSISTANT_NURSE,Emergency Department
+ASSISTANT_NURSE,Emergency Department
+ASSISTANT_NURSE,Emergency Department
+ASSISTANT_NURSE,Emergency Department
+ASSISTANT_NURSE,Emergency Department
+ASSISTANT_NURSE,Emergency Department
+ASSISTANT_NURSE,Emergency Department
+ASSISTANT_NURSE,Emergency Department
+ASSISTANT_NURSE,Emergency Department
+ASSISTANT_NURSE,Emergency Department
+ASSISTANT_NURSE,Emergency Department
+ASSISTANT_NURSE,Emergency Department
+ASSISTANT_NURSE,Emergency Department
+ASSISTANT_NURSE,Emergency Department
+HEAD_NURSE,Cardiology
+HEAD_NURSE,Cardiology
+HEAD_NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+NURSE,Cardiology
+ASSISTANT_NURSE,Cardiology
+ASSISTANT_NURSE,Cardiology
+ASSISTANT_NURSE,Cardiology
+ASSISTANT_NURSE,Cardiology
+ASSISTANT_NURSE,Cardiology
+ASSISTANT_NURSE,Cardiology
+ASSISTANT_NURSE,Cardiology
+ASSISTANT_NURSE,Cardiology
+ASSISTANT_NURSE,Cardiology
+ASSISTANT_NURSE,Cardiology
+HEAD_NURSE,General Surgery
+HEAD_NURSE,General Surgery
+HEAD_NURSE,General Surgery
+HEAD_NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+NURSE,General Surgery
+ASSISTANT_NURSE,General Surgery
+ASSISTANT_NURSE,General Surgery
+ASSISTANT_NURSE,General Surgery
+ASSISTANT_NURSE,General Surgery
+ASSISTANT_NURSE,General Surgery
+ASSISTANT_NURSE,General Surgery
+ASSISTANT_NURSE,General Surgery
+ASSISTANT_NURSE,General Surgery
+ASSISTANT_NURSE,General Surgery
+ASSISTANT_NURSE,General Surgery
+ASSISTANT_NURSE,General Surgery
+HEAD_NURSE,Orthopedics
+HEAD_NURSE,Orthopedics
+HEAD_NURSE,Orthopedics
+NURSE,Orthopedics
+NURSE,Orthopedics
+NURSE,Orthopedics
+NURSE,Orthopedics
+NURSE,Orthopedics
+NURSE,Orthopedics
+NURSE,Orthopedics
+NURSE,Orthopedics
+NURSE,Orthopedics
+NURSE,Orthopedics
+NURSE,Orthopedics
+NURSE,Orthopedics
+NURSE,Orthopedics
+NURSE,Orthopedics
+NURSE,Orthopedics
+NURSE,Orthopedics
+NURSE,Orthopedics
+NURSE,Orthopedics
+ASSISTANT_NURSE,Orthopedics
+ASSISTANT_NURSE,Orthopedics
+ASSISTANT_NURSE,Orthopedics
+ASSISTANT_NURSE,Orthopedics
+ASSISTANT_NURSE,Orthopedics
+ASSISTANT_NURSE,Orthopedics
+ASSISTANT_NURSE,Orthopedics
+ASSISTANT_NURSE,Orthopedics
+ASSISTANT_NURSE,Orthopedics
+HEAD_NURSE,Neurology
+HEAD_NURSE,Neurology
+NURSE,Neurology
+NURSE,Neurology
+NURSE,Neurology
+NURSE,Neurology
+NURSE,Neurology
+NURSE,Neurology
+NURSE,Neurology
+NURSE,Neurology
+NURSE,Neurology
+NURSE,Neurology
+NURSE,Neurology
+NURSE,Neurology
+NURSE,Neurology
+NURSE,Neurology
+NURSE,Neurology
+ASSISTANT_NURSE,Neurology
+ASSISTANT_NURSE,Neurology
+ASSISTANT_NURSE,Neurology
+ASSISTANT_NURSE,Neurology
+ASSISTANT_NURSE,Neurology
+ASSISTANT_NURSE,Neurology
+ASSISTANT_NURSE,Neurology
+HEAD_NURSE,Neurosurgery
+HEAD_NURSE,Neurosurgery
+HEAD_NURSE,Neurosurgery
+NURSE,Neurosurgery
+NURSE,Neurosurgery
+NURSE,Neurosurgery
+NURSE,Neurosurgery
+NURSE,Neurosurgery
+NURSE,Neurosurgery
+NURSE,Neurosurgery
+NURSE,Neurosurgery
+NURSE,Neurosurgery
+NURSE,Neurosurgery
+NURSE,Neurosurgery
+NURSE,Neurosurgery
+NURSE,Neurosurgery
+NURSE,Neurosurgery
+NURSE,Neurosurgery
+ASSISTANT_NURSE,Neurosurgery
+ASSISTANT_NURSE,Neurosurgery
+ASSISTANT_NURSE,Neurosurgery
+ASSISTANT_NURSE,Neurosurgery
+ASSISTANT_NURSE,Neurosurgery
+ASSISTANT_NURSE,Neurosurgery
+ASSISTANT_NURSE,Neurosurgery
+ASSISTANT_NURSE,Neurosurgery
+HEAD_NURSE,Pediatrics
+HEAD_NURSE,Pediatrics
+HEAD_NURSE,Pediatrics
+NURSE,Pediatrics
+NURSE,Pediatrics
+NURSE,Pediatrics
+NURSE,Pediatrics
+NURSE,Pediatrics
+NURSE,Pediatrics
+NURSE,Pediatrics
+NURSE,Pediatrics
+NURSE,Pediatrics
+NURSE,Pediatrics
+NURSE,Pediatrics
+NURSE,Pediatrics
+NURSE,Pediatrics
+NURSE,Pediatrics
+NURSE,Pediatrics
+NURSE,Pediatrics
+NURSE,Pediatrics
+ASSISTANT_NURSE,Pediatrics
+ASSISTANT_NURSE,Pediatrics
+ASSISTANT_NURSE,Pediatrics
+ASSISTANT_NURSE,Pediatrics
+ASSISTANT_NURSE,Pediatrics
+ASSISTANT_NURSE,Pediatrics
+ASSISTANT_NURSE,Pediatrics
+ASSISTANT_NURSE,Pediatrics
+HEAD_NURSE,Oncology
+HEAD_NURSE,Oncology
+HEAD_NURSE,Oncology
+HEAD_NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+NURSE,Oncology
+ASSISTANT_NURSE,Oncology
+ASSISTANT_NURSE,Oncology
+ASSISTANT_NURSE,Oncology
+ASSISTANT_NURSE,Oncology
+ASSISTANT_NURSE,Oncology
+ASSISTANT_NURSE,Oncology
+ASSISTANT_NURSE,Oncology
+ASSISTANT_NURSE,Oncology
+ASSISTANT_NURSE,Oncology
+ASSISTANT_NURSE,Oncology
+ASSISTANT_NURSE,Oncology
+ASSISTANT_NURSE,Oncology
+ASSISTANT_NURSE,Oncology
+HEAD_NURSE,Intensive Care Unit
+HEAD_NURSE,Intensive Care Unit
+HEAD_NURSE,Intensive Care Unit
+HEAD_NURSE,Intensive Care Unit
+HEAD_NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+NURSE,Intensive Care Unit
+ASSISTANT_NURSE,Intensive Care Unit
+ASSISTANT_NURSE,Intensive Care Unit
+ASSISTANT_NURSE,Intensive Care Unit
+ASSISTANT_NURSE,Intensive Care Unit
+ASSISTANT_NURSE,Intensive Care Unit
+ASSISTANT_NURSE,Intensive Care Unit
+ASSISTANT_NURSE,Intensive Care Unit
+ASSISTANT_NURSE,Intensive Care Unit
+ASSISTANT_NURSE,Intensive Care Unit
+ASSISTANT_NURSE,Intensive Care Unit
+ASSISTANT_NURSE,Intensive Care Unit
+ASSISTANT_NURSE,Intensive Care Unit
+ASSISTANT_NURSE,Intensive Care Unit
+ASSISTANT_NURSE,Intensive Care Unit
+ASSISTANT_NURSE,Intensive Care Unit
+HEAD_NURSE,Radiology
+NURSE,Radiology
+NURSE,Radiology
+NURSE,Radiology
+NURSE,Radiology
+NURSE,Radiology
+NURSE,Radiology
+NURSE,Radiology
+NURSE,Radiology
+NURSE,Radiology
+ASSISTANT_NURSE,Radiology
+ASSISTANT_NURSE,Radiology
+ASSISTANT_NURSE,Radiology
+ASSISTANT_NURSE,Radiology
+HEAD_NURSE,Pathology
+HEAD_NURSE,Pathology
+NURSE,Pathology
+NURSE,Pathology
+NURSE,Pathology
+NURSE,Pathology
+NURSE,Pathology
+NURSE,Pathology
+NURSE,Pathology
+NURSE,Pathology
+NURSE,Pathology
+ASSISTANT_NURSE,Pathology
+ASSISTANT_NURSE,Pathology
+ASSISTANT_NURSE,Pathology
+ASSISTANT_NURSE,Pathology
+ASSISTANT_NURSE,Pathology
+HEAD_NURSE,Pulmonology
+HEAD_NURSE,Pulmonology
+HEAD_NURSE,Pulmonology
+NURSE,Pulmonology
+NURSE,Pulmonology
+NURSE,Pulmonology
+NURSE,Pulmonology
+NURSE,Pulmonology
+NURSE,Pulmonology
+NURSE,Pulmonology
+NURSE,Pulmonology
+NURSE,Pulmonology
+NURSE,Pulmonology
+NURSE,Pulmonology
+NURSE,Pulmonology
+NURSE,Pulmonology
+NURSE,Pulmonology
+NURSE,Pulmonology
+ASSISTANT_NURSE,Pulmonology
+ASSISTANT_NURSE,Pulmonology
+ASSISTANT_NURSE,Pulmonology
+ASSISTANT_NURSE,Pulmonology
+ASSISTANT_NURSE,Pulmonology
+ASSISTANT_NURSE,Pulmonology
+ASSISTANT_NURSE,Pulmonology
+ASSISTANT_NURSE,Pulmonology
+HEAD_NURSE,Gastroenterology
+HEAD_NURSE,Gastroenterology
+NURSE,Gastroenterology
+NURSE,Gastroenterology
+NURSE,Gastroenterology
+NURSE,Gastroenterology
+NURSE,Gastroenterology
+NURSE,Gastroenterology
+NURSE,Gastroenterology
+NURSE,Gastroenterology
+NURSE,Gastroenterology
+NURSE,Gastroenterology
+NURSE,Gastroenterology
+NURSE,Gastroenterology
+NURSE,Gastroenterology
+ASSISTANT_NURSE,Gastroenterology
+ASSISTANT_NURSE,Gastroenterology
+ASSISTANT_NURSE,Gastroenterology
+ASSISTANT_NURSE,Gastroenterology
+ASSISTANT_NURSE,Gastroenterology
+ASSISTANT_NURSE,Gastroenterology
+ASSISTANT_NURSE,Gastroenterology
+HEAD_NURSE,Urology
+HEAD_NURSE,Urology
+NURSE,Urology
+NURSE,Urology
+NURSE,Urology
+NURSE,Urology
+NURSE,Urology
+NURSE,Urology
+NURSE,Urology
+NURSE,Urology
+NURSE,Urology
+NURSE,Urology
+NURSE,Urology
+NURSE,Urology
+NURSE,Urology
+NURSE,Urology
+NURSE,Urology
+ASSISTANT_NURSE,Urology
+ASSISTANT_NURSE,Urology
+ASSISTANT_NURSE,Urology
+ASSISTANT_NURSE,Urology
+ASSISTANT_NURSE,Urology
+ASSISTANT_NURSE,Urology
+ASSISTANT_NURSE,Urology
+HEAD_NURSE,Obstetrics and Gynecology
+HEAD_NURSE,Obstetrics and Gynecology
+HEAD_NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+NURSE,Obstetrics and Gynecology
+ASSISTANT_NURSE,Obstetrics and Gynecology
+ASSISTANT_NURSE,Obstetrics and Gynecology
+ASSISTANT_NURSE,Obstetrics and Gynecology
+ASSISTANT_NURSE,Obstetrics and Gynecology
+ASSISTANT_NURSE,Obstetrics and Gynecology
+ASSISTANT_NURSE,Obstetrics and Gynecology
+ASSISTANT_NURSE,Obstetrics and Gynecology
+ASSISTANT_NURSE,Obstetrics and Gynecology
+ASSISTANT_NURSE,Obstetrics and Gynecology
+ASSISTANT_NURSE,Obstetrics and Gynecology

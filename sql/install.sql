@@ -96,7 +96,7 @@ CREATE TABLE doctor (
 
 CREATE TABLE nurse (
     staff_id INT PRIMARY KEY,
-    nurse_num VARCHAR(30) NOT NULL UNIQUE,
+    nurse_num SERIAL UNIQUE,
     rank VARCHAR(50) NOT NULL,
     department_id INT NOT NULL,
 
@@ -116,7 +116,7 @@ CREATE TABLE nurse (
 
 CREATE TABLE administrative (
     staff_id INT PRIMARY KEY,
-    admin_num VARCHAR(30) NOT NULL UNIQUE, 
+    admin_num SERIAL UNIQUE, 
     role VARCHAR(100) NOT NULL,
     office VARCHAR(50) NOT NULL,
     department_id INT NOT NULL,
