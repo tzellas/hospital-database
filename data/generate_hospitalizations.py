@@ -99,6 +99,65 @@ def choose_patient(patient_ids, patient_profiles, patient_total_stays, patient_d
 
     return random.choices(patient_ids, weights=weighted, k=1)[0]
 
+def smooth_icd_category_counts(rows, icds):
+    icds_by_letter = defaultdict(list)
+    for code in icds:
+        letter = clean(code)[:1]
+        if letter:
+            icds_by_letter[letter].append(code)
+
+    counts = defaultdict(lambda: defaultdict(int))
+    for row in rows:
+        year = row[3][:4]
+        letter = clean(row[5])[:1]
+        if letter:
+            counts[year][letter] += 1
+
+    years = ('2025', '2026')
+    letters = sorted(set(counts[years[0]]) | set(counts[years[1]]))
+
+    for letter in letters:
+        if min(counts[years[0]].get(letter, 0), counts[years[1]].get(letter, 0)) >= 5:
+            if counts[years[0]].get(letter, 0) == counts[years[1]].get(letter, 0):
+                return
+
+    candidates = []
+    for letter in letters:
+        left = counts[years[0]].get(letter, 0)
+        right = counts[years[1]].get(letter, 0)
+        if min(left, right) >= 5 and left != right:
+            candidates.append((abs(left - right), letter, left, right))
+    if not candidates:
+        return
+
+    _, letter, left, right = min(candidates)
+    donor_year = years[0] if left > right else years[1]
+    receiver_year = years[1] if donor_year == years[0] else years[0]
+    moves = abs(left - right)
+
+    receiver_letter = None
+    receiver_count = -1
+    for candidate in letters:
+        if candidate == letter or not icds_by_letter[candidate]:
+            continue
+        current = counts[donor_year].get(candidate, 0)
+        if current > receiver_count:
+            receiver_letter = candidate
+            receiver_count = current
+    if not receiver_letter:
+        return
+
+    donor_rows = []
+    for idx, row in enumerate(rows):
+        if row[3][:4] == donor_year and clean(row[5]).startswith(letter):
+            donor_rows.append(idx)
+            if len(donor_rows) == moves:
+                break
+
+    replacement_codes = icds_by_letter[receiver_letter]
+    for offset, idx in enumerate(donor_rows):
+        rows[idx][5] = replacement_codes[offset % len(replacement_codes)]
+
 def main():
     random.seed(SEED)
     data = DATA_DIR
@@ -201,6 +260,8 @@ def main():
         patient_total_stays[patient_id] += 1
         patient_dep_stays[(patient_id, dep)] += 1
         i += 1
+
+    smooth_icd_category_counts(out, icds)
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     with open(OUT_PATH, 'w', newline='', encoding='utf-8') as fp:
