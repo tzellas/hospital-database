@@ -9,7 +9,7 @@ Run the following commands from a Git Bash / Linux-style terminal.
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/NikosLiagkas/HospitalDatabase.git
 cd HospitalDatabase
 ```
 
@@ -23,7 +23,7 @@ You need:
 ### 3. Create the database
 
 ```bash
-createdb -U postgres hospital_db
+createdb -U postgres <your database name>
 ```
 
 ### 4. Optionally regenerate the generated CSV files
@@ -41,7 +41,7 @@ This step is optional if the CSV files already exist and you want to load them a
 Run from the project root:
 
 ```bash
-psql -U postgres -d hospital_db -f sql/install.sql
+psql -U postgres -d <your database name> -f sql/install.sql
 ```
 
 ### 6. Load the database data
@@ -49,7 +49,7 @@ psql -U postgres -d hospital_db -f sql/install.sql
 Run from the project root:
 
 ```bash
-psql -U postgres -d hospital_db -f sql/load.sql
+psql -U postgres -d <your database name> -f sql/load.sql
 ```
 
 ### 7. Optionally run all query files
