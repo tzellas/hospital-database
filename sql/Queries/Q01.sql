@@ -1,4 +1,4 @@
-\encoding UTF8
+\encoding UTF8 -- Όταν το τρέχουμε σε pgAdmin σβήνουμε αυτή τη γραμμή 
 
 /*
 Q01

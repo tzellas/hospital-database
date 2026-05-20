@@ -5,23 +5,23 @@
 
                                                                                      QUERY PLAN                                                                                     
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- GroupAggregate  (cost=52.92..52.96 rows=1 width=117) (actual time=0.049..0.050 rows=0.00 loops=1)
+ GroupAggregate  (cost=52.92..52.96 rows=1 width=117) (actual time=0.038..0.039 rows=0.00 loops=1)
    Group Key: st.first_name, st.last_name
    Buffers: shared hit=2
-   ->  Sort  (cost=52.92..52.93 rows=1 width=53) (actual time=0.048..0.049 rows=0.00 loops=1)
+   ->  Sort  (cost=52.92..52.93 rows=1 width=53) (actual time=0.037..0.038 rows=0.00 loops=1)
          Sort Key: st.first_name, st.last_name
          Sort Method: quicksort  Memory: 25kB
          Buffers: shared hit=2
-         ->  Nested Loop  (cost=5.13..52.91 rows=1 width=53) (actual time=0.040..0.040 rows=0.00 loops=1)
+         ->  Nested Loop  (cost=5.13..52.91 rows=1 width=53) (actual time=0.026..0.027 rows=0.00 loops=1)
                Buffers: shared hit=2
-               ->  Nested Loop  (cost=4.85..44.61 rows=1 width=39) (actual time=0.039..0.040 rows=0.00 loops=1)
+               ->  Nested Loop  (cost=4.85..44.61 rows=1 width=39) (actual time=0.025..0.026 rows=0.00 loops=1)
                      Buffers: shared hit=2
-                     ->  Nested Loop  (cost=4.58..36.31 rows=1 width=12) (actual time=0.039..0.040 rows=0.00 loops=1)
+                     ->  Nested Loop  (cost=4.58..36.31 rows=1 width=12) (actual time=0.025..0.026 rows=0.00 loops=1)
                            Buffers: shared hit=2
-                           ->  Bitmap Heap Scan on doctor_review dr  (cost=4.30..11.41 rows=3 width=16) (actual time=0.039..0.039 rows=0.00 loops=1)
+                           ->  Bitmap Heap Scan on doctor_review dr  (cost=4.30..11.41 rows=3 width=16) (actual time=0.025..0.025 rows=0.00 loops=1)
                                  Recheck Cond: (doctor_id = 1)
                                  Buffers: shared hit=2
-                                 ->  Bitmap Index Scan on idx_doctor_review_doctor_id  (cost=0.00..4.30 rows=3 width=0) (actual time=0.009..0.010 rows=0.00 loops=1)
+                                 ->  Bitmap Index Scan on idx_doctor_review_doctor_id  (cost=0.00..4.30 rows=3 width=0) (actual time=0.006..0.006 rows=0.00 loops=1)
                                        Index Cond: (doctor_id = 1)
                                        Index Searches: 1
                                        Buffers: shared hit=2
@@ -36,30 +36,30 @@
                      Index Searches: 0
  Planning:
    Buffers: shared hit=12
- Planning Time: 0.626 ms
- Execution Time: 0.183 ms
+ Planning Time: 0.756 ms
+ Execution Time: 0.220 ms
 (33 rows)
 
 SET
                                                                                      QUERY PLAN                                                                                     
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- GroupAggregate  (cost=52.92..52.96 rows=1 width=117) (actual time=0.024..0.024 rows=0.00 loops=1)
+ GroupAggregate  (cost=52.92..52.96 rows=1 width=117) (actual time=0.031..0.032 rows=0.00 loops=1)
    Group Key: st.first_name, st.last_name
    Buffers: shared hit=2
-   ->  Sort  (cost=52.92..52.93 rows=1 width=53) (actual time=0.023..0.024 rows=0.00 loops=1)
+   ->  Sort  (cost=52.92..52.93 rows=1 width=53) (actual time=0.030..0.031 rows=0.00 loops=1)
          Sort Key: st.first_name, st.last_name
          Sort Method: quicksort  Memory: 25kB
          Buffers: shared hit=2
-         ->  Nested Loop  (cost=5.13..52.91 rows=1 width=53) (actual time=0.018..0.019 rows=0.00 loops=1)
+         ->  Nested Loop  (cost=5.13..52.91 rows=1 width=53) (actual time=0.024..0.025 rows=0.00 loops=1)
                Buffers: shared hit=2
-               ->  Nested Loop  (cost=4.85..44.61 rows=1 width=39) (actual time=0.018..0.019 rows=0.00 loops=1)
+               ->  Nested Loop  (cost=4.85..44.61 rows=1 width=39) (actual time=0.024..0.025 rows=0.00 loops=1)
                      Buffers: shared hit=2
-                     ->  Nested Loop  (cost=4.58..36.31 rows=1 width=12) (actual time=0.018..0.018 rows=0.00 loops=1)
+                     ->  Nested Loop  (cost=4.58..36.31 rows=1 width=12) (actual time=0.024..0.024 rows=0.00 loops=1)
                            Buffers: shared hit=2
-                           ->  Bitmap Heap Scan on doctor_review dr  (cost=4.30..11.41 rows=3 width=16) (actual time=0.018..0.018 rows=0.00 loops=1)
+                           ->  Bitmap Heap Scan on doctor_review dr  (cost=4.30..11.41 rows=3 width=16) (actual time=0.023..0.024 rows=0.00 loops=1)
                                  Recheck Cond: (doctor_id = 1)
                                  Buffers: shared hit=2
-                                 ->  Bitmap Index Scan on idx_doctor_review_doctor_id  (cost=0.00..4.30 rows=3 width=0) (actual time=0.004..0.004 rows=0.00 loops=1)
+                                 ->  Bitmap Index Scan on idx_doctor_review_doctor_id  (cost=0.00..4.30 rows=3 width=0) (actual time=0.007..0.007 rows=0.00 loops=1)
                                        Index Cond: (doctor_id = 1)
                                        Index Searches: 1
                                        Buffers: shared hit=2
@@ -74,8 +74,8 @@ SET
                      Index Searches: 0
  Planning:
    Buffers: shared hit=12
- Planning Time: 0.465 ms
- Execution Time: 0.066 ms
+ Planning Time: 0.769 ms
+ Execution Time: 0.091 ms
 (33 rows)
 
 RESET

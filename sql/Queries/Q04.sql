@@ -1,4 +1,4 @@
-\encoding UTF8
+\encoding UTF8 ---- Όταν το τρέχουμε σε pgAdmin σβήνουμε αυτή τη γραμμή 
 /*
 Q04
 Για συγκεκριμένο ιατρό, βρίσκουμε:
@@ -90,7 +90,7 @@ JOIN hospitalization_review AS hr
     ON hr.patient_id = dr.patient_id
    AND hr.hospitalization_id = dr.hospitalization_id
 
-WHERE doc.staff_id = 1
+WHERE doc.staff_id = 671
 
 GROUP BY
     doc.staff_id,
@@ -134,7 +134,7 @@ JOIN hospitalization_review AS hr
     ON hr.patient_id = dr.patient_id
    AND hr.hospitalization_id = dr.hospitalization_id
 
-WHERE doc.staff_id = 1
+WHERE doc.staff_id = 671
 
 GROUP BY
     doc.staff_id,
