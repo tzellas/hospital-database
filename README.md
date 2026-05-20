@@ -58,7 +58,7 @@ psql -U postgres -d <your database name> -f sql/load.sql
 for f in sql/Queries/Q*.sql
 do
   base="$(basename "$f" .sql)"
-  psql -U postgres -d hospital_db -P pager=off -f "$f" -o "sql/Queries/${base}_out.txt"
+  psql -U postgres -d <your database name> -P pager=off -f "$f" -o "sql/Queries/${base}_out.txt"
 done
 ```
 
