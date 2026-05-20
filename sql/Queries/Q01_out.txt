@@ -1,0 +1,1194 @@
+      department_name      | admission_year | ken_code | insurance_provider | hospitalization_count | total_base_revenue | total_extra_revenue | total_revenue 
+---------------------------+----------------+----------+--------------------+-----------------------+--------------------+---------------------+---------------
+ Cardiology                |           2025 | Α02Μα    | Ethniki Insurance  |                     1 |            3922.00 |                0.00 |       3922.00
+ Cardiology                |           2025 | Α23Α     | Interamerican      |                     1 |             319.00 |             1914.00 |       2233.00
+ Cardiology                |           2025 | Α27Χ     | NN Hellas          |                     1 |             350.00 |              175.00 |        525.00
+ Cardiology                |           2025 | Β01Χ     | Allianz            |                     1 |            2892.00 |                0.00 |       2892.00
+ Cardiology                |           2025 | Γ08Α     | Ethniki Insurance  |                     1 |             719.00 |             2157.00 |       2876.00
+ Cardiology                |           2025 | Γ09Α     | AIG                |                     1 |             418.00 |              209.00 |        627.00
+ Cardiology                |           2025 | Δ07Α     | NN Hellas          |                     1 |             605.00 |             2420.00 |       3025.00
+ Cardiology                |           2025 | Ε09Α     | Uninsured          |                     1 |           15346.00 |                0.00 |      15346.00
+ Cardiology                |           2025 | Ε10Α     | Groupama           |                     1 |           94009.00 |                0.00 |      94009.00
+ Cardiology                |           2025 | Η06Χ     | Groupama           |                     1 |            1556.00 |              622.40 |       2178.40
+ Cardiology                |           2025 | Η07Μ     | Generali           |                     1 |            4299.00 |                0.00 |       4299.00
+ Cardiology                |           2025 | Θ02Χ     | AIG                |                     1 |            3515.00 |                0.00 |       3515.00
+ Cardiology                |           2025 | Θ03Α     | Eurolife FFH       |                     1 |            3297.00 |                0.00 |       3297.00
+ Cardiology                |           2025 | Θ09Μ     | Uninsured          |                     1 |            4895.00 |                0.00 |       4895.00
+ Cardiology                |           2025 | Θ20Χ     | Ethniki Insurance  |                     1 |             158.00 |                0.00 |        158.00
+ Cardiology                |           2025 | Θ23Χ     | Groupama           |                     1 |             405.00 |                0.00 |        405.00
+ Cardiology                |           2025 | Κ15Χ     | Generali           |                     1 |            2013.00 |             7045.50 |       9058.50
+ Cardiology                |           2025 | Κ17Μ     | AIG                |                     1 |            2892.00 |                0.00 |       2892.00
+ Cardiology                |           2025 | Κ42Χ     | NN Hellas          |                     1 |             934.00 |                0.00 |        934.00
+ Cardiology                |           2025 | Κ45Μβ    | Uninsured          |                     1 |            1019.00 |                0.00 |       1019.00
+ Cardiology                |           2025 | Λ02Μ     | AXA                |                     1 |            1743.00 |              435.75 |       2178.75
+ Cardiology                |           2025 | Λ05Α     | Groupama           |                     1 |             334.00 |              668.00 |       1002.00
+ Cardiology                |           2025 | Λ26Α     | ERGO               |                     1 |             257.00 |              514.00 |        771.00
+ Cardiology                |           2025 | Μ09Μ     | Allianz            |                     1 |            1472.00 |                0.00 |       1472.00
+ Cardiology                |           2025 | Μ09Μ     | Eurolife FFH       |                     1 |            1472.00 |                0.00 |       1472.00
+ Cardiology                |           2025 | Μ11Α     | Allianz            |                     1 |            4045.00 |                0.00 |       4045.00
+ Cardiology                |           2025 | Μ18Α     | ERGO               |                     1 |             743.00 |              743.00 |       1486.00
+ Cardiology                |           2025 | Μ28Χ     | Allianz            |                     1 |            1379.00 |                0.00 |       1379.00
+ Cardiology                |           2025 | Μ63Χ     | NN Hellas          |                     1 |             444.00 |                0.00 |        444.00
+ Cardiology                |           2025 | Μ64Χ     | AIG                |                     1 |            1175.00 |                0.00 |       1175.00
+ Cardiology                |           2025 | Μ66Χ     | Ethniki Insurance  |                     1 |             652.00 |             1630.00 |       2282.00
+ Cardiology                |           2025 | Μ67Μ     | Generali           |                     1 |            2428.00 |                0.00 |       2428.00
+ Cardiology                |           2025 | Μ74Α     | AIG                |                     1 |             350.00 |              350.00 |        700.00
+ Cardiology                |           2025 | Μ74Α     | EOPYY              |                     1 |             350.00 |                0.00 |        350.00
+ Cardiology                |           2025 | Μ75Μ     | Allianz            |                     1 |            1455.00 |                0.00 |       1455.00
+ Cardiology                |           2025 | Μ75Μ     | AXA                |                     1 |            1455.00 |                0.00 |       1455.00
+ Cardiology                |           2025 | Μ77Χ     | NN Hellas          |                     1 |            1058.00 |                0.00 |       1058.00
+ Cardiology                |           2025 | Ν10Α     | Allianz            |                     1 |             163.00 |             1141.00 |       1304.00
+ Cardiology                |           2025 | Ν21Χ     | AIG                |                     1 |            1885.00 |                0.00 |       1885.00
+ Cardiology                |           2025 | Ν38Μ     | AXA                |                     1 |            2327.00 |                0.00 |       2327.00
+ Cardiology                |           2025 | Ξ20Χα    | Allianz            |                     1 |             786.00 |              524.00 |       1310.00
+ Cardiology                |           2025 | Ξ20Χβ    | Generali           |                     1 |             257.00 |             1799.00 |       2056.00
+ Cardiology                |           2025 | Ο15Β     | ERGO               |                     1 |             687.00 |             2748.00 |       3435.00
+ Cardiology                |           2025 | Ο61Χ     | Interamerican      |                     1 |             482.00 |              241.00 |        723.00
+ Cardiology                |           2025 | Π07Μ     | Allianz            |                     1 |             155.00 |               31.00 |        186.00
+ Cardiology                |           2025 | Π12Μβ    | Groupama           |                     1 |            1932.00 |                0.00 |       1932.00
+ Cardiology                |           2025 | Ρ24Μβ    | NN Hellas          |                     1 |            1401.00 |                0.00 |       1401.00
+ Cardiology                |           2025 | Σ22Μ     | Ethniki Insurance  |                     1 |            1253.00 |              417.66 |       1670.66
+ Cardiology                |           2025 | Τ26Μβ    | Ethniki Insurance  |                     1 |            2346.00 |                0.00 |       2346.00
+ Cardiology                |           2025 | Υ03Μα    | Ethniki Insurance  |                     1 |            6431.00 |                0.00 |       6431.00
+ Cardiology                |           2025 | Φ27Χ     | NN Hellas          |                     1 |            1479.00 |              246.50 |       1725.50
+ Cardiology                |           2025 | Χ46Α     | AXA                |                     1 |            4171.00 |                0.00 |       4171.00
+ Cardiology                |           2025 | Ω34Α     | NN Hellas          |                     1 |             288.00 |             1440.00 |       1728.00
+ Cardiology                |           2026 | S01Α     | AXA                |                     1 |             540.00 |                0.00 |        540.00
+ Cardiology                |           2026 | S25Α     | Groupama           |                     1 |            1082.00 |                0.00 |       1082.00
+ Cardiology                |           2026 | Α25Μ     | ERGO               |                     1 |            1766.00 |                0.00 |       1766.00
+ Cardiology                |           2026 | Α34Μα    | ERGO               |                     1 |            1977.00 |                0.00 |       1977.00
+ Cardiology                |           2026 | Β01Μ     | NN Hellas          |                     1 |            3553.00 |                0.00 |       3553.00
+ Cardiology                |           2026 | Δ08Χ     | Groupama           |                     1 |             791.00 |             2768.50 |       3559.50
+ Cardiology                |           2026 | Ε12Α     | EOPYY              |                     1 |            6414.00 |             4276.00 |      10690.00
+ Cardiology                |           2026 | Η05Χ     | ERGO               |                     1 |            1393.00 |             2437.75 |       3830.75
+ Cardiology                |           2026 | Η40Μα    | ERGO               |                     1 |            2654.00 |                0.00 |       2654.00
+ Cardiology                |           2026 | Θ02Μ     | Uninsured          |                     1 |            5135.00 |                0.00 |       5135.00
+ Cardiology                |           2026 | Θ04Χ     | Allianz            |                     1 |            2848.00 |            11392.00 |      14240.00
+ Cardiology                |           2026 | Κ14Μβ    | Generali           |                     1 |            1991.00 |             1493.25 |       3484.25
+ Cardiology                |           2026 | Μ08Μ     | Eurolife FFH       |                     1 |            4449.00 |                0.00 |       4449.00
+ Cardiology                |           2026 | Μ11Α     | AIG                |                     1 |            4045.00 |                0.00 |       4045.00
+ Cardiology                |           2026 | Μ32Χ     | Eurolife FFH       |                     1 |            9147.00 |                0.00 |       9147.00
+ Cardiology                |           2026 | Ν04Μ     | Allianz            |                     1 |            4267.00 |                0.00 |       4267.00
+ Cardiology                |           2026 | Ν21Μ     | NN Hellas          |                     1 |             496.00 |                0.00 |        496.00
+ Cardiology                |           2026 | Π12Χ     | Generali           |                     1 |             967.00 |              322.33 |       1289.33
+ Cardiology                |           2026 | Ρ22Μ     | EOPYY              |                     1 |            1105.00 |              663.00 |       1768.00
+ Cardiology                |           2026 | Τ06Μ     | AIG                |                     1 |           15128.00 |                0.00 |      15128.00
+ Cardiology                |           2026 | Υ02Χ     | NN Hellas          |                     1 |            1189.00 |             3567.00 |       4756.00
+ Cardiology                |           2026 | Ω02Μα    | EOPYY              |                     1 |             542.00 |                0.00 |        542.00
+ Cardiology                |           2026 | Ω14Α     | NN Hellas          |                     1 |             740.00 |                0.00 |        740.00
+ Cardiology                |           2026 | Ω20Α     | Groupama           |                     1 |             557.00 |             3342.00 |       3899.00
+ Cardiology                |           2026 | Ω34Α     | AXA                |                     1 |             288.00 |              576.00 |        864.00
+ Emergency Department      |           2025 | Α10Μ     | Uninsured          |                     1 |            6036.00 |                0.00 |       6036.00
+ Emergency Department      |           2025 | Β03Α     | Groupama           |                     1 |             771.00 |             1156.50 |       1927.50
+ Emergency Department      |           2025 | Β20Χ     | Eurolife FFH       |                     1 |             413.00 |              826.00 |       1239.00
+ Emergency Department      |           2025 | Β20Χ     | Generali           |                     1 |             413.00 |              206.50 |        619.50
+ Emergency Department      |           2025 | Γ05Μ     | NN Hellas          |                     1 |            2147.00 |                0.00 |       2147.00
+ Emergency Department      |           2025 | Γ05Χ     | Generali           |                     1 |            1374.00 |                0.00 |       1374.00
+ Emergency Department      |           2025 | Δ27Χ     | Uninsured          |                     1 |             199.00 |              597.00 |        796.00
+ Emergency Department      |           2025 | Ζ02Μ     | AXA                |                     1 |            7225.00 |                0.00 |       7225.00
+ Emergency Department      |           2025 | Θ04Χ     | NN Hellas          |                     1 |            2848.00 |            11392.00 |      14240.00
+ Emergency Department      |           2025 | Κ03Χ     | Eurolife FFH       |                     1 |           11734.00 |                0.00 |      11734.00
+ Emergency Department      |           2025 | Κ31Μ     | AXA                |                     2 |            4076.00 |                0.00 |       4076.00
+ Emergency Department      |           2025 | Κ45Μα    | Allianz            |                     1 |            2428.00 |                0.00 |       2428.00
+ Emergency Department      |           2025 | Λ03Χ     | Eurolife FFH       |                     1 |             886.00 |              443.00 |       1329.00
+ Emergency Department      |           2025 | Μ01Μ     | ERGO               |                     1 |            1402.00 |                0.00 |       1402.00
+ Emergency Department      |           2025 | Μ06Α     | Interamerican      |                     1 |            1998.00 |                0.00 |       1998.00
+ Emergency Department      |           2025 | Μ08Χ     | ERGO               |                     1 |            3014.00 |                0.00 |       3014.00
+ Emergency Department      |           2025 | Μ68Α     | Generali           |                     1 |             151.00 |              302.00 |        453.00
+ Emergency Department      |           2025 | Μ78Μ     | Groupama           |                     1 |            1463.00 |                0.00 |       1463.00
+ Emergency Department      |           2025 | Μ79Χ     | ERGO               |                     1 |             137.00 |                0.00 |        137.00
+ Emergency Department      |           2025 | Ν12Μ     | Generali           |                     1 |             539.00 |                0.00 |        539.00
+ Emergency Department      |           2025 | Ν21Μ     | ERGO               |                     1 |             496.00 |                0.00 |        496.00
+ Emergency Department      |           2025 | Ν21Χ     | EOPYY              |                     1 |            1885.00 |                0.00 |       1885.00
+ Emergency Department      |           2025 | Ν31Μ     | Allianz            |                     1 |             151.00 |                0.00 |        151.00
+ Emergency Department      |           2025 | Ξ20Χβ    | Uninsured          |                     1 |             257.00 |             2056.00 |       2313.00
+ Emergency Department      |           2025 | Ο02Α     | Groupama           |                     1 |            1611.00 |                0.00 |       1611.00
+ Emergency Department      |           2025 | Π06Α     | ERGO               |                     1 |            1037.00 |              345.67 |       1382.67
+ Emergency Department      |           2025 | Π07Χ     | NN Hellas          |                     1 |             983.00 |                0.00 |        983.00
+ Emergency Department      |           2025 | Σ02Μ     | Eurolife FFH       |                     1 |            5777.00 |                0.00 |       5777.00
+ Emergency Department      |           2025 | Τ27Μγ    | Eurolife FFH       |                     1 |             918.00 |                0.00 |        918.00
+ Emergency Department      |           2025 | Φ24Χ     | Allianz            |                     1 |             934.00 |                0.00 |        934.00
+ Emergency Department      |           2025 | Χ48Α     | AIG                |                     1 |            3261.00 |                0.00 |       3261.00
+ Emergency Department      |           2025 | Ω36Χ     | Generali           |                     1 |             243.00 |             1944.00 |       2187.00
+ Emergency Department      |           2026 | Α29Χ     | Generali           |                     1 |             397.00 |              595.50 |        992.50
+ Emergency Department      |           2026 | Δ07Α     | Uninsured          |                     1 |             605.00 |              605.00 |       1210.00
+ Emergency Department      |           2026 | Κ32Μ     | Ethniki Insurance  |                     1 |            2062.00 |                0.00 |       2062.00
+ Emergency Department      |           2026 | Μ32Μα    | Generali           |                     1 |           12912.00 |                0.00 |      12912.00
+ Emergency Department      |           2026 | Ν01Μ     | Generali           |                     1 |            2528.00 |                0.00 |       2528.00
+ Emergency Department      |           2026 | Τ04Α     | AIG                |                     1 |           11997.00 |                0.00 |      11997.00
+ Emergency Department      |           2026 | Ω10Α     | ERGO               |                     1 |             787.00 |              787.00 |       1574.00
+ Gastroenterology          |           2025 | S24Χ     | ERGO               |                     1 |             216.00 |             1296.00 |       1512.00
+ Gastroenterology          |           2025 | Α01Μ     | EOPYY              |                     1 |            4701.00 |                0.00 |       4701.00
+ Gastroenterology          |           2025 | Α29Χ     | AIG                |                     1 |             397.00 |             1588.00 |       1985.00
+ Gastroenterology          |           2025 | Α30Χ     | Generali           |                     1 |             607.00 |              910.50 |       1517.50
+ Gastroenterology          |           2025 | Β06Χ     | Uninsured          |                     1 |            1659.00 |             1659.00 |       3318.00
+ Gastroenterology          |           2025 | Δ01Χ     | Allianz            |                     1 |            6452.00 |                0.00 |       6452.00
+ Gastroenterology          |           2025 | Δ12Χβ    | Interamerican      |                     1 |            1774.00 |                0.00 |       1774.00
+ Gastroenterology          |           2025 | Δ25Μ     | EOPYY              |                     1 |            1105.00 |                0.00 |       1105.00
+ Gastroenterology          |           2025 | Η05Χ     | AXA                |                     1 |            1393.00 |             2437.75 |       3830.75
+ Gastroenterology          |           2025 | Η05Χ     | Interamerican      |                     1 |            1393.00 |                0.00 |       1393.00
+ Gastroenterology          |           2025 | Θ03Α     | Generali           |                     1 |            3297.00 |                0.00 |       3297.00
+ Gastroenterology          |           2025 | Κ08Μ     | ERGO               |                     1 |            8956.00 |                0.00 |       8956.00
+ Gastroenterology          |           2025 | Κ17Χ     | AXA                |                     1 |            2617.00 |             2617.00 |       5234.00
+ Gastroenterology          |           2025 | Μ13Μ     | Generali           |                     1 |            3893.00 |                0.00 |       3893.00
+ Gastroenterology          |           2025 | Μ17Χ     | Generali           |                     1 |            1764.00 |                0.00 |       1764.00
+ Gastroenterology          |           2025 | Μ28Χ     | Eurolife FFH       |                     1 |            1379.00 |                0.00 |       1379.00
+ Gastroenterology          |           2025 | Μ64Μ     | NN Hellas          |                     1 |            2669.00 |                0.00 |       2669.00
+ Gastroenterology          |           2025 | Ν30Α     | Ethniki Insurance  |                     1 |             420.00 |              420.00 |        840.00
+ Gastroenterology          |           2025 | Ν31Μ     | ERGO               |                     1 |             151.00 |                0.00 |        151.00
+ Gastroenterology          |           2025 | Ξ02Μ     | NN Hellas          |                     1 |            4655.00 |                0.00 |       4655.00
+ Gastroenterology          |           2025 | Π01Χ     | Uninsured          |                     1 |            3857.00 |                0.00 |       3857.00
+ Gastroenterology          |           2025 | Π02Μ     | AIG                |                     1 |            5741.00 |                0.00 |       5741.00
+ Gastroenterology          |           2025 | Ρ05Μβ    | AXA                |                     1 |             305.00 |                0.00 |        305.00
+ Gastroenterology          |           2025 | Τ21Α     | ERGO               |                     1 |           41579.00 |                0.00 |      41579.00
+ Gastroenterology          |           2025 | Φ24Χ     | EOPYY              |                     1 |             934.00 |                0.00 |        934.00
+ Gastroenterology          |           2025 | Χ43Α     | Groupama           |                     1 |            2568.00 |                0.00 |       2568.00
+ Gastroenterology          |           2026 | S01Μ     | ERGO               |                     1 |            2413.00 |                0.00 |       2413.00
+ Gastroenterology          |           2026 | Α20Χ     | EOPYY              |                     1 |            2638.00 |                0.00 |       2638.00
+ Gastroenterology          |           2026 | Δ24Χ     | AIG                |                     1 |             802.00 |             1403.50 |       2205.50
+ Gastroenterology          |           2026 | Δ29Α     | AXA                |                     1 |             161.00 |              322.00 |        483.00
+ Gastroenterology          |           2026 | Η06Χ     | EOPYY              |                     1 |            1556.00 |                0.00 |       1556.00
+ Gastroenterology          |           2026 | Θ24Χ     | Uninsured          |                     1 |             669.00 |              334.50 |       1003.50
+ Gastroenterology          |           2026 | Ι24Α     | ERGO               |                     1 |             599.00 |             1048.25 |       1647.25
+ Gastroenterology          |           2026 | Κ30Χ     | Eurolife FFH       |                     1 |             447.00 |                0.00 |        447.00
+ Gastroenterology          |           2026 | Ν39Χ     | Interamerican      |                     1 |             537.00 |                0.00 |        537.00
+ Gastroenterology          |           2026 | Ο22Α     | Uninsured          |                     1 |             327.00 |              490.50 |        817.50
+ Gastroenterology          |           2026 | Σ04Χ     | Ethniki Insurance  |                     1 |             966.00 |             2415.00 |       3381.00
+ Gastroenterology          |           2026 | Υ27Χ     | ERGO               |                     1 |             358.00 |                0.00 |        358.00
+ Gastroenterology          |           2026 | Φ22Χ     | AXA                |                     1 |             827.00 |                0.00 |        827.00
+ Gastroenterology          |           2026 | Χ43Α     | Uninsured          |                     1 |            2568.00 |                0.00 |       2568.00
+ Gastroenterology          |           2026 | Ω30Μ     | AIG                |                     1 |            2288.00 |                0.00 |       2288.00
+ General Surgery           |           2025 | S25Α     | EOPYY              |                     1 |            1082.00 |                0.00 |       1082.00
+ General Surgery           |           2025 | W10Α     | Eurolife FFH       |                     1 |            2014.00 |             2685.32 |       4699.32
+ General Surgery           |           2025 | Α01Χ     | AXA                |                     1 |            2712.00 |             1162.29 |       3874.29
+ General Surgery           |           2025 | Α02Μβ    | EOPYY              |                     1 |            1595.00 |                0.00 |       1595.00
+ General Surgery           |           2025 | Β06Χ     | Eurolife FFH       |                     1 |            1659.00 |             2488.50 |       4147.50
+ General Surgery           |           2025 | Β20Χ     | ERGO               |                     1 |             413.00 |              826.00 |       1239.00
+ General Surgery           |           2025 | Γ06Μ     | Interamerican      |                     1 |            1649.00 |                0.00 |       1649.00
+ General Surgery           |           2025 | Γ22Α     | Eurolife FFH       |                     1 |             257.00 |              257.00 |        514.00
+ General Surgery           |           2025 | Δ01Μ     | Eurolife FFH       |                     1 |            8557.00 |                0.00 |       8557.00
+ General Surgery           |           2025 | Δ25Μ     | Uninsured          |                     1 |            1105.00 |                0.00 |       1105.00
+ General Surgery           |           2025 | Ε11Μ     | ERGO               |                     1 |           10704.00 |                0.00 |      10704.00
+ General Surgery           |           2025 | Ζ20Α     | Generali           |                     1 |             241.00 |              482.00 |        723.00
+ General Surgery           |           2025 | Ζ21Α     | Allianz            |                     1 |             848.00 |              636.00 |       1484.00
+ General Surgery           |           2025 | Η06Μ     | Allianz            |                     1 |            4646.00 |                0.00 |       4646.00
+ General Surgery           |           2025 | Η06Μ     | AXA                |                     1 |            4646.00 |                0.00 |       4646.00
+ General Surgery           |           2025 | Η20Χ     | AXA                |                     1 |            1517.00 |                0.00 |       1517.00
+ General Surgery           |           2025 | Θ20Α     | Eurolife FFH       |                     1 |             297.00 |                0.00 |        297.00
+ General Surgery           |           2025 | Θ20Α     | Interamerican      |                     1 |             297.00 |              297.00 |        594.00
+ General Surgery           |           2025 | Ι24Α     | NN Hellas          |                     1 |             599.00 |              149.75 |        748.75
+ General Surgery           |           2025 | Κ03Χ     | ERGO               |                     1 |           11734.00 |                0.00 |      11734.00
+ General Surgery           |           2025 | Κ04Μ     | NN Hellas          |                     1 |           13155.00 |                0.00 |      13155.00
+ General Surgery           |           2025 | Κ05Χ     | ERGO               |                     1 |             727.00 |                0.00 |        727.00
+ General Surgery           |           2025 | Κ12Χ     | Eurolife FFH       |                     1 |            3694.00 |             3694.00 |       7388.00
+ General Surgery           |           2025 | Κ18Μ     | EOPYY              |                     1 |            2226.00 |                0.00 |       2226.00
+ General Surgery           |           2025 | Κ36Χ     | Eurolife FFH       |                     1 |             374.00 |             1309.00 |       1683.00
+ General Surgery           |           2025 | Κ39Μ     | Ethniki Insurance  |                     1 |            1268.00 |              422.66 |       1690.66
+ General Surgery           |           2025 | Κ43Μ     | AIG                |                     1 |            1471.00 |                0.00 |       1471.00
+ General Surgery           |           2025 | Λ01Μ     | AXA                |                     1 |            2171.00 |                0.00 |       2171.00
+ General Surgery           |           2025 | Λ04Χ     | Interamerican      |                     1 |             571.00 |                0.00 |        571.00
+ General Surgery           |           2025 | Λ26Α     | Uninsured          |                     1 |             257.00 |                0.00 |        257.00
+ General Surgery           |           2025 | Μ01Μ     | EOPYY              |                     1 |            1402.00 |                0.00 |       1402.00
+ General Surgery           |           2025 | Μ04Χ     | Ethniki Insurance  |                     1 |            6611.00 |                0.00 |       6611.00
+ General Surgery           |           2025 | Μ06Α     | AIG                |                     1 |            1998.00 |                0.00 |       1998.00
+ General Surgery           |           2025 | Μ07Α     | EOPYY              |                     1 |            5235.00 |                0.00 |       5235.00
+ General Surgery           |           2025 | Μ28Χ     | ERGO               |                     1 |            1379.00 |              689.50 |       2068.50
+ General Surgery           |           2025 | Μ30Α     | Interamerican      |                     1 |             891.00 |             3564.00 |       4455.00
+ General Surgery           |           2025 | Μ32Μβ    | AIG                |                     1 |            9963.00 |                0.00 |       9963.00
+ General Surgery           |           2025 | Μ68Χ     | AXA                |                     1 |             731.00 |                0.00 |        731.00
+ General Surgery           |           2025 | Ν02Μα    | Interamerican      |                     1 |             773.00 |                0.00 |        773.00
+ General Surgery           |           2025 | Ν02Χ     | EOPYY              |                     1 |            3836.00 |                0.00 |       3836.00
+ General Surgery           |           2025 | Ο03Α     | ERGO               |                     1 |             837.00 |             4185.00 |       5022.00
+ General Surgery           |           2025 | Π02Χ     | Generali           |                     1 |            2771.00 |                0.00 |       2771.00
+ General Surgery           |           2025 | Π04Μα    | AIG                |                     1 |            4847.00 |                0.00 |       4847.00
+ General Surgery           |           2025 | Π12Χ     | ERGO               |                     1 |             967.00 |                0.00 |        967.00
+ General Surgery           |           2025 | Π28Μ     | ERGO               |                     1 |            2062.00 |                0.00 |       2062.00
+ General Surgery           |           2025 | Π41Μ     | Ethniki Insurance  |                     1 |            1027.00 |                0.00 |       1027.00
+ General Surgery           |           2025 | Π44Χ     | Groupama           |                     1 |            1073.00 |             1073.00 |       2146.00
+ General Surgery           |           2025 | Ρ10Μα    | NN Hellas          |                     1 |            7118.00 |                0.00 |       7118.00
+ General Surgery           |           2025 | Σ04Μ     | NN Hellas          |                     1 |            1694.00 |                0.00 |       1694.00
+ General Surgery           |           2025 | Τ26Μγ    | ERGO               |                     1 |            1644.00 |                0.00 |       1644.00
+ General Surgery           |           2025 | Τ27Μβ    | AIG                |                     1 |            1294.00 |                0.00 |       1294.00
+ General Surgery           |           2025 | Υ06Χ     | Uninsured          |                     1 |             808.00 |              808.00 |       1616.00
+ General Surgery           |           2025 | Υ09Χβ    | ERGO               |                     1 |            1035.00 |             1552.50 |       2587.50
+ General Surgery           |           2025 | Υ20Α     | Ethniki Insurance  |                     1 |             767.00 |              383.50 |       1150.50
+ General Surgery           |           2025 | Υ20Α     | Groupama           |                     1 |             767.00 |              767.00 |       1534.00
+ General Surgery           |           2025 | Υ23Χ     | Eurolife FFH       |                     1 |             560.00 |                0.00 |        560.00
+ General Surgery           |           2025 | Φ22Χ     | Ethniki Insurance  |                     1 |             827.00 |             2067.50 |       2894.50
+ General Surgery           |           2025 | Φ63Μ     | Eurolife FFH       |                     1 |            1245.00 |                0.00 |       1245.00
+ General Surgery           |           2025 | Ω01Α     | Allianz            |                     1 |              24.00 |               72.00 |         96.00
+ General Surgery           |           2025 | Ω02Μβ    | NN Hellas          |                     1 |             257.00 |                0.00 |        257.00
+ General Surgery           |           2025 | Ω33Α     | Allianz            |                     1 |             397.00 |              992.50 |       1389.50
+ General Surgery           |           2026 | Α30Μ     | ERGO               |                     1 |            1331.00 |                0.00 |       1331.00
+ General Surgery           |           2026 | Α34Χ     | Groupama           |                     1 |             638.00 |              212.67 |        850.67
+ General Surgery           |           2026 | Ε06Χβ    | ERGO               |                     1 |           15548.00 |                0.00 |      15548.00
+ General Surgery           |           2026 | Ε08Μ     | Interamerican      |                     1 |           10017.00 |                0.00 |      10017.00
+ General Surgery           |           2026 | Ζ01Α     | Eurolife FFH       |                     1 |           36068.00 |                0.00 |      36068.00
+ General Surgery           |           2026 | Η23Μ     | ERGO               |                     1 |            2552.00 |                0.00 |       2552.00
+ General Surgery           |           2026 | Η23Χ     | Interamerican      |                     1 |             786.00 |                0.00 |        786.00
+ General Surgery           |           2026 | Η41Μ     | NN Hellas          |                     1 |             193.00 |                0.00 |        193.00
+ General Surgery           |           2026 | Θ03Α     | Eurolife FFH       |                     1 |            3297.00 |                0.00 |       3297.00
+ General Surgery           |           2026 | Κ12Χ     | Uninsured          |                     1 |            3694.00 |             2770.50 |       6464.50
+ General Surgery           |           2026 | Κ16Μ     | Allianz            |                     1 |            1531.00 |              510.33 |       2041.33
+ General Surgery           |           2026 | Κ19Α     | Uninsured          |                     1 |            3194.00 |                0.00 |       3194.00
+ General Surgery           |           2026 | Μ05Χ     | AXA                |                     1 |            6101.00 |                0.00 |       6101.00
+ General Surgery           |           2026 | Μ10Μ     | Uninsured          |                     1 |            3391.00 |                0.00 |       3391.00
+ General Surgery           |           2026 | Μ68Χ     | Uninsured          |                     1 |             731.00 |                0.00 |        731.00
+ General Surgery           |           2026 | Ν10Α     | EOPYY              |                     1 |             163.00 |                0.00 |        163.00
+ General Surgery           |           2026 | Ν12Χ     | Groupama           |                     1 |             372.00 |                0.00 |        372.00
+ General Surgery           |           2026 | Ν30Μβ    | Generali           |                     1 |             186.00 |                0.00 |        186.00
+ General Surgery           |           2026 | Ξ01Α     | Interamerican      |                     1 |            3476.00 |                0.00 |       3476.00
+ General Surgery           |           2026 | Ξ21Χ     | Eurolife FFH       |                     1 |             315.00 |             2835.00 |       3150.00
+ General Surgery           |           2026 | Ο20Μ     | Uninsured          |                     1 |             186.00 |                0.00 |        186.00
+ General Surgery           |           2026 | Π26Μ     | AXA                |                     1 |            3338.00 |                0.00 |       3338.00
+ General Surgery           |           2026 | Π28Α     | ERGO               |                     1 |             290.00 |              870.00 |       1160.00
+ General Surgery           |           2026 | Ρ22Χ     | Eurolife FFH       |                     1 |             444.00 |              666.00 |       1110.00
+ General Surgery           |           2026 | Σ22Μ     | ERGO               |                     1 |            1253.00 |              626.49 |       1879.49
+ General Surgery           |           2026 | Υ02Μ     | Interamerican      |                     1 |            3111.00 |                0.00 |       3111.00
+ General Surgery           |           2026 | Υ04Χβ    | Eurolife FFH       |                     1 |            1605.00 |              535.00 |       2140.00
+ General Surgery           |           2026 | Υ21Α     | ERGO               |                     1 |             231.00 |              462.00 |        693.00
+ General Surgery           |           2026 | Υ26Α     | Uninsured          |                     2 |             880.00 |             2200.00 |       3080.00
+ General Surgery           |           2026 | Υ27Μ     | Eurolife FFH       |                     1 |            1673.00 |                0.00 |       1673.00
+ General Surgery           |           2026 | Χ41Α     | Uninsured          |                     1 |            3066.00 |                0.00 |       3066.00
+ General Surgery           |           2026 | Ω37Β     | Eurolife FFH       |                     1 |             661.00 |              881.32 |       1542.32
+ Intensive Care Unit       |           2025 | S23Χ     | NN Hellas          |                     1 |             848.00 |                0.00 |        848.00
+ Intensive Care Unit       |           2025 | Α10Μ     | NN Hellas          |                     1 |            6036.00 |                0.00 |       6036.00
+ Intensive Care Unit       |           2025 | Α21Χ     | EOPYY              |                     1 |            1035.00 |              345.00 |       1380.00
+ Intensive Care Unit       |           2025 | Γ10Α     | ERGO               |                     1 |             425.00 |              850.00 |       1275.00
+ Intensive Care Unit       |           2025 | Δ08Μ     | Groupama           |                     1 |            2294.00 |                0.00 |       2294.00
+ Intensive Care Unit       |           2025 | Δ23Μ     | Groupama           |                     1 |             965.00 |                0.00 |        965.00
+ Intensive Care Unit       |           2025 | Δ24Χ     | ERGO               |                     1 |             802.00 |                0.00 |        802.00
+ Intensive Care Unit       |           2025 | Η20Χ     | Generali           |                     1 |            1517.00 |                0.00 |       1517.00
+ Intensive Care Unit       |           2025 | Η23Μ     | Generali           |                     1 |            2552.00 |                0.00 |       2552.00
+ Intensive Care Unit       |           2025 | Η42Χ     | Generali           |                     1 |             708.00 |             1652.00 |       2360.00
+ Intensive Care Unit       |           2025 | Κ33Α     | Uninsured          |                     1 |            3132.00 |                0.00 |       3132.00
+ Intensive Care Unit       |           2025 | Κ36Χ     | Uninsured          |                     1 |             374.00 |                0.00 |        374.00
+ Intensive Care Unit       |           2025 | Κ42Χ     | AXA                |                     1 |             934.00 |                0.00 |        934.00
+ Intensive Care Unit       |           2025 | Μ01Χ     | NN Hellas          |                     1 |            9606.00 |                0.00 |       9606.00
+ Intensive Care Unit       |           2025 | Μ27Μ     | Ethniki Insurance  |                     1 |            2179.00 |                0.00 |       2179.00
+ Intensive Care Unit       |           2025 | Μ66Μ     | AIG                |                     1 |            2436.00 |                0.00 |       2436.00
+ Intensive Care Unit       |           2025 | Μ72Χ     | Uninsured          |                     1 |             490.00 |                0.00 |        490.00
+ Intensive Care Unit       |           2025 | Ν05Α     | AXA                |                     1 |             439.00 |              878.00 |       1317.00
+ Intensive Care Unit       |           2025 | Ν12Μ     | ERGO               |                     1 |             539.00 |                0.00 |        539.00
+ Intensive Care Unit       |           2025 | Ν22Α     | Interamerican      |                     1 |             243.00 |             1701.00 |       1944.00
+ Intensive Care Unit       |           2025 | Ν29Χ     | Interamerican      |                     1 |             545.00 |              363.34 |        908.34
+ Intensive Care Unit       |           2025 | Ν82Χ     | Ethniki Insurance  |                     1 |            1416.00 |                0.00 |       1416.00
+ Intensive Care Unit       |           2025 | Ο20Χ     | Ethniki Insurance  |                     1 |            1035.00 |             1035.00 |       2070.00
+ Intensive Care Unit       |           2025 | Π50Χ     | Generali           |                     1 |             374.00 |             1496.00 |       1870.00
+ Intensive Care Unit       |           2025 | Ρ05Μα    | Generali           |                     1 |             811.00 |                0.00 |        811.00
+ Intensive Care Unit       |           2025 | Υ08Μ     | Allianz            |                     1 |            1271.00 |                0.00 |       1271.00
+ Intensive Care Unit       |           2025 | Υ21Α     | Eurolife FFH       |                     1 |             231.00 |              231.00 |        462.00
+ Intensive Care Unit       |           2025 | Υ22Α     | Generali           |                     1 |             482.00 |              482.00 |        964.00
+ Intensive Care Unit       |           2025 | Υ29Α     | Groupama           |                     1 |             136.00 |              952.00 |       1088.00
+ Intensive Care Unit       |           2025 | Φ10Α     | Allianz            |                     1 |            1472.00 |             2944.00 |       4416.00
+ Intensive Care Unit       |           2025 | Ω02Μα    | Groupama           |                     1 |             542.00 |                0.00 |        542.00
+ Intensive Care Unit       |           2025 | Ω05Α     | Uninsured          |                     1 |            1859.00 |                0.00 |       1859.00
+ Intensive Care Unit       |           2025 | Ω11Α     | EOPYY              |                     1 |             526.00 |             1052.00 |       1578.00
+ Intensive Care Unit       |           2026 | Α20Χ     | Interamerican      |                     1 |            2638.00 |                0.00 |       2638.00
+ Intensive Care Unit       |           2026 | Α34Μβ    | ERGO               |                     1 |            1393.00 |                0.00 |       1393.00
+ Intensive Care Unit       |           2026 | Α35Μβ    | AXA                |                     1 |             973.00 |                0.00 |        973.00
+ Intensive Care Unit       |           2026 | Β03Α     | ERGO               |                     1 |             771.00 |             1156.50 |       1927.50
+ Intensive Care Unit       |           2026 | Γ21Α     | Interamerican      |                     1 |             475.00 |                0.00 |        475.00
+ Intensive Care Unit       |           2026 | Θ02Χ     | Eurolife FFH       |                     1 |            3515.00 |                0.00 |       3515.00
+ Intensive Care Unit       |           2026 | Κ04Μ     | Interamerican      |                     1 |           13155.00 |                0.00 |      13155.00
+ Intensive Care Unit       |           2026 | Κ06Χ     | AIG                |                     1 |            5077.00 |             2901.16 |       7978.16
+ Intensive Care Unit       |           2026 | Λ01Μ     | EOPYY              |                     1 |            2171.00 |                0.00 |       2171.00
+ Intensive Care Unit       |           2026 | Μ02Χ     | Groupama           |                     1 |             343.00 |                0.00 |        343.00
+ Intensive Care Unit       |           2026 | Μ08Χ     | Ethniki Insurance  |                     1 |            3014.00 |                0.00 |       3014.00
+ Intensive Care Unit       |           2026 | Μ31Μ     | AIG                |                     1 |           11675.00 |                0.00 |      11675.00
+ Intensive Care Unit       |           2026 | Ν26Μ     | AIG                |                     1 |            2062.00 |                0.00 |       2062.00
+ Intensive Care Unit       |           2026 | Τ04Α     | Generali           |                     1 |           11997.00 |                0.00 |      11997.00
+ Intensive Care Unit       |           2026 | Τ24Α     | Interamerican      |                     1 |            5818.00 |                0.00 |       5818.00
+ Intensive Care Unit       |           2026 | Τ25Μγ    | NN Hellas          |                     1 |            3158.00 |                0.00 |       3158.00
+ Intensive Care Unit       |           2026 | Ω36Μ     | Groupama           |                     1 |             957.00 |                0.00 |        957.00
+ Neurology                 |           2025 | S01Μ     | ERGO               |                     1 |            2413.00 |                0.00 |       2413.00
+ Neurology                 |           2025 | S20Μ     | Allianz            |                     1 |            2716.00 |                0.00 |       2716.00
+ Neurology                 |           2025 | S25Α     | NN Hellas          |                     1 |            1082.00 |             1352.50 |       2434.50
+ Neurology                 |           2025 | Α12Μ     | AXA                |                     1 |            3984.00 |                0.00 |       3984.00
+ Neurology                 |           2025 | Α22Μα    | AXA                |                     1 |            1938.00 |                0.00 |       1938.00
+ Neurology                 |           2025 | Α32Α     | Eurolife FFH       |                     1 |             846.00 |                0.00 |        846.00
+ Neurology                 |           2025 | Β22Α     | EOPYY              |                     1 |             545.00 |                0.00 |        545.00
+ Neurology                 |           2025 | Β24Α     | Uninsured          |                     1 |             296.00 |             2072.00 |       2368.00
+ Neurology                 |           2025 | Γ10Α     | NN Hellas          |                     1 |             425.00 |              425.00 |        850.00
+ Neurology                 |           2025 | Δ07Α     | Eurolife FFH       |                     1 |             605.00 |              605.00 |       1210.00
+ Neurology                 |           2025 | Δ28Μ     | AXA                |                     1 |            1969.00 |                0.00 |       1969.00
+ Neurology                 |           2025 | Ε06Χα    | Eurolife FFH       |                     1 |           20597.00 |                0.00 |      20597.00
+ Neurology                 |           2025 | Η02Χ     | Eurolife FFH       |                     1 |            2079.00 |                0.00 |       2079.00
+ Neurology                 |           2025 | Η06Μ     | Uninsured          |                     1 |            4646.00 |                0.00 |       4646.00
+ Neurology                 |           2025 | Η08Μ     | Eurolife FFH       |                     1 |            2111.00 |                0.00 |       2111.00
+ Neurology                 |           2025 | Η43Μ     | Eurolife FFH       |                     1 |            1813.00 |                0.00 |       1813.00
+ Neurology                 |           2025 | Θ02Χ     | Uninsured          |                     1 |            3515.00 |                0.00 |       3515.00
+ Neurology                 |           2025 | Θ05Χ     | Uninsured          |                     1 |            1218.00 |                0.00 |       1218.00
+ Neurology                 |           2025 | Θ06Μ     | EOPYY              |                     1 |             262.00 |                0.00 |        262.00
+ Neurology                 |           2025 | Ι24Α     | Allianz            |                     1 |             599.00 |                0.00 |        599.00
+ Neurology                 |           2025 | Κ06Μ     | Uninsured          |                     1 |            7182.00 |                0.00 |       7182.00
+ Neurology                 |           2025 | Κ06Χ     | Uninsured          |                     1 |            5077.00 |                0.00 |       5077.00
+ Neurology                 |           2025 | Κ14Χ     | Eurolife FFH       |                     1 |            1277.00 |              638.50 |       1915.50
+ Neurology                 |           2025 | Κ15Μ     | Generali           |                     1 |            2728.00 |                0.00 |       2728.00
+ Neurology                 |           2025 | Κ21Χ     | AIG                |                     1 |            1494.00 |                0.00 |       1494.00
+ Neurology                 |           2025 | Μ01Μ     | EOPYY              |                     1 |            1402.00 |                0.00 |       1402.00
+ Neurology                 |           2025 | Μ10Χ     | Allianz            |                     1 |            1908.00 |             2862.00 |       4770.00
+ Neurology                 |           2025 | Μ20Α     | Allianz            |                     1 |            1286.00 |             3858.00 |       5144.00
+ Neurology                 |           2025 | Μ32Μβ    | NN Hellas          |                     1 |            9963.00 |                0.00 |       9963.00
+ Neurology                 |           2025 | Μ68Α     | Uninsured          |                     1 |             151.00 |              453.00 |        604.00
+ Neurology                 |           2025 | Μ71Μ     | Generali           |                     1 |            1323.00 |                0.00 |       1323.00
+ Neurology                 |           2025 | Μ74Α     | Groupama           |                     1 |             350.00 |             1050.00 |       1400.00
+ Neurology                 |           2025 | Ν03Χ     | Eurolife FFH       |                     1 |             399.00 |                0.00 |        399.00
+ Neurology                 |           2025 | Ν32Μ     | NN Hellas          |                     1 |            3175.00 |                0.00 |       3175.00
+ Neurology                 |           2025 | Ν36Μ     | AIG                |                     1 |            1486.00 |                0.00 |       1486.00
+ Neurology                 |           2025 | Ν37Α     | EOPYY              |                     1 |             335.00 |              837.50 |       1172.50
+ Neurology                 |           2025 | Ν82Μβ    | NN Hellas          |                     1 |            2475.00 |                0.00 |       2475.00
+ Neurology                 |           2025 | Π27Α     | AXA                |                     1 |             265.00 |             1325.00 |       1590.00
+ Neurology                 |           2025 | Π42Α     | ERGO               |                     1 |            1097.00 |                0.00 |       1097.00
+ Neurology                 |           2025 | Ρ24Μα    | Groupama           |                     1 |            3773.00 |                0.00 |       3773.00
+ Neurology                 |           2025 | Ρ24Χ     | Eurolife FFH       |                     1 |             623.00 |                0.00 |        623.00
+ Neurology                 |           2025 | Τ04Α     | ERGO               |                     1 |           11997.00 |                0.00 |      11997.00
+ Neurology                 |           2025 | Τ05Α     | Allianz            |                     2 |           20714.00 |                0.00 |      20714.00
+ Neurology                 |           2025 | Τ25Μγ    | Generali           |                     1 |            3158.00 |                0.00 |       3158.00
+ Neurology                 |           2025 | Υ03Μα    | AXA                |                     1 |            6431.00 |                0.00 |       6431.00
+ Neurology                 |           2025 | Υ03Μα    | NN Hellas          |                     1 |            6431.00 |                0.00 |       6431.00
+ Neurology                 |           2025 | Υ06Μ     | NN Hellas          |                     2 |            4762.00 |                0.00 |       4762.00
+ Neurology                 |           2025 | Υ22Α     | Ethniki Insurance  |                     1 |             482.00 |                0.00 |        482.00
+ Neurology                 |           2025 | Φ27Μ     | Generali           |                     1 |            3631.00 |                0.00 |       3631.00
+ Neurology                 |           2025 | Χ42Μ     | Groupama           |                     1 |            3268.00 |                0.00 |       3268.00
+ Neurology                 |           2025 | Ω02Μβ    | AXA                |                     1 |             257.00 |                0.00 |        257.00
+ Neurology                 |           2026 | S20Χ     | AIG                |                     1 |            1759.00 |                0.00 |       1759.00
+ Neurology                 |           2026 | Α10Μ     | AXA                |                     1 |            6036.00 |                0.00 |       6036.00
+ Neurology                 |           2026 | Α25Μ     | Uninsured          |                     1 |            1766.00 |                0.00 |       1766.00
+ Neurology                 |           2026 | Α35Χ     | Groupama           |                     1 |             475.00 |              237.50 |        712.50
+ Neurology                 |           2026 | Β24Α     | NN Hellas          |                     1 |             296.00 |                0.00 |        296.00
+ Neurology                 |           2026 | Γ06Χ     | Groupama           |                     1 |            1264.00 |                0.00 |       1264.00
+ Neurology                 |           2026 | Δ06Α     | EOPYY              |                     1 |            1383.00 |                0.00 |       1383.00
+ Neurology                 |           2026 | Ε12Α     | Allianz            |                     1 |            6414.00 |                0.00 |       6414.00
+ Neurology                 |           2026 | Η05Μ     | ERGO               |                     1 |            4533.00 |                0.00 |       4533.00
+ Neurology                 |           2026 | Η05Χ     | Uninsured          |                     1 |            1393.00 |             1393.00 |       2786.00
+ Neurology                 |           2026 | Η40Χ     | ERGO               |                     1 |             366.00 |                0.00 |        366.00
+ Neurology                 |           2026 | Θ09Μ     | ERGO               |                     1 |            4895.00 |                0.00 |       4895.00
+ Neurology                 |           2026 | Κ12Χ     | EOPYY              |                     1 |            3694.00 |                0.00 |       3694.00
+ Neurology                 |           2026 | Κ15Μ     | NN Hellas          |                     1 |            2728.00 |                0.00 |       2728.00
+ Neurology                 |           2026 | Κ17Χ     | AIG                |                     1 |            2617.00 |                0.00 |       2617.00
+ Neurology                 |           2026 | Κ18Χ     | NN Hellas          |                     1 |            1146.00 |              573.00 |       1719.00
+ Neurology                 |           2026 | Κ36Μ     | Allianz            |                     1 |             957.00 |                0.00 |        957.00
+ Neurology                 |           2026 | Κ38Μ     | Eurolife FFH       |                     1 |            1284.00 |             1926.00 |       3210.00
+ Neurology                 |           2026 | Κ40Μ     | AXA                |                     1 |               2.00 |                0.00 |          2.00
+ Neurology                 |           2026 | Κ40Μ     | ERGO               |                     1 |               2.00 |                0.00 |          2.00
+ Neurology                 |           2026 | Κ42Χ     | AXA                |                     1 |             934.00 |              747.20 |       1681.20
+ Neurology                 |           2026 | Κ45Χ     | Eurolife FFH       |                     1 |             521.00 |                0.00 |        521.00
+ Neurology                 |           2026 | Μ03Μ     | Eurolife FFH       |                     1 |            6307.00 |                0.00 |       6307.00
+ Neurology                 |           2026 | Μ08Μ     | Groupama           |                     1 |            4449.00 |                0.00 |       4449.00
+ Neurology                 |           2026 | Μ09Χ     | NN Hellas          |                     1 |            9783.00 |                0.00 |       9783.00
+ Neurology                 |           2026 | Μ13Μ     | AXA                |                     1 |            3893.00 |                0.00 |       3893.00
+ Neurology                 |           2026 | Μ32Μα    | AXA                |                     1 |           12912.00 |                0.00 |      12912.00
+ Neurology                 |           2026 | Μ32Μβ    | Eurolife FFH       |                     1 |            9963.00 |                0.00 |       9963.00
+ Neurology                 |           2026 | Μ63Μ     | Generali           |                     1 |            1198.00 |                0.00 |       1198.00
+ Neurology                 |           2026 | Μ67Μ     | Uninsured          |                     1 |            2428.00 |                0.00 |       2428.00
+ Neurology                 |           2026 | Ν26Μ     | Generali           |                     1 |            2062.00 |                0.00 |       2062.00
+ Neurology                 |           2026 | Ν39Μ     | Groupama           |                     1 |            1323.00 |                0.00 |       1323.00
+ Neurology                 |           2026 | Ν68Χ     | Ethniki Insurance  |                     1 |             565.00 |             1130.00 |       1695.00
+ Neurology                 |           2026 | Ο61Χ     | AXA                |                     1 |             482.00 |             1928.00 |       2410.00
+ Neurology                 |           2026 | Π05Μα    | Eurolife FFH       |                     1 |            3329.00 |                0.00 |       3329.00
+ Neurology                 |           2026 | Π43Α     | EOPYY              |                     1 |             335.00 |              167.50 |        502.50
+ Neurology                 |           2026 | Υ08Χ     | Allianz            |                     1 |             631.00 |              315.50 |        946.50
+ Neurology                 |           2026 | Υ08Χ     | NN Hellas          |                     1 |             631.00 |                0.00 |        631.00
+ Neurology                 |           2026 | Υ25Μ     | Generali           |                     1 |            1128.00 |                0.00 |       1128.00
+ Neurology                 |           2026 | Ω20Α     | Ethniki Insurance  |                     1 |             557.00 |             1114.00 |       1671.00
+ Neurosurgery              |           2025 | S23Μ     | Allianz            |                     1 |            2039.00 |                0.00 |       2039.00
+ Neurosurgery              |           2025 | Α02Μβ    | AXA                |                     1 |            1595.00 |                0.00 |       1595.00
+ Neurosurgery              |           2025 | Α28Μ     | AXA                |                     1 |            1377.00 |                0.00 |       1377.00
+ Neurosurgery              |           2025 | Α34Μβ    | Groupama           |                     1 |            1393.00 |                0.00 |       1393.00
+ Neurosurgery              |           2025 | Α35Χ     | NN Hellas          |                     1 |             475.00 |             1425.00 |       1900.00
+ Neurosurgery              |           2025 | Γ06Μ     | NN Hellas          |                     1 |            1649.00 |              824.50 |       2473.50
+ Neurosurgery              |           2025 | Γ08Α     | Uninsured          |                     1 |             719.00 |             2876.00 |       3595.00
+ Neurosurgery              |           2025 | Γ09Α     | Eurolife FFH       |                     1 |             418.00 |             1254.00 |       1672.00
+ Neurosurgery              |           2025 | Γ11Α     | Interamerican      |                     1 |             729.00 |                0.00 |        729.00
+ Neurosurgery              |           2025 | Γ11Α     | NN Hellas          |                     1 |             729.00 |              972.00 |       1701.00
+ Neurosurgery              |           2025 | Γ21Α     | AIG                |                     1 |             475.00 |              950.00 |       1425.00
+ Neurosurgery              |           2025 | Δ13Χ     | AXA                |                     1 |             915.00 |                0.00 |        915.00
+ Neurosurgery              |           2025 | Δ14Α     | ERGO               |                     1 |            4198.00 |                0.00 |       4198.00
+ Neurosurgery              |           2025 | Δ23Χ     | Eurolife FFH       |                     1 |             366.00 |              366.00 |        732.00
+ Neurosurgery              |           2025 | Ε04Α     | AXA                |                     1 |           30015.00 |                0.00 |      30015.00
+ Neurosurgery              |           2025 | Ε05Α     | Allianz            |                     1 |           34279.00 |                0.00 |      34279.00
+ Neurosurgery              |           2025 | Ε09Β     | ERGO               |                     1 |            9669.00 |                0.00 |       9669.00
+ Neurosurgery              |           2025 | Ζ03Α     | Interamerican      |                     1 |            2312.00 |             1387.20 |       3699.20
+ Neurosurgery              |           2025 | Η01Μ     | AIG                |                     1 |            7916.00 |                0.00 |       7916.00
+ Neurosurgery              |           2025 | Η02Μα    | ERGO               |                     1 |            5111.00 |                0.00 |       5111.00
+ Neurosurgery              |           2025 | Η02Χ     | EOPYY              |                     1 |            2079.00 |             1039.50 |       3118.50
+ Neurosurgery              |           2025 | Η05Μ     | AIG                |                     1 |            4533.00 |                0.00 |       4533.00
+ Neurosurgery              |           2025 | Η05Χ     | Generali           |                     1 |            1393.00 |                0.00 |       1393.00
+ Neurosurgery              |           2025 | Η05Χ     | Uninsured          |                     1 |            1393.00 |                0.00 |       1393.00
+ Neurosurgery              |           2025 | Η23Χ     | Interamerican      |                     1 |             786.00 |                0.00 |        786.00
+ Neurosurgery              |           2025 | Η40Μα    | ERGO               |                     1 |            2654.00 |                0.00 |       2654.00
+ Neurosurgery              |           2025 | Η40Μβ    | Interamerican      |                     1 |             965.00 |                0.00 |        965.00
+ Neurosurgery              |           2025 | Η40Χ     | AXA                |                     1 |             366.00 |              549.00 |        915.00
+ Neurosurgery              |           2025 | Η43Χ     | AXA                |                     1 |             521.00 |                0.00 |        521.00
+ Neurosurgery              |           2025 | Θ04Μ     | Eurolife FFH       |                     1 |            4378.00 |                0.00 |       4378.00
+ Neurosurgery              |           2025 | Θ06Χ     | ERGO               |                     1 |            1581.00 |                0.00 |       1581.00
+ Neurosurgery              |           2025 | Κ04Μ     | Ethniki Insurance  |                     1 |           13155.00 |                0.00 |      13155.00
+ Neurosurgery              |           2025 | Κ04Μ     | Interamerican      |                     1 |           13155.00 |                0.00 |      13155.00
+ Neurosurgery              |           2025 | Κ04Χ     | Ethniki Insurance  |                     1 |            9163.00 |                0.00 |       9163.00
+ Neurosurgery              |           2025 | Κ09Χ     | Generali           |                     1 |            2386.00 |                0.00 |       2386.00
+ Neurosurgery              |           2025 | Κ21Μ     | Allianz            |                     1 |             368.00 |                0.00 |        368.00
+ Neurosurgery              |           2025 | Κ35Χ     | AXA                |                     1 |             521.00 |                0.00 |        521.00
+ Neurosurgery              |           2025 | Κ37Μ     | ERGO               |                     1 |            1198.00 |                0.00 |       1198.00
+ Neurosurgery              |           2025 | Κ44Α     | ERGO               |                     1 |             311.00 |              311.00 |        622.00
+ Neurosurgery              |           2025 | Λ03Μ     | AIG                |                     1 |            1249.00 |             1665.32 |       2914.32
+ Neurosurgery              |           2025 | Μ02Χ     | Allianz            |                     1 |             343.00 |                0.00 |        343.00
+ Neurosurgery              |           2025 | Μ17Μ     | NN Hellas          |                     1 |            2708.00 |                0.00 |       2708.00
+ Neurosurgery              |           2025 | Μ63Μ     | AIG                |                     1 |            1198.00 |                0.00 |       1198.00
+ Neurosurgery              |           2025 | Μ67Μ     | AXA                |                     1 |            2428.00 |                0.00 |       2428.00
+ Neurosurgery              |           2025 | Ν07Χ     | Allianz            |                     1 |             111.00 |              444.00 |        555.00
+ Neurosurgery              |           2025 | Ν10Α     | ERGO               |                     1 |             163.00 |              489.00 |        652.00
+ Neurosurgery              |           2025 | Ν10Α     | NN Hellas          |                     1 |             163.00 |                0.00 |        163.00
+ Neurosurgery              |           2025 | Ν26Μ     | Generali           |                     1 |            2062.00 |                0.00 |       2062.00
+ Neurosurgery              |           2025 | Ν31Μ     | ERGO               |                     1 |             151.00 |               43.14 |        194.14
+ Neurosurgery              |           2025 | Ν32Μ     | AXA                |                     1 |            3175.00 |                0.00 |       3175.00
+ Neurosurgery              |           2025 | Ν36Μ     | AXA                |                     1 |            1486.00 |                0.00 |       1486.00
+ Neurosurgery              |           2025 | Ν36Χ     | Generali           |                     1 |             482.00 |              482.00 |        964.00
+ Neurosurgery              |           2025 | Ν37Α     | Interamerican      |                     1 |             335.00 |                0.00 |        335.00
+ Neurosurgery              |           2025 | Ν82Χ     | Eurolife FFH       |                     1 |            1416.00 |                0.00 |       1416.00
+ Neurosurgery              |           2025 | Ξ20Χα    | AIG                |                     1 |             786.00 |                0.00 |        786.00
+ Neurosurgery              |           2025 | Ξ21Χ     | AXA                |                     1 |             315.00 |             2835.00 |       3150.00
+ Neurosurgery              |           2025 | Ξ21Χ     | Uninsured          |                     1 |             315.00 |             1260.00 |       1575.00
+ Neurosurgery              |           2025 | Ο01Α     | Ethniki Insurance  |                     1 |            1395.00 |                0.00 |       1395.00
+ Neurosurgery              |           2025 | Ο01Α     | Interamerican      |                     1 |            1395.00 |             1860.00 |       3255.00
+ Neurosurgery              |           2025 | Ο15Β     | Interamerican      |                     1 |             687.00 |             1374.00 |       2061.00
+ Neurosurgery              |           2025 | Ο61Χ     | Allianz            |                     1 |             482.00 |              482.00 |        964.00
+ Neurosurgery              |           2025 | Π07Μ     | Interamerican      |                     1 |             155.00 |              155.00 |        310.00
+ Neurosurgery              |           2025 | Π12Χ     | Uninsured          |                     1 |             967.00 |              644.66 |       1611.66
+ Neurosurgery              |           2025 | Π26Α     | Generali           |                     1 |             330.00 |              330.00 |        660.00
+ Neurosurgery              |           2025 | Π42Α     | Interamerican      |                     1 |            1097.00 |                0.00 |       1097.00
+ Neurosurgery              |           2025 | Π44Χ     | AXA                |                     1 |            1073.00 |             1073.00 |       2146.00
+ Neurosurgery              |           2025 | Ρ20Α     | Uninsured          |                     1 |            6023.00 |                0.00 |       6023.00
+ Neurosurgery              |           2025 | Ρ20Χ     | ERGO               |                     1 |            1261.00 |              630.51 |       1891.51
+ Neurosurgery              |           2025 | Σ04Μ     | Groupama           |                     1 |            1694.00 |                0.00 |       1694.00
+ Neurosurgery              |           2025 | Σ22Μ     | AXA                |                     1 |            1253.00 |              835.32 |       2088.32
+ Neurosurgery              |           2025 | Τ21Α     | Generali           |                     1 |           41579.00 |                0.00 |      41579.00
+ Neurosurgery              |           2025 | Τ22Α     | Eurolife FFH       |                     1 |           30725.00 |                0.00 |      30725.00
+ Neurosurgery              |           2025 | Τ25Χ     | AXA                |                     1 |            2646.00 |                0.00 |       2646.00
+ Neurosurgery              |           2025 | Τ26Χ     | Ethniki Insurance  |                     1 |             716.00 |                0.00 |        716.00
+ Neurosurgery              |           2025 | Υ05Μ     | AXA                |                     1 |            2848.00 |                0.00 |       2848.00
+ Neurosurgery              |           2025 | Υ05Χ     | AIG                |                     1 |               1.00 |                0.00 |          1.00
+ Neurosurgery              |           2025 | Υ07Μ     | Generali           |                     1 |            1218.00 |             1218.00 |       2436.00
+ Neurosurgery              |           2025 | Υ07Μ     | Groupama           |                     1 |            1218.00 |                0.00 |       1218.00
+ Neurosurgery              |           2025 | Υ08Χ     | ERGO               |                     1 |             631.00 |                0.00 |        631.00
+ Neurosurgery              |           2025 | Υ22Μ     | Eurolife FFH       |                     1 |            1471.00 |                0.00 |       1471.00
+ Neurosurgery              |           2025 | Υ25Μ     | Allianz            |                     1 |            1128.00 |                0.00 |       1128.00
+ Neurosurgery              |           2025 | Υ27Μ     | AIG                |                     1 |            1673.00 |                0.00 |       1673.00
+ Neurosurgery              |           2025 | Υ27Μ     | Uninsured          |                     1 |            1673.00 |              478.00 |       2151.00
+ Neurosurgery              |           2025 | Φ11Χ     | Interamerican      |                     1 |            1883.00 |                0.00 |       1883.00
+ Neurosurgery              |           2025 | Φ26Χ     | AXA                |                     1 |             828.00 |              414.00 |       1242.00
+ Neurosurgery              |           2025 | Φ27Χ     | NN Hellas          |                     1 |            1479.00 |                0.00 |       1479.00
+ Neurosurgery              |           2025 | Φ63Μ     | Generali           |                     1 |            1245.00 |                0.00 |       1245.00
+ Neurosurgery              |           2025 | Ω02Μα    | Generali           |                     1 |             542.00 |                0.00 |        542.00
+ Neurosurgery              |           2025 | Ω20Α     | Interamerican      |                     1 |             557.00 |             3899.00 |       4456.00
+ Neurosurgery              |           2026 | Α12Χ     | Generali           |                     1 |            1798.00 |                0.00 |       1798.00
+ Neurosurgery              |           2026 | Α21Χ     | NN Hellas          |                     1 |            1035.00 |                0.00 |       1035.00
+ Neurosurgery              |           2026 | Ζ01Α     | Eurolife FFH       |                     1 |           36068.00 |                0.00 |      36068.00
+ Neurosurgery              |           2026 | Ζ02Χ     | Generali           |                     1 |            2979.00 |                0.00 |       2979.00
+ Neurosurgery              |           2026 | Η40Μα    | AXA                |                     1 |            2654.00 |                0.00 |       2654.00
+ Neurosurgery              |           2026 | Η40Μα    | Generali           |                     1 |            2654.00 |                0.00 |       2654.00
+ Neurosurgery              |           2026 | Θ05Μ     | NN Hellas          |                     1 |            2587.00 |                0.00 |       2587.00
+ Neurosurgery              |           2026 | Ι23Α     | Uninsured          |                     1 |             576.00 |                0.00 |        576.00
+ Neurosurgery              |           2026 | Κ03Μ     | ERGO               |                     1 |           15429.00 |                0.00 |      15429.00
+ Neurosurgery              |           2026 | Κ08Χ     | Uninsured          |                     1 |            5561.00 |                0.00 |       5561.00
+ Neurosurgery              |           2026 | Κ38Μ     | Uninsured          |                     1 |            1284.00 |             1926.00 |       3210.00
+ Neurosurgery              |           2026 | Λ04Μ     | ERGO               |                     1 |            1807.00 |                0.00 |       1807.00
+ Neurosurgery              |           2026 | Μ13Χ     | Uninsured          |                     1 |            2083.00 |                0.00 |       2083.00
+ Neurosurgery              |           2026 | Μ19Χ     | ERGO               |                     1 |            1904.00 |             1904.00 |       3808.00
+ Neurosurgery              |           2026 | Μ24Α     | AXA                |                     1 |             710.00 |             1420.00 |       2130.00
+ Neurosurgery              |           2026 | Μ66Χ     | Groupama           |                     1 |             652.00 |                0.00 |        652.00
+ Neurosurgery              |           2026 | Ν24Μ     | ERGO               |                     1 |            2389.00 |                0.00 |       2389.00
+ Neurosurgery              |           2026 | Ν28Μ     | Ethniki Insurance  |                     1 |            1907.00 |                0.00 |       1907.00
+ Neurosurgery              |           2026 | Ν30Μβ    | AIG                |                     1 |             186.00 |                0.00 |        186.00
+ Neurosurgery              |           2026 | Ν32Μ     | NN Hellas          |                     1 |            3175.00 |                0.00 |       3175.00
+ Neurosurgery              |           2026 | Ν82Μβ    | Eurolife FFH       |                     1 |            2475.00 |                0.00 |       2475.00
+ Neurosurgery              |           2026 | Ο14Α     | Interamerican      |                     1 |             406.00 |                0.00 |        406.00
+ Neurosurgery              |           2026 | Ο17Α     | NN Hellas          |                     1 |            2423.00 |                0.00 |       2423.00
+ Neurosurgery              |           2026 | Π07Χ     | Ethniki Insurance  |                     1 |             983.00 |              983.00 |       1966.00
+ Neurosurgery              |           2026 | Ρ20Α     | Allianz            |                     1 |            6023.00 |                0.00 |       6023.00
+ Neurosurgery              |           2026 | Τ01Α     | Eurolife FFH       |                     1 |            1381.00 |             6905.00 |       8286.00
+ Neurosurgery              |           2026 | Υ04Μ     | AXA                |                     1 |            4355.00 |                0.00 |       4355.00
+ Neurosurgery              |           2026 | Υ07Μ     | Groupama           |                     1 |            1218.00 |              730.80 |       1948.80
+ Neurosurgery              |           2026 | Υ08Μ     | Uninsured          |                     1 |            1271.00 |              254.20 |       1525.20
+ Neurosurgery              |           2026 | Υ08Χ     | AXA                |                     1 |             631.00 |                0.00 |        631.00
+ Neurosurgery              |           2026 | Υ28Α     | EOPYY              |                     1 |             296.00 |                0.00 |        296.00
+ Neurosurgery              |           2026 | Υ29Α     | Interamerican      |                     1 |             136.00 |              816.00 |        952.00
+ Neurosurgery              |           2026 | Χ46Α     | ERGO               |                     1 |            4171.00 |                0.00 |       4171.00
+ Neurosurgery              |           2026 | Ω10Α     | Eurolife FFH       |                     1 |             787.00 |             1574.00 |       2361.00
+ Neurosurgery              |           2026 | Ω34Α     | Generali           |                     1 |             288.00 |              288.00 |        576.00
+ Obstetrics and Gynecology |           2025 | Γ08Α     | Uninsured          |                     1 |             719.00 |             2157.00 |       2876.00
+ Obstetrics and Gynecology |           2025 | Ε06Χγ    | Groupama           |                     1 |            8261.00 |                0.00 |       8261.00
+ Obstetrics and Gynecology |           2025 | Θ01Χ     | ERGO               |                     1 |            2801.00 |                0.00 |       2801.00
+ Obstetrics and Gynecology |           2025 | Θ02Μ     | Eurolife FFH       |                     1 |            5135.00 |                0.00 |       5135.00
+ Obstetrics and Gynecology |           2025 | Θ04Χ     | Groupama           |                     1 |            2848.00 |                0.00 |       2848.00
+ Obstetrics and Gynecology |           2025 | Κ01Μ     | ERGO               |                     1 |           16215.00 |                0.00 |      16215.00
+ Obstetrics and Gynecology |           2025 | Κ07Μα    | ERGO               |                     1 |           10554.00 |                0.00 |      10554.00
+ Obstetrics and Gynecology |           2025 | Κ07Μβ    | Groupama           |                     1 |            7279.00 |              909.88 |       8188.88
+ Obstetrics and Gynecology |           2025 | Λ01Χ     | AXA                |                     1 |            1541.00 |                0.00 |       1541.00
+ Obstetrics and Gynecology |           2025 | Λ04Χ     | NN Hellas          |                     1 |             571.00 |              285.50 |        856.50
+ Obstetrics and Gynecology |           2025 | Μ01Χ     | ERGO               |                     1 |            9606.00 |                0.00 |       9606.00
+ Obstetrics and Gynecology |           2025 | Μ16Α     | AXA                |                     1 |            1588.00 |             4764.00 |       6352.00
+ Obstetrics and Gynecology |           2025 | Μ72Χ     | Groupama           |                     1 |             490.00 |              326.66 |        816.66
+ Obstetrics and Gynecology |           2025 | Ν02Χ     | Ethniki Insurance  |                     1 |            3836.00 |             1096.00 |       4932.00
+ Obstetrics and Gynecology |           2025 | Ν07Χ     | Eurolife FFH       |                     1 |             111.00 |                0.00 |        111.00
+ Obstetrics and Gynecology |           2025 | Ν82Μβ    | Uninsured          |                     1 |            2475.00 |                0.00 |       2475.00
+ Obstetrics and Gynecology |           2025 | Π05Μα    | AXA                |                     1 |            3329.00 |                0.00 |       3329.00
+ Obstetrics and Gynecology |           2025 | Ρ24Χ     | AXA                |                     1 |             623.00 |              623.01 |       1246.01
+ Obstetrics and Gynecology |           2025 | Υ05Χ     | AXA                |                     1 |               1.00 |                0.66 |          1.66
+ Obstetrics and Gynecology |           2025 | Υ06Χ     | Allianz            |                     1 |             808.00 |              808.00 |       1616.00
+ Obstetrics and Gynecology |           2025 | Υ20Χ     | Ethniki Insurance  |                     1 |             584.00 |                0.00 |        584.00
+ Obstetrics and Gynecology |           2025 | Υ23Χ     | Eurolife FFH       |                     1 |             560.00 |              373.34 |        933.34
+ Obstetrics and Gynecology |           2025 | Υ24Α     | EOPYY              |                     1 |             389.00 |             1167.00 |       1556.00
+ Obstetrics and Gynecology |           2025 | Φ22Χ     | Ethniki Insurance  |                     1 |             827.00 |             1654.00 |       2481.00
+ Obstetrics and Gynecology |           2025 | Χ43Α     | ERGO               |                     1 |            2568.00 |                0.00 |       2568.00
+ Obstetrics and Gynecology |           2025 | Ω03Α     | Ethniki Insurance  |                     1 |            1281.00 |              640.50 |       1921.50
+ Obstetrics and Gynecology |           2025 | Ω10Α     | NN Hellas          |                     1 |             787.00 |              787.00 |       1574.00
+ Obstetrics and Gynecology |           2026 | S24Χ     | ERGO               |                     1 |             216.00 |              648.00 |        864.00
+ Obstetrics and Gynecology |           2026 | Γ08Α     | Groupama           |                     1 |             719.00 |             1438.00 |       2157.00
+ Obstetrics and Gynecology |           2026 | Ζ03Α     | Interamerican      |                     1 |            2312.00 |              462.40 |       2774.40
+ Obstetrics and Gynecology |           2026 | Θ25Χ     | AIG                |                     1 |             731.00 |                0.00 |        731.00
+ Obstetrics and Gynecology |           2026 | Μ12Χ     | NN Hellas          |                     1 |            1665.00 |             1110.00 |       2775.00
+ Obstetrics and Gynecology |           2026 | Μ76Χ     | Ethniki Insurance  |                     1 |             389.00 |              389.00 |        778.00
+ Obstetrics and Gynecology |           2026 | Ν29Μ     | ERGO               |                     1 |             123.00 |               41.00 |        164.00
+ Obstetrics and Gynecology |           2026 | Π12Χ     | AXA                |                     1 |             967.00 |                0.00 |        967.00
+ Obstetrics and Gynecology |           2026 | Π27Χ     | Allianz            |                     1 |             988.00 |                0.00 |        988.00
+ Obstetrics and Gynecology |           2026 | Τ03Α     | AXA                |                     1 |           16846.00 |                0.00 |      16846.00
+ Obstetrics and Gynecology |           2026 | Υ23Μ     | AIG                |                     1 |            1564.00 |                0.00 |       1564.00
+ Obstetrics and Gynecology |           2026 | Φ26Χ     | Uninsured          |                     1 |             828.00 |             2070.00 |       2898.00
+ Oncology                  |           2025 | G01Μα    | Generali           |                     1 |            5709.00 |                0.00 |       5709.00
+ Oncology                  |           2025 | S24Χ     | Interamerican      |                     1 |             216.00 |              864.00 |       1080.00
+ Oncology                  |           2025 | Α02Μα    | AXA                |                     1 |            3922.00 |                0.00 |       3922.00
+ Oncology                  |           2025 | Α12Α     | AXA                |                     1 |             191.00 |             1337.00 |       1528.00
+ Oncology                  |           2025 | Α12Α     | Eurolife FFH       |                     1 |             191.00 |              191.00 |        382.00
+ Oncology                  |           2025 | Α21Χ     | Allianz            |                     1 |            1035.00 |                0.00 |       1035.00
+ Oncology                  |           2025 | Α22Μβ    | AIG                |                     1 |            1144.00 |              572.01 |       1716.01
+ Oncology                  |           2025 | Α22Μβ    | AXA                |                     1 |            1144.00 |                0.00 |       1144.00
+ Oncology                  |           2025 | Α27Μ     | Groupama           |                     1 |             864.00 |                0.00 |        864.00
+ Oncology                  |           2025 | Α27Χ     | NN Hellas          |                     1 |             350.00 |                0.00 |        350.00
+ Oncology                  |           2025 | Α34Μα    | Eurolife FFH       |                     1 |            1977.00 |                0.00 |       1977.00
+ Oncology                  |           2025 | Α34Μβ    | Eurolife FFH       |                     1 |            1393.00 |                0.00 |       1393.00
+ Oncology                  |           2025 | Β01Χ     | AIG                |                     1 |            2892.00 |                0.00 |       2892.00
+ Oncology                  |           2025 | Γ05Χ     | ERGO               |                     1 |            1374.00 |              687.00 |       2061.00
+ Oncology                  |           2025 | Γ10Α     | Allianz            |                     1 |             425.00 |              850.00 |       1275.00
+ Oncology                  |           2025 | Δ01Χ     | AIG                |                     1 |            6452.00 |                0.00 |       6452.00
+ Oncology                  |           2025 | Δ07Α     | Generali           |                     1 |             605.00 |                0.00 |        605.00
+ Oncology                  |           2025 | Δ13Μ     | ERGO               |                     1 |            2856.00 |                0.00 |       2856.00
+ Oncology                  |           2025 | Δ13Χ     | AXA                |                     1 |             915.00 |                0.00 |        915.00
+ Oncology                  |           2025 | Δ22Χ     | Interamerican      |                     1 |             688.00 |             2408.00 |       3096.00
+ Oncology                  |           2025 | Δ23Μ     | Generali           |                     1 |             965.00 |                0.00 |        965.00
+ Oncology                  |           2025 | Δ24Μ     | ERGO               |                     1 |            1619.00 |                0.00 |       1619.00
+ Oncology                  |           2025 | Δ27Μ     | Ethniki Insurance  |                     1 |             708.00 |              944.00 |       1652.00
+ Oncology                  |           2025 | Δ28Χ     | Allianz            |                     1 |             965.00 |                0.00 |        965.00
+ Oncology                  |           2025 | Ε08Μ     | Ethniki Insurance  |                     1 |           10017.00 |                0.00 |      10017.00
+ Oncology                  |           2025 | Ε08Μ     | Eurolife FFH       |                     1 |           10017.00 |                0.00 |      10017.00
+ Oncology                  |           2025 | Ε10Α     | Interamerican      |                     1 |           94009.00 |                0.00 |      94009.00
+ Oncology                  |           2025 | Ε13Α     | Allianz            |                     1 |           37063.00 |                0.00 |      37063.00
+ Oncology                  |           2025 | Ζ02Μ     | Groupama           |                     1 |            7225.00 |                0.00 |       7225.00
+ Oncology                  |           2025 | Ζ03Α     | Groupama           |                     1 |            2312.00 |             2312.00 |       4624.00
+ Oncology                  |           2025 | Η02Μα    | Ethniki Insurance  |                     1 |            5111.00 |                0.00 |       5111.00
+ Oncology                  |           2025 | Η05Μ     | Ethniki Insurance  |                     1 |            4533.00 |                0.00 |       4533.00
+ Oncology                  |           2025 | Η07Μ     | AXA                |                     1 |            4299.00 |                0.00 |       4299.00
+ Oncology                  |           2025 | Η07Μ     | Eurolife FFH       |                     2 |            8598.00 |                0.00 |       8598.00
+ Oncology                  |           2025 | Η20Χ     | AIG                |                     1 |            1517.00 |                0.00 |       1517.00
+ Oncology                  |           2025 | Η23Χ     | Uninsured          |                     1 |             786.00 |              262.00 |       1048.00
+ Oncology                  |           2025 | Η43Χ     | Allianz            |                     1 |             521.00 |             1302.50 |       1823.50
+ Oncology                  |           2025 | Θ02Μ     | AIG                |                     1 |            5135.00 |                0.00 |       5135.00
+ Oncology                  |           2025 | Θ22Χ     | Allianz            |                     1 |             482.00 |                0.00 |        482.00
+ Oncology                  |           2025 | Θ24Χ     | Eurolife FFH       |                     1 |             669.00 |             1672.50 |       2341.50
+ Oncology                  |           2025 | Ι24Α     | Ethniki Insurance  |                     1 |             599.00 |              748.75 |       1347.75
+ Oncology                  |           2025 | Κ06Μ     | NN Hellas          |                     1 |            7182.00 |                0.00 |       7182.00
+ Oncology                  |           2025 | Κ07Χ     | Interamerican      |                     1 |            5354.00 |                0.00 |       5354.00
+ Oncology                  |           2025 | Κ09Μβ    | Eurolife FFH       |                     1 |            3617.00 |                0.00 |       3617.00
+ Oncology                  |           2025 | Κ12Μ     | ERGO               |                     1 |            5465.00 |                0.00 |       5465.00
+ Oncology                  |           2025 | Κ14Μβ    | Ethniki Insurance  |                     1 |            1991.00 |             2986.50 |       4977.50
+ Oncology                  |           2025 | Κ14Μβ    | Groupama           |                     1 |            1991.00 |                0.00 |       1991.00
+ Oncology                  |           2025 | Κ16Μ     | ERGO               |                     1 |            1531.00 |              510.33 |       2041.33
+ Oncology                  |           2025 | Κ16Χ     | NN Hellas          |                     1 |            1118.00 |             2236.00 |       3354.00
+ Oncology                  |           2025 | Κ34Μ     | Allianz            |                     1 |            2233.00 |                0.00 |       2233.00
+ Oncology                  |           2025 | Κ37Μ     | Eurolife FFH       |                     1 |            1198.00 |                0.00 |       1198.00
+ Oncology                  |           2025 | Κ37Χ     | EOPYY              |                     1 |             459.00 |                0.00 |        459.00
+ Oncology                  |           2025 | Κ38Μ     | ERGO               |                     1 |            1284.00 |             1284.00 |       2568.00
+ Oncology                  |           2025 | Κ39Μ     | Groupama           |                     1 |            1268.00 |                0.00 |       1268.00
+ Oncology                  |           2025 | Κ39Χ     | Eurolife FFH       |                     1 |             327.00 |                0.00 |        327.00
+ Oncology                  |           2025 | Κ40Μ     | Eurolife FFH       |                     1 |               2.00 |                0.00 |          2.00
+ Oncology                  |           2025 | Κ46Μ     | Allianz            |                     1 |            1245.00 |                0.00 |       1245.00
+ Oncology                  |           2025 | Κ46Χ     | EOPYY              |                     1 |             444.00 |             1776.00 |       2220.00
+ Oncology                  |           2025 | Μ10Χ     | EOPYY              |                     1 |            1908.00 |             1908.00 |       3816.00
+ Oncology                  |           2025 | Μ11Α     | NN Hellas          |                     1 |            4045.00 |                0.00 |       4045.00
+ Oncology                  |           2025 | Μ17Μ     | ERGO               |                     1 |            2708.00 |                0.00 |       2708.00
+ Oncology                  |           2025 | Μ19Μ     | ERGO               |                     1 |            2648.00 |                0.00 |       2648.00
+ Oncology                  |           2025 | Μ71Χ     | Interamerican      |                     1 |             405.00 |                0.00 |        405.00
+ Oncology                  |           2025 | Μ73Χ     | NN Hellas          |                     1 |             584.00 |              292.00 |        876.00
+ Oncology                  |           2025 | Ν25Α     | Groupama           |                     1 |             482.00 |             1687.00 |       2169.00
+ Oncology                  |           2025 | Ν26Χ     | Allianz            |                     1 |             872.00 |              218.00 |       1090.00
+ Oncology                  |           2025 | Ν28Μ     | ERGO               |                     1 |            1907.00 |                0.00 |       1907.00
+ Oncology                  |           2025 | Ν34Μ     | AXA                |                     1 |            1012.00 |                0.00 |       1012.00
+ Oncology                  |           2025 | Ξ20Χβ    | Interamerican      |                     1 |             257.00 |             1542.00 |       1799.00
+ Oncology                  |           2025 | Ο05Α     | Groupama           |                     1 |             896.00 |             5376.00 |       6272.00
+ Oncology                  |           2025 | Ο12Α     | Eurolife FFH       |                     1 |             583.00 |             1166.00 |       1749.00
+ Oncology                  |           2025 | Ο20Χ     | Eurolife FFH       |                     1 |            1035.00 |              776.25 |       1811.25
+ Oncology                  |           2025 | Ο20Χ     | Interamerican      |                     1 |            1035.00 |              517.50 |       1552.50
+ Oncology                  |           2025 | Π05Μβ    | Allianz            |                     1 |            2085.00 |                0.00 |       2085.00
+ Oncology                  |           2025 | Π05Μβ    | AXA                |                     1 |            2085.00 |                0.00 |       2085.00
+ Oncology                  |           2025 | Π05Χ     | AIG                |                     1 |            1379.00 |                0.00 |       1379.00
+ Oncology                  |           2025 | Π07Μ     | ERGO               |                     1 |             155.00 |               31.00 |        186.00
+ Oncology                  |           2025 | Π10Μ     | Ethniki Insurance  |                     1 |            1697.00 |                0.00 |       1697.00
+ Oncology                  |           2025 | Π10Μ     | Uninsured          |                     1 |            1697.00 |                0.00 |       1697.00
+ Oncology                  |           2025 | Π12Μα    | Groupama           |                     1 |            4177.00 |                0.00 |       4177.00
+ Oncology                  |           2025 | Π26Χ     | AXA                |                     1 |            1245.00 |                0.00 |       1245.00
+ Oncology                  |           2025 | Π41Μ     | Groupama           |                     1 |            1027.00 |                0.00 |       1027.00
+ Oncology                  |           2025 | Π46Α     | Groupama           |                     1 |             327.00 |              490.50 |        817.50
+ Oncology                  |           2025 | Ρ22Μ     | Uninsured          |                     1 |            1105.00 |                0.00 |       1105.00
+ Oncology                  |           2025 | Σ03Χ     | Ethniki Insurance  |                     1 |            1099.00 |              732.66 |       1831.66
+ Oncology                  |           2025 | Σ04Χ     | Groupama           |                     1 |             966.00 |             3381.00 |       4347.00
+ Oncology                  |           2025 | Σ21Α     | NN Hellas          |                     1 |             294.00 |              294.00 |        588.00
+ Oncology                  |           2025 | Τ26Μγ    | Allianz            |                     1 |            1644.00 |                0.00 |       1644.00
+ Oncology                  |           2025 | Τ26Μγ    | Generali           |                     1 |            1644.00 |                0.00 |       1644.00
+ Oncology                  |           2025 | Τ26Χ     | Interamerican      |                     1 |             716.00 |                0.00 |        716.00
+ Oncology                  |           2025 | Τ27Μβ    | AXA                |                     1 |            1294.00 |                0.00 |       1294.00
+ Oncology                  |           2025 | Τ27Μβ    | Generali           |                     1 |            1294.00 |                0.00 |       1294.00
+ Oncology                  |           2025 | Υ20Μα    | Interamerican      |                     1 |            2934.00 |                0.00 |       2934.00
+ Oncology                  |           2025 | Υ27Χ     | AXA                |                     1 |             358.00 |              179.00 |        537.00
+ Oncology                  |           2025 | Φ01Α     | Allianz            |                     1 |           12204.00 |                0.00 |      12204.00
+ Oncology                  |           2025 | Φ11Χ     | Allianz            |                     1 |            1883.00 |                0.00 |       1883.00
+ Oncology                  |           2025 | Φ62Χ     | Uninsured          |                     1 |             374.00 |                0.00 |        374.00
+ Oncology                  |           2025 | Χ20Α     | AIG                |                     1 |             148.00 |             1332.00 |       1480.00
+ Oncology                  |           2025 | Χ40Α     | Ethniki Insurance  |                     1 |             140.00 |             1400.00 |       1540.00
+ Oncology                  |           2025 | Χ42Χ     | Allianz            |                     1 |            1331.00 |              166.38 |       1497.38
+ Oncology                  |           2025 | Ω03Α     | NN Hellas          |                     1 |            1281.00 |                0.00 |       1281.00
+ Oncology                  |           2025 | Ω30Χ     | AXA                |                     1 |             545.00 |             1635.00 |       2180.00
+ Oncology                  |           2025 | Ω32Α     | EOPYY              |                     1 |             358.00 |                0.00 |        358.00
+ Oncology                  |           2025 | Ω32Α     | ERGO               |                     1 |             358.00 |                0.00 |        358.00
+ Oncology                  |           2025 | Ω33Α     | Ethniki Insurance  |                     1 |             397.00 |              595.50 |        992.50
+ Oncology                  |           2025 | Ω35Α     | Interamerican      |                     1 |             265.00 |              265.00 |        530.00
+ Oncology                  |           2025 | Ω36Μ     | Eurolife FFH       |                     1 |             957.00 |              957.00 |       1914.00
+ Oncology                  |           2025 | Ω37Β     | NN Hellas          |                     1 |             661.00 |                0.00 |        661.00
+ Oncology                  |           2026 | G01Μα    | AXA                |                     1 |            5709.00 |                0.00 |       5709.00
+ Oncology                  |           2026 | G01Χ     | Generali           |                     1 |            2182.00 |              727.33 |       2909.33
+ Oncology                  |           2026 | S01Μ     | Eurolife FFH       |                     1 |            2413.00 |             1206.51 |       3619.51
+ Oncology                  |           2026 | S23Χ     | Eurolife FFH       |                     1 |             848.00 |                0.00 |        848.00
+ Oncology                  |           2026 | Α26Μβ    | Groupama           |                     1 |            1175.00 |              940.00 |       2115.00
+ Oncology                  |           2026 | Β03Α     | Uninsured          |                     1 |             771.00 |                0.00 |        771.00
+ Oncology                  |           2026 | Δ23Μ     | Generali           |                     1 |             965.00 |              386.00 |       1351.00
+ Oncology                  |           2026 | Ε08Χ     | AIG                |                     1 |            3683.00 |                0.00 |       3683.00
+ Oncology                  |           2026 | Ε11Χ     | Eurolife FFH       |                     1 |            5302.00 |                0.00 |       5302.00
+ Oncology                  |           2026 | Θ04Χ     | ERGO               |                     1 |            2848.00 |             4272.00 |       7120.00
+ Oncology                  |           2026 | Θ06Μ     | Eurolife FFH       |                     1 |             262.00 |               52.40 |        314.40
+ Oncology                  |           2026 | Ι22Μ     | AXA                |                     1 |             910.00 |              303.34 |       1213.34
+ Oncology                  |           2026 | Κ03Χ     | AIG                |                     2 |           23468.00 |                0.00 |      23468.00
+ Oncology                  |           2026 | Κ06Χ     | NN Hellas          |                     1 |            5077.00 |                0.00 |       5077.00
+ Oncology                  |           2026 | Κ07Χ     | Uninsured          |                     1 |            5354.00 |                0.00 |       5354.00
+ Oncology                  |           2026 | Λ03Χ     | AXA                |                     1 |             886.00 |                0.00 |        886.00
+ Oncology                  |           2026 | Λ26Α     | NN Hellas          |                     1 |             257.00 |              514.00 |        771.00
+ Oncology                  |           2026 | Μ10Χ     | Uninsured          |                     1 |            1908.00 |             2385.00 |       4293.00
+ Oncology                  |           2026 | Μ32Μα    | Ethniki Insurance  |                     1 |           12912.00 |                0.00 |      12912.00
+ Oncology                  |           2026 | Μ75Μ     | ERGO               |                     1 |            1455.00 |                0.00 |       1455.00
+ Oncology                  |           2026 | Μ77Χ     | AXA                |                     1 |            1058.00 |                0.00 |       1058.00
+ Oncology                  |           2026 | Ν24Χ     | EOPYY              |                     1 |            1159.00 |                0.00 |       1159.00
+ Oncology                  |           2026 | Ν26Μ     | NN Hellas          |                     1 |            2062.00 |                0.00 |       2062.00
+ Oncology                  |           2026 | Ν31Μ     | NN Hellas          |                     1 |             151.00 |                0.00 |        151.00
+ Oncology                  |           2026 | Ν39Μ     | Ethniki Insurance  |                     1 |            1323.00 |                0.00 |       1323.00
+ Oncology                  |           2026 | Ο13Α     | Eurolife FFH       |                     1 |             336.00 |              672.00 |       1008.00
+ Oncology                  |           2026 | Ο13Α     | Groupama           |                     1 |             336.00 |             2352.00 |       2688.00
+ Oncology                  |           2026 | Π28Μ     | Groupama           |                     1 |            2062.00 |                0.00 |       2062.00
+ Oncology                  |           2026 | Π44Χ     | Allianz            |                     1 |            1073.00 |              536.50 |       1609.50
+ Oncology                  |           2026 | Ρ20Α     | Uninsured          |                     1 |            6023.00 |                0.00 |       6023.00
+ Oncology                  |           2026 | Τ24Α     | Eurolife FFH       |                     1 |            5818.00 |                0.00 |       5818.00
+ Oncology                  |           2026 | Υ03Χ     | Generali           |                     1 |            2992.00 |                0.00 |       2992.00
+ Oncology                  |           2026 | Υ22Μ     | NN Hellas          |                     1 |            1471.00 |              630.42 |       2101.42
+ Oncology                  |           2026 | Υ23Μ     | Interamerican      |                     1 |            1564.00 |                0.00 |       1564.00
+ Oncology                  |           2026 | Υ25Μ     | Groupama           |                     1 |            1128.00 |                0.00 |       1128.00
+ Oncology                  |           2026 | Φ01Α     | ERGO               |                     1 |           12204.00 |                0.00 |      12204.00
+ Oncology                  |           2026 | Φ02Χ     | ERGO               |                     1 |            8412.00 |                0.00 |       8412.00
+ Oncology                  |           2026 | Φ40Α     | NN Hellas          |                     1 |            3649.00 |                0.00 |       3649.00
+ Oncology                  |           2026 | Χ41Α     | Allianz            |                     1 |            3066.00 |                0.00 |       3066.00
+ Oncology                  |           2026 | Ω14Α     | Ethniki Insurance  |                     1 |             740.00 |                0.00 |        740.00
+ Oncology                  |           2026 | Ω30Μ     | AXA                |                     1 |            2288.00 |                0.00 |       2288.00
+ Orthopedics               |           2025 | S20Χ     | Ethniki Insurance  |                     1 |            1759.00 |                0.00 |       1759.00
+ Orthopedics               |           2025 | S25Α     | Allianz            |                     1 |            1082.00 |              811.50 |       1893.50
+ Orthopedics               |           2025 | Α25Χ     | Eurolife FFH       |                     1 |             949.00 |                0.00 |        949.00
+ Orthopedics               |           2025 | Α26Μβ    | AXA                |                     1 |            1175.00 |                0.00 |       1175.00
+ Orthopedics               |           2025 | Α28Χ     | Allianz            |                     1 |             623.00 |                0.00 |        623.00
+ Orthopedics               |           2025 | Β02Μ     | AXA                |                     1 |            1719.00 |                0.00 |       1719.00
+ Orthopedics               |           2025 | Γ11Α     | Eurolife FFH       |                     1 |             729.00 |              243.00 |        972.00
+ Orthopedics               |           2025 | Γ11Α     | Interamerican      |                     1 |             729.00 |                0.00 |        729.00
+ Orthopedics               |           2025 | Γ22Α     | Generali           |                     1 |             257.00 |             1542.00 |       1799.00
+ Orthopedics               |           2025 | Δ13Μ     | Eurolife FFH       |                     1 |            2856.00 |                0.00 |       2856.00
+ Orthopedics               |           2025 | Δ20Χ     | AXA                |                     1 |            1471.00 |                0.00 |       1471.00
+ Orthopedics               |           2025 | Δ27Χ     | Groupama           |                     1 |             199.00 |              796.00 |        995.00
+ Orthopedics               |           2025 | Δ29Χ     | AXA                |                     1 |            1377.00 |                0.00 |       1377.00
+ Orthopedics               |           2025 | Δ29Χ     | ERGO               |                     1 |            1377.00 |                0.00 |       1377.00
+ Orthopedics               |           2025 | Ε11Χ     | Interamerican      |                     2 |           10604.00 |             1767.34 |      12371.34
+ Orthopedics               |           2025 | Ζ02Χ     | Groupama           |                     1 |            2979.00 |                0.00 |       2979.00
+ Orthopedics               |           2025 | Η05Χ     | Uninsured          |                     1 |            1393.00 |                0.00 |       1393.00
+ Orthopedics               |           2025 | Η08Χ     | Uninsured          |                     1 |            1273.00 |             1273.00 |       2546.00
+ Orthopedics               |           2025 | Η40Μβ    | Eurolife FFH       |                     1 |             965.00 |                0.00 |        965.00
+ Orthopedics               |           2025 | Η42Χ     | ERGO               |                     1 |             708.00 |              472.00 |       1180.00
+ Orthopedics               |           2025 | Θ02Χ     | Groupama           |                     1 |            3515.00 |                0.00 |       3515.00
+ Orthopedics               |           2025 | Θ04Μ     | Groupama           |                     1 |            4378.00 |                0.00 |       4378.00
+ Orthopedics               |           2025 | Θ05Χ     | NN Hellas          |                     1 |            1218.00 |             1827.00 |       3045.00
+ Orthopedics               |           2025 | Θ06Μ     | Allianz            |                     1 |             262.00 |                0.00 |        262.00
+ Orthopedics               |           2025 | Θ09Μ     | AIG                |                     1 |            4895.00 |                0.00 |       4895.00
+ Orthopedics               |           2025 | Θ20Χ     | AXA                |                     1 |             158.00 |                0.00 |        158.00
+ Orthopedics               |           2025 | Κ02Α     | AIG                |                     1 |            2844.00 |                0.00 |       2844.00
+ Orthopedics               |           2025 | Κ03Μ     | Allianz            |                     1 |           15429.00 |                0.00 |      15429.00
+ Orthopedics               |           2025 | Κ03Χ     | Uninsured          |                     1 |           11734.00 |                0.00 |      11734.00
+ Orthopedics               |           2025 | Κ12Χ     | ERGO               |                     1 |            3694.00 |                0.00 |       3694.00
+ Orthopedics               |           2025 | Κ22Α     | Generali           |                     1 |            7753.00 |                0.00 |       7753.00
+ Orthopedics               |           2025 | Κ31Μ     | AXA                |                     1 |            2038.00 |                0.00 |       2038.00
+ Orthopedics               |           2025 | Κ39Χ     | AIG                |                     1 |             327.00 |                0.00 |        327.00
+ Orthopedics               |           2025 | Κ39Χ     | EOPYY              |                     1 |             327.00 |                0.00 |        327.00
+ Orthopedics               |           2025 | Κ41Μ     | EOPYY              |                     1 |            4801.00 |                0.00 |       4801.00
+ Orthopedics               |           2025 | Μ08Χ     | NN Hellas          |                     1 |            3014.00 |                0.00 |       3014.00
+ Orthopedics               |           2025 | Μ10Χ     | Uninsured          |                     1 |            1908.00 |             1431.00 |       3339.00
+ Orthopedics               |           2025 | Μ12Χ     | Uninsured          |                     1 |            1665.00 |                0.00 |       1665.00
+ Orthopedics               |           2025 | Μ20Α     | Generali           |                     1 |            1286.00 |             1286.00 |       2572.00
+ Orthopedics               |           2025 | Μ27Μ     | Eurolife FFH       |                     1 |            2179.00 |                0.00 |       2179.00
+ Orthopedics               |           2025 | Μ31Μ     | Uninsured          |                     1 |           11675.00 |                0.00 |      11675.00
+ Orthopedics               |           2025 | Μ32Χ     | Uninsured          |                     1 |            9147.00 |                0.00 |       9147.00
+ Orthopedics               |           2025 | Μ63Μ     | AIG                |                     1 |            1198.00 |              342.28 |       1540.28
+ Orthopedics               |           2025 | Μ63Μ     | Allianz            |                     1 |            1198.00 |                0.00 |       1198.00
+ Orthopedics               |           2025 | Μ69Χ     | EOPYY              |                     1 |             428.00 |              642.00 |       1070.00
+ Orthopedics               |           2025 | Μ78Χ     | Ethniki Insurance  |                     1 |             475.00 |              237.50 |        712.50
+ Orthopedics               |           2025 | Ν29Μ     | Uninsured          |                     1 |             123.00 |               20.50 |        143.50
+ Orthopedics               |           2025 | Ξ02Χ     | Interamerican      |                     1 |             781.00 |              390.50 |       1171.50
+ Orthopedics               |           2025 | Ο20Μ     | Allianz            |                     1 |             186.00 |                0.00 |        186.00
+ Orthopedics               |           2025 | Π26Μ     | Interamerican      |                     1 |            3338.00 |                0.00 |       3338.00
+ Orthopedics               |           2025 | Π27Μ     | EOPYY              |                     1 |            2521.00 |                0.00 |       2521.00
+ Orthopedics               |           2025 | Π42Α     | Allianz            |                     1 |            1097.00 |              219.40 |       1316.40
+ Orthopedics               |           2025 | Τ02Α     | Eurolife FFH       |                     1 |           20279.00 |                0.00 |      20279.00
+ Orthopedics               |           2025 | Τ26Μα    | AIG                |                     1 |            3719.00 |                0.00 |       3719.00
+ Orthopedics               |           2025 | Τ27Μα    | AXA                |                     1 |            3076.00 |                0.00 |       3076.00
+ Orthopedics               |           2025 | Υ04Μ     | Ethniki Insurance  |                     1 |            4355.00 |                0.00 |       4355.00
+ Orthopedics               |           2025 | Υ04Μ     | NN Hellas          |                     1 |            4355.00 |                0.00 |       4355.00
+ Orthopedics               |           2025 | Υ04Χα    | AXA                |                     1 |            2361.00 |                0.00 |       2361.00
+ Orthopedics               |           2025 | Υ07Μ     | Allianz            |                     1 |            1218.00 |                0.00 |       1218.00
+ Orthopedics               |           2025 | Υ08Χ     | Ethniki Insurance  |                     1 |             631.00 |              631.00 |       1262.00
+ Orthopedics               |           2025 | Φ01Α     | Generali           |                     1 |           12204.00 |                0.00 |      12204.00
+ Orthopedics               |           2025 | Φ10Α     | ERGO               |                     1 |            1472.00 |             1472.00 |       2944.00
+ Orthopedics               |           2025 | Φ64Μ     | Uninsured          |                     1 |            1159.00 |                0.00 |       1159.00
+ Orthopedics               |           2025 | Χ40Α     | AXA                |                     1 |             140.00 |              700.00 |        840.00
+ Orthopedics               |           2025 | Ω02Χ     | Uninsured          |                     1 |            1609.00 |             1609.00 |       3218.00
+ Orthopedics               |           2025 | Ω04Χ     | AXA                |                     1 |            1934.00 |             4835.00 |       6769.00
+ Orthopedics               |           2025 | Ω06Α     | EOPYY              |                     1 |            1125.00 |             5625.00 |       6750.00
+ Orthopedics               |           2025 | Ω30Χ     | NN Hellas          |                     1 |             545.00 |              817.50 |       1362.50
+ Orthopedics               |           2025 | Ω31Α     | AXA                |                     1 |             444.00 |              666.00 |       1110.00
+ Orthopedics               |           2025 | Ω35Α     | AIG                |                     1 |             265.00 |             1590.00 |       1855.00
+ Orthopedics               |           2026 | S01Α     | Groupama           |                     1 |             540.00 |             2160.00 |       2700.00
+ Orthopedics               |           2026 | S23Χ     | AIG                |                     1 |             848.00 |                0.00 |        848.00
+ Orthopedics               |           2026 | Α02Μα    | Groupama           |                     1 |            3922.00 |                0.00 |       3922.00
+ Orthopedics               |           2026 | Α22Μα    | AIG                |                     1 |            1938.00 |                0.00 |       1938.00
+ Orthopedics               |           2026 | Β01Χ     | Interamerican      |                     1 |            2892.00 |             4338.00 |       7230.00
+ Orthopedics               |           2026 | Β21Α     | AXA                |                     1 |             459.00 |              459.00 |        918.00
+ Orthopedics               |           2026 | Δ01Χ     | Uninsured          |                     1 |            6452.00 |                0.00 |       6452.00
+ Orthopedics               |           2026 | Δ10Α     | Interamerican      |                     1 |             672.00 |             6720.00 |       7392.00
+ Orthopedics               |           2026 | Δ29Χ     | NN Hellas          |                     1 |            1377.00 |                0.00 |       1377.00
+ Orthopedics               |           2026 | Ε09Α     | NN Hellas          |                     1 |           15346.00 |                0.00 |      15346.00
+ Orthopedics               |           2026 | Η23Μ     | AIG                |                     1 |            2552.00 |                0.00 |       2552.00
+ Orthopedics               |           2026 | Η40Μβ    | AXA                |                     1 |             965.00 |              772.00 |       1737.00
+ Orthopedics               |           2026 | Ι22Χ     | Eurolife FFH       |                     1 |             366.00 |             1830.00 |       2196.00
+ Orthopedics               |           2026 | Κ06Χ     | AXA                |                     1 |            5077.00 |                0.00 |       5077.00
+ Orthopedics               |           2026 | Κ08Χ     | EOPYY              |                     1 |            5561.00 |                0.00 |       5561.00
+ Orthopedics               |           2026 | Κ15Χ     | Ethniki Insurance  |                     1 |            2013.00 |             3019.50 |       5032.50
+ Orthopedics               |           2026 | Κ30Χ     | Eurolife FFH       |                     1 |             447.00 |                0.00 |        447.00
+ Orthopedics               |           2026 | Κ36Χ     | NN Hellas          |                     1 |             374.00 |                0.00 |        374.00
+ Orthopedics               |           2026 | Κ38Χ     | Groupama           |                     1 |             627.00 |             3762.00 |       4389.00
+ Orthopedics               |           2026 | Μ04Χ     | AXA                |                     1 |            6611.00 |                0.00 |       6611.00
+ Orthopedics               |           2026 | Μ11Α     | EOPYY              |                     1 |            4045.00 |                0.00 |       4045.00
+ Orthopedics               |           2026 | Μ18Α     | Allianz            |                     1 |             743.00 |             1486.00 |       2229.00
+ Orthopedics               |           2026 | Μ27Μ     | Ethniki Insurance  |                     1 |            2179.00 |                0.00 |       2179.00
+ Orthopedics               |           2026 | Μ28Μ     | Uninsured          |                     1 |            2639.00 |                0.00 |       2639.00
+ Orthopedics               |           2026 | Μ65Μ     | AXA                |                     1 |             256.00 |                0.00 |        256.00
+ Orthopedics               |           2026 | Μ65Μ     | ERGO               |                     1 |             256.00 |                0.00 |        256.00
+ Orthopedics               |           2026 | Μ66Χ     | Ethniki Insurance  |                     1 |             652.00 |                0.00 |        652.00
+ Orthopedics               |           2026 | Μ67Χ     | Interamerican      |                     1 |             996.00 |              569.16 |       1565.16
+ Orthopedics               |           2026 | Μ68Α     | Eurolife FFH       |                     1 |             151.00 |             1057.00 |       1208.00
+ Orthopedics               |           2026 | Μ68Μ     | NN Hellas          |                     1 |            1712.00 |                0.00 |       1712.00
+ Orthopedics               |           2026 | Ν23Α     | Interamerican      |                     1 |            2109.00 |                0.00 |       2109.00
+ Orthopedics               |           2026 | Ν38Χ     | Allianz            |                     1 |             879.00 |                0.00 |        879.00
+ Orthopedics               |           2026 | Ξ21Μ     | Allianz            |                     1 |            1136.00 |                0.00 |       1136.00
+ Orthopedics               |           2026 | Ξ21Χ     | Eurolife FFH       |                     1 |             315.00 |             1260.00 |       1575.00
+ Orthopedics               |           2026 | Ο20Χ     | AIG                |                     1 |            1035.00 |              517.50 |       1552.50
+ Orthopedics               |           2026 | Π27Α     | Eurolife FFH       |                     1 |             265.00 |             1060.00 |       1325.00
+ Orthopedics               |           2026 | Π50Χ     | AXA                |                     1 |             374.00 |                0.00 |        374.00
+ Orthopedics               |           2026 | Π50Χ     | Generali           |                     1 |             374.00 |              561.00 |        935.00
+ Orthopedics               |           2026 | Ρ20Μ     | NN Hellas          |                     1 |            2514.00 |                0.00 |       2514.00
+ Orthopedics               |           2026 | Σ01Μ     | Groupama           |                     1 |            8558.00 |                0.00 |       8558.00
+ Orthopedics               |           2026 | Σ22Χ     | Uninsured          |                     1 |             638.00 |              319.00 |        957.00
+ Orthopedics               |           2026 | Τ27Μα    | ERGO               |                     1 |            3076.00 |                0.00 |       3076.00
+ Orthopedics               |           2026 | Υ20Μβ    | Eurolife FFH       |                     1 |              13.00 |                0.00 |         13.00
+ Orthopedics               |           2026 | Φ02Χ     | Groupama           |                     1 |            8412.00 |                0.00 |       8412.00
+ Orthopedics               |           2026 | Φ27Μ     | Uninsured          |                     1 |            3631.00 |                0.00 |       3631.00
+ Orthopedics               |           2026 | Χ43Α     | AIG                |                     1 |            2568.00 |                0.00 |       2568.00
+ Orthopedics               |           2026 | Χ46Α     | Allianz            |                     1 |            4171.00 |                0.00 |       4171.00
+ Orthopedics               |           2026 | Ω04Χ     | NN Hellas          |                     1 |            1934.00 |                0.00 |       1934.00
+ Pathology                 |           2025 | S21Μ     | Generali           |                     1 |             887.00 |                0.00 |        887.00
+ Pathology                 |           2025 | Α12Α     | Uninsured          |                     1 |             191.00 |             1146.00 |       1337.00
+ Pathology                 |           2025 | Α27Χ     | NN Hellas          |                     1 |             350.00 |             1050.00 |       1400.00
+ Pathology                 |           2025 | Α35Μβ    | Interamerican      |                     1 |             973.00 |                0.00 |        973.00
+ Pathology                 |           2025 | Γ08Α     | Eurolife FFH       |                     1 |             719.00 |              719.00 |       1438.00
+ Pathology                 |           2025 | Δ09Α     | ERGO               |                     1 |             688.00 |                0.00 |        688.00
+ Pathology                 |           2025 | Δ20Χ     | ERGO               |                     1 |            1471.00 |                0.00 |       1471.00
+ Pathology                 |           2025 | Ε09Β     | ERGO               |                     1 |            9669.00 |             2417.26 |      12086.26
+ Pathology                 |           2025 | Ζ03Α     | Groupama           |                     1 |            2312.00 |                0.00 |       2312.00
+ Pathology                 |           2025 | Η06Μ     | AXA                |                     1 |            4646.00 |                0.00 |       4646.00
+ Pathology                 |           2025 | Η07Χ     | Ethniki Insurance  |                     1 |            2037.00 |                0.00 |       2037.00
+ Pathology                 |           2025 | Η41Χ     | AIG                |                     1 |             872.00 |                0.00 |        872.00
+ Pathology                 |           2025 | Η43Χ     | Eurolife FFH       |                     1 |             521.00 |              781.50 |       1302.50
+ Pathology                 |           2025 | Θ06Μ     | Groupama           |                     1 |             262.00 |                0.00 |        262.00
+ Pathology                 |           2025 | Θ20Μ     | Eurolife FFH       |                     1 |            4296.00 |                0.00 |       4296.00
+ Pathology                 |           2025 | Ι21Α     | Interamerican      |                     1 |            1089.00 |                0.00 |       1089.00
+ Pathology                 |           2025 | Ι22Χ     | Allianz            |                     1 |             366.00 |                0.00 |        366.00
+ Pathology                 |           2025 | Κ38Χ     | ERGO               |                     1 |             627.00 |              627.00 |       1254.00
+ Pathology                 |           2025 | Κ43Μ     | AXA                |                     1 |            1471.00 |                0.00 |       1471.00
+ Pathology                 |           2025 | Λ05Α     | AXA                |                     1 |             334.00 |             1336.00 |       1670.00
+ Pathology                 |           2025 | Μ04Μ     | NN Hellas          |                     1 |            7042.00 |                0.00 |       7042.00
+ Pathology                 |           2025 | Μ09Μ     | Generali           |                     1 |            1472.00 |                0.00 |       1472.00
+ Pathology                 |           2025 | Μ10Χ     | AIG                |                     1 |            1908.00 |             1908.00 |       3816.00
+ Pathology                 |           2025 | Μ12Μα    | Allianz            |                     1 |            5478.00 |                0.00 |       5478.00
+ Pathology                 |           2025 | Μ63Χ     | AXA                |                     1 |             444.00 |              666.00 |       1110.00
+ Pathology                 |           2025 | Μ64Μ     | Groupama           |                     1 |            2669.00 |                0.00 |       2669.00
+ Pathology                 |           2025 | Ν12Χ     | Eurolife FFH       |                     1 |             372.00 |                0.00 |        372.00
+ Pathology                 |           2025 | Ν20Μ     | Groupama           |                     1 |            6919.00 |                0.00 |       6919.00
+ Pathology                 |           2025 | Ν24Μ     | ERGO               |                     1 |            2389.00 |                0.00 |       2389.00
+ Pathology                 |           2025 | Ν28Μ     | Uninsured          |                     1 |            1907.00 |                0.00 |       1907.00
+ Pathology                 |           2025 | Ν32Μ     | EOPYY              |                     1 |            3175.00 |                0.00 |       3175.00
+ Pathology                 |           2025 | Ξ01Α     | Ethniki Insurance  |                     1 |            3476.00 |                0.00 |       3476.00
+ Pathology                 |           2025 | Ο12Α     | AIG                |                     1 |             583.00 |             4664.00 |       5247.00
+ Pathology                 |           2025 | Ο16Α     | Allianz            |                     1 |             592.00 |              592.00 |       1184.00
+ Pathology                 |           2025 | Ο16Α     | Interamerican      |                     1 |             592.00 |              592.00 |       1184.00
+ Pathology                 |           2025 | Ο23Α     | NN Hellas          |                     1 |             420.00 |              840.00 |       1260.00
+ Pathology                 |           2025 | Π01Μ     | Groupama           |                     1 |            6489.00 |                0.00 |       6489.00
+ Pathology                 |           2025 | Π07Χ     | Uninsured          |                     1 |             983.00 |              491.50 |       1474.50
+ Pathology                 |           2025 | Π28Μ     | EOPYY              |                     1 |            2062.00 |                0.00 |       2062.00
+ Pathology                 |           2025 | Π47Μ     | Interamerican      |                     1 |            1121.00 |                0.00 |       1121.00
+ Pathology                 |           2025 | Σ20Μ     | ERGO               |                     1 |            7435.00 |                0.00 |       7435.00
+ Pathology                 |           2025 | Τ06Μ     | AXA                |                     1 |           15128.00 |                0.00 |      15128.00
+ Pathology                 |           2025 | Τ24Α     | ERGO               |                     1 |            5818.00 |                0.00 |       5818.00
+ Pathology                 |           2025 | Τ25Χ     | Generali           |                     1 |            2646.00 |                0.00 |       2646.00
+ Pathology                 |           2025 | Τ27Χ     | Uninsured          |                     1 |             428.00 |              142.67 |        570.67
+ Pathology                 |           2025 | Υ06Χ     | Ethniki Insurance  |                     1 |             808.00 |             2424.00 |       3232.00
+ Pathology                 |           2025 | Υ06Χ     | Groupama           |                     1 |             808.00 |             2424.00 |       3232.00
+ Pathology                 |           2025 | Υ07Μ     | Eurolife FFH       |                     1 |            1218.00 |                0.00 |       1218.00
+ Pathology                 |           2025 | Υ25Χ     | ERGO               |                     1 |             405.00 |              405.00 |        810.00
+ Pathology                 |           2025 | Φ26Χ     | Generali           |                     1 |             828.00 |             2484.00 |       3312.00
+ Pathology                 |           2025 | Φ27Μ     | NN Hellas          |                     1 |            3631.00 |                0.00 |       3631.00
+ Pathology                 |           2025 | Φ40Α     | EOPYY              |                     1 |            3649.00 |              521.29 |       4170.29
+ Pathology                 |           2025 | Φ60Μ     | AIG                |                     1 |            1144.00 |              490.29 |       1634.29
+ Pathology                 |           2025 | Φ61Α     | Uninsured          |                     1 |             280.00 |             1400.00 |       1680.00
+ Pathology                 |           2025 | Φ63Μ     | AXA                |                     1 |            1245.00 |                0.00 |       1245.00
+ Pathology                 |           2025 | Χ43Α     | Generali           |                     1 |            2568.00 |                0.00 |       2568.00
+ Pathology                 |           2025 | Ω01Α     | AXA                |                     1 |              24.00 |               48.00 |         72.00
+ Pathology                 |           2025 | Ω37Β     | Eurolife FFH       |                     1 |             661.00 |                0.00 |        661.00
+ Pathology                 |           2026 | S21Μ     | NN Hellas          |                     1 |             887.00 |                0.00 |        887.00
+ Pathology                 |           2026 | S25Α     | Generali           |                     1 |            1082.00 |                0.00 |       1082.00
+ Pathology                 |           2026 | Ε07Α     | AXA                |                     1 |           26508.00 |                0.00 |      26508.00
+ Pathology                 |           2026 | Ζ02Μ     | Groupama           |                     1 |            7225.00 |                0.00 |       7225.00
+ Pathology                 |           2026 | Θ04Μ     | Interamerican      |                     1 |            4378.00 |                0.00 |       4378.00
+ Pathology                 |           2026 | Κ12Μ     | Ethniki Insurance  |                     1 |            5465.00 |                0.00 |       5465.00
+ Pathology                 |           2026 | Κ39Χ     | AIG                |                     1 |             327.00 |              327.00 |        654.00
+ Pathology                 |           2026 | Μ19Μ     | ERGO               |                     1 |            2648.00 |                0.00 |       2648.00
+ Pathology                 |           2026 | Μ23Α     | ERGO               |                     1 |             661.00 |                0.00 |        661.00
+ Pathology                 |           2026 | Μ65Μ     | ERGO               |                     1 |             256.00 |                0.00 |        256.00
+ Pathology                 |           2026 | Ν29Μ     | Uninsured          |                     1 |             123.00 |               41.00 |        164.00
+ Pathology                 |           2026 | Ξ21Χ     | Interamerican      |                     1 |             315.00 |             1890.00 |       2205.00
+ Pathology                 |           2026 | Π04Χ     | AXA                |                     1 |            1578.00 |                0.00 |       1578.00
+ Pathology                 |           2026 | Π28Α     | Allianz            |                     1 |             290.00 |              290.00 |        580.00
+ Pathology                 |           2026 | Υ06Μ     | Groupama           |                     1 |            2381.00 |                0.00 |       2381.00
+ Pathology                 |           2026 | Ω02Μβ    | AXA                |                     1 |             257.00 |                0.00 |        257.00
+ Pediatrics                |           2025 | Α29Μ     | Groupama           |                     1 |             872.00 |              436.00 |       1308.00
+ Pediatrics                |           2025 | Α35Μα    | Interamerican      |                     1 |            1556.00 |                0.00 |       1556.00
+ Pediatrics                |           2025 | Ε06Χα    | AIG                |                     1 |           20597.00 |                0.00 |      20597.00
+ Pediatrics                |           2025 | Ζ02Χ     | AIG                |                     1 |            2979.00 |                0.00 |       2979.00
+ Pediatrics                |           2025 | Ζ20Α     | Uninsured          |                     1 |             241.00 |              964.00 |       1205.00
+ Pediatrics                |           2025 | Η02Χ     | AXA                |                     1 |            2079.00 |                0.00 |       2079.00
+ Pediatrics                |           2025 | Η40Μβ    | AIG                |                     1 |             965.00 |                0.00 |        965.00
+ Pediatrics                |           2025 | Η44Μ     | Eurolife FFH       |                     1 |            1198.00 |              199.67 |       1397.67
+ Pediatrics                |           2025 | Θ08Α     | Uninsured          |                     1 |             952.00 |             1904.00 |       2856.00
+ Pediatrics                |           2025 | Θ09Χα    | AIG                |                     1 |             208.00 |                0.00 |        208.00
+ Pediatrics                |           2025 | Κ31Μ     | ERGO               |                     1 |            2038.00 |                0.00 |       2038.00
+ Pediatrics                |           2025 | Μ06Α     | Generali           |                     1 |            1998.00 |                0.00 |       1998.00
+ Pediatrics                |           2025 | Μ29Α     | NN Hellas          |                     1 |            1903.00 |             3806.00 |       5709.00
+ Pediatrics                |           2025 | Ν42Μα    | ERGO               |                     1 |            5805.00 |                0.00 |       5805.00
+ Pediatrics                |           2025 | Ο10Α     | NN Hellas          |                     1 |             650.00 |                0.00 |        650.00
+ Pediatrics                |           2025 | Ο11Α     | ERGO               |                     1 |             639.00 |             3834.00 |       4473.00
+ Pediatrics                |           2025 | Ο16Α     | Interamerican      |                     1 |             592.00 |              592.00 |       1184.00
+ Pediatrics                |           2025 | Ο20Χ     | Eurolife FFH       |                     1 |            1035.00 |                0.00 |       1035.00
+ Pediatrics                |           2025 | Π03Χα    | NN Hellas          |                     1 |            2826.00 |                0.00 |       2826.00
+ Pediatrics                |           2025 | Π04Μβ    | Uninsured          |                     1 |             271.00 |                0.00 |        271.00
+ Pediatrics                |           2025 | Π12Μα    | EOPYY              |                     1 |            4177.00 |                0.00 |       4177.00
+ Pediatrics                |           2025 | Π28Μ     | AXA                |                     1 |            2062.00 |                0.00 |       2062.00
+ Pediatrics                |           2025 | Ρ10Μα    | Groupama           |                     1 |            7118.00 |                0.00 |       7118.00
+ Pediatrics                |           2025 | Τ01Α     | Eurolife FFH       |                     1 |            1381.00 |             5524.00 |       6905.00
+ Pediatrics                |           2025 | Τ26Μα    | EOPYY              |                     1 |            3719.00 |                0.00 |       3719.00
+ Pediatrics                |           2025 | Φ03Α     | ERGO               |                     1 |            5386.00 |                0.00 |       5386.00
+ Pediatrics                |           2025 | Φ25Χ     | NN Hellas          |                     1 |             700.00 |             2100.00 |       2800.00
+ Pediatrics                |           2025 | Χ42Μ     | AIG                |                     1 |            3268.00 |                0.00 |       3268.00
+ Pediatrics                |           2025 | Χ45Α     | Ethniki Insurance  |                     1 |             965.00 |                0.00 |        965.00
+ Pediatrics                |           2026 | Α22Μα    | Eurolife FFH       |                     1 |            1938.00 |                0.00 |       1938.00
+ Pediatrics                |           2026 | Α25Μ     | Ethniki Insurance  |                     1 |            1766.00 |                0.00 |       1766.00
+ Pediatrics                |           2026 | Α27Μ     | Allianz            |                     1 |             864.00 |              432.00 |       1296.00
+ Pediatrics                |           2026 | Γ06Χ     | Generali           |                     1 |            1264.00 |                0.00 |       1264.00
+ Pediatrics                |           2026 | Δ20Μ     | Uninsured          |                     1 |            2669.00 |                0.00 |       2669.00
+ Pediatrics                |           2026 | Δ22Χ     | AXA                |                     1 |             688.00 |              344.00 |       1032.00
+ Pediatrics                |           2026 | Η43Χ     | Ethniki Insurance  |                     1 |             521.00 |              521.00 |       1042.00
+ Pediatrics                |           2026 | Θ23Χ     | NN Hellas          |                     1 |             405.00 |                0.00 |        405.00
+ Pediatrics                |           2026 | Μ05Χ     | Uninsured          |                     1 |            6101.00 |                0.00 |       6101.00
+ Pediatrics                |           2026 | Μ65Χ     | Generali           |                     1 |            1222.00 |                0.00 |       1222.00
+ Pediatrics                |           2026 | Ν10Α     | NN Hellas          |                     1 |             163.00 |                0.00 |        163.00
+ Pediatrics                |           2026 | Ν82Μβ    | Eurolife FFH       |                     1 |            2475.00 |                0.00 |       2475.00
+ Pediatrics                |           2026 | Ο15Β     | Groupama           |                     1 |             687.00 |             6183.00 |       6870.00
+ Pediatrics                |           2026 | Π40Χ     | AIG                |                     1 |             677.00 |              338.50 |       1015.50
+ Pediatrics                |           2026 | Π44Μ     | Uninsured          |                     1 |            1097.00 |                0.00 |       1097.00
+ Pediatrics                |           2026 | Τ27Χ     | NN Hellas          |                     1 |             428.00 |              428.01 |        856.01
+ Pediatrics                |           2026 | Φ24Μ     | AIG                |                     1 |            2785.00 |                0.00 |       2785.00
+ Pediatrics                |           2026 | Ω14Α     | AIG                |                     1 |             740.00 |                0.00 |        740.00
+ Pediatrics                |           2026 | Ω20Α     | AIG                |                     1 |             557.00 |             1114.00 |       1671.00
+ Pulmonology               |           2025 | S20Χ     | ERGO               |                     1 |            1759.00 |                0.00 |       1759.00
+ Pulmonology               |           2025 | S23Χ     | AXA                |                     1 |             848.00 |                0.00 |        848.00
+ Pulmonology               |           2025 | S23Χ     | ERGO               |                     1 |             848.00 |                0.00 |        848.00
+ Pulmonology               |           2025 | S25Α     | EOPYY              |                     1 |            1082.00 |                0.00 |       1082.00
+ Pulmonology               |           2025 | W11Α     | ERGO               |                     1 |             991.00 |              991.00 |       1982.00
+ Pulmonology               |           2025 | Α27Χ     | AXA                |                     1 |             350.00 |              350.00 |        700.00
+ Pulmonology               |           2025 | Α29Μ     | AIG                |                     1 |             872.00 |                0.00 |        872.00
+ Pulmonology               |           2025 | Α35Μβ    | Interamerican      |                     1 |             973.00 |                0.00 |        973.00
+ Pulmonology               |           2025 | Α36Α     | ERGO               |                     1 |            2412.00 |                0.00 |       2412.00
+ Pulmonology               |           2025 | Β03Α     | AXA                |                     2 |            1542.00 |             1927.50 |       3469.50
+ Pulmonology               |           2025 | Β04Α     | Generali           |                     1 |             652.00 |             5868.00 |       6520.00
+ Pulmonology               |           2025 | Β06Χ     | AXA                |                     1 |            1659.00 |              829.50 |       2488.50
+ Pulmonology               |           2025 | Β06Χ     | Ethniki Insurance  |                     1 |            1659.00 |             2488.50 |       4147.50
+ Pulmonology               |           2025 | Β21Α     | ERGO               |                     1 |             459.00 |              459.00 |        918.00
+ Pulmonology               |           2025 | Γ10Α     | AIG                |                     1 |             425.00 |             3400.00 |       3825.00
+ Pulmonology               |           2025 | Δ01Μ     | NN Hellas          |                     1 |            8557.00 |                0.00 |       8557.00
+ Pulmonology               |           2025 | Δ12Χβ    | Groupama           |                     1 |            1774.00 |                0.00 |       1774.00
+ Pulmonology               |           2025 | Ζ01Α     | Uninsured          |                     1 |           36068.00 |                0.00 |      36068.00
+ Pulmonology               |           2025 | Η08Μ     | Allianz            |                     1 |            2111.00 |                0.00 |       2111.00
+ Pulmonology               |           2025 | Η42Μ     | AIG                |                     1 |            1938.00 |                0.00 |       1938.00
+ Pulmonology               |           2025 | Θ01Χ     | AIG                |                     1 |            2801.00 |                0.00 |       2801.00
+ Pulmonology               |           2025 | Θ09Χβ    | Interamerican      |                     1 |            1765.00 |                0.00 |       1765.00
+ Pulmonology               |           2025 | Θ24Χ     | Interamerican      |                     1 |             669.00 |              669.00 |       1338.00
+ Pulmonology               |           2025 | Θ25Χ     | ERGO               |                     1 |             731.00 |              731.01 |       1462.01
+ Pulmonology               |           2025 | Θ25Χ     | Interamerican      |                     1 |             731.00 |              487.34 |       1218.34
+ Pulmonology               |           2025 | Κ03Χ     | Uninsured          |                     1 |           11734.00 |                0.00 |      11734.00
+ Pulmonology               |           2025 | Κ06Μ     | Eurolife FFH       |                     1 |            7182.00 |                0.00 |       7182.00
+ Pulmonology               |           2025 | Κ09Χ     | AIG                |                     1 |            2386.00 |                0.00 |       2386.00
+ Pulmonology               |           2025 | Κ13Μ     | ERGO               |                     1 |            3969.00 |                0.00 |       3969.00
+ Pulmonology               |           2025 | Κ21Μ     | Allianz            |                     1 |             368.00 |                0.00 |        368.00
+ Pulmonology               |           2025 | Κ34Μ     | Allianz            |                     1 |            2233.00 |                0.00 |       2233.00
+ Pulmonology               |           2025 | Κ41Μ     | AXA                |                     2 |            9602.00 |                0.00 |       9602.00
+ Pulmonology               |           2025 | Κ46Χ     | Eurolife FFH       |                     1 |             444.00 |              222.00 |        666.00
+ Pulmonology               |           2025 | Λ02Μ     | AIG                |                     1 |            1743.00 |                0.00 |       1743.00
+ Pulmonology               |           2025 | Λ03Μ     | Uninsured          |                     1 |            1249.00 |              416.33 |       1665.33
+ Pulmonology               |           2025 | Λ21Α     | Ethniki Insurance  |                     1 |             420.00 |              840.00 |       1260.00
+ Pulmonology               |           2025 | Μ03Μ     | Interamerican      |                     1 |            6307.00 |                0.00 |       6307.00
+ Pulmonology               |           2025 | Μ03Μ     | Uninsured          |                     1 |            6307.00 |                0.00 |       6307.00
+ Pulmonology               |           2025 | Μ09Χ     | EOPYY              |                     1 |            9783.00 |                0.00 |       9783.00
+ Pulmonology               |           2025 | Μ11Α     | AIG                |                     1 |            4045.00 |             7078.75 |      11123.75
+ Pulmonology               |           2025 | Μ13Χ     | AIG                |                     1 |            2083.00 |                0.00 |       2083.00
+ Pulmonology               |           2025 | Μ27Μ     | Uninsured          |                     1 |            2179.00 |                0.00 |       2179.00
+ Pulmonology               |           2025 | Μ32Μβ    | AIG                |                     1 |            9963.00 |                0.00 |       9963.00
+ Pulmonology               |           2025 | Μ63Χ     | AIG                |                     1 |             444.00 |              444.00 |        888.00
+ Pulmonology               |           2025 | Μ63Χ     | EOPYY              |                     1 |             444.00 |              222.00 |        666.00
+ Pulmonology               |           2025 | Μ64Μ     | AIG                |                     1 |            2669.00 |                0.00 |       2669.00
+ Pulmonology               |           2025 | Ν04Χ     | Uninsured          |                     1 |             247.00 |                0.00 |        247.00
+ Pulmonology               |           2025 | Ν21Χ     | Uninsured          |                     1 |            1885.00 |                0.00 |       1885.00
+ Pulmonology               |           2025 | Ν26Μ     | AXA                |                     1 |            2062.00 |                0.00 |       2062.00
+ Pulmonology               |           2025 | Ν27Μα    | Generali           |                     1 |            2529.00 |                0.00 |       2529.00
+ Pulmonology               |           2025 | Ν30Α     | NN Hellas          |                     1 |             420.00 |             1260.00 |       1680.00
+ Pulmonology               |           2025 | Ν31Χ     | Uninsured          |                     1 |             280.00 |              840.00 |       1120.00
+ Pulmonology               |           2025 | Ν33Α     | ERGO               |                     1 |             739.00 |                0.00 |        739.00
+ Pulmonology               |           2025 | Ν34Μ     | AIG                |                     1 |            1012.00 |                0.00 |       1012.00
+ Pulmonology               |           2025 | Ν38Μ     | AXA                |                     1 |            2327.00 |                0.00 |       2327.00
+ Pulmonology               |           2025 | Ν41Μ     | Eurolife FFH       |                     1 |            1837.00 |                0.00 |       1837.00
+ Pulmonology               |           2025 | Ο11Α     | AXA                |                     1 |             639.00 |             1278.00 |       1917.00
+ Pulmonology               |           2025 | Ο15Β     | Uninsured          |                     1 |             687.00 |             2061.00 |       2748.00
+ Pulmonology               |           2025 | Ο17Α     | AXA                |                     1 |            2423.00 |                0.00 |       2423.00
+ Pulmonology               |           2025 | Π05Χ     | ERGO               |                     1 |            1379.00 |                0.00 |       1379.00
+ Pulmonology               |           2025 | Π26Α     | Generali           |                     1 |             330.00 |              990.00 |       1320.00
+ Pulmonology               |           2025 | Π27Χ     | Ethniki Insurance  |                     1 |             988.00 |             1729.00 |       2717.00
+ Pulmonology               |           2025 | Π28Μ     | Interamerican      |                     1 |            2062.00 |                0.00 |       2062.00
+ Pulmonology               |           2025 | Π28Χ     | AXA                |                     1 |             872.00 |                0.00 |        872.00
+ Pulmonology               |           2025 | Π44Χ     | Ethniki Insurance  |                     1 |            1073.00 |             3755.50 |       4828.50
+ Pulmonology               |           2025 | Π44Χ     | Generali           |                     1 |            1073.00 |             1073.00 |       2146.00
+ Pulmonology               |           2025 | Π47Μ     | Uninsured          |                     1 |            1121.00 |                0.00 |       1121.00
+ Pulmonology               |           2025 | Ρ05Χ     | EOPYY              |                     1 |             214.00 |                0.00 |        214.00
+ Pulmonology               |           2025 | Ρ10Μα    | Uninsured          |                     1 |            7118.00 |                0.00 |       7118.00
+ Pulmonology               |           2025 | Ρ21Μ     | Allianz            |                     1 |            1556.00 |                0.00 |       1556.00
+ Pulmonology               |           2025 | Ρ21Μ     | AXA                |                     1 |            1556.00 |                0.00 |       1556.00
+ Pulmonology               |           2025 | Ρ22Χ     | AIG                |                     1 |             444.00 |                0.00 |        444.00
+ Pulmonology               |           2025 | Ρ24Μα    | AXA                |                     1 |            3773.00 |                0.00 |       3773.00
+ Pulmonology               |           2025 | Σ02Χα    | Allianz            |                     1 |            3109.00 |              388.63 |       3497.63
+ Pulmonology               |           2025 | Σ03Μ     | ERGO               |                     1 |            6097.00 |                0.00 |       6097.00
+ Pulmonology               |           2025 | Υ02Μ     | Interamerican      |                     1 |            3111.00 |                0.00 |       3111.00
+ Pulmonology               |           2025 | Υ20Α     | AXA                |                     1 |             767.00 |             3068.00 |       3835.00
+ Pulmonology               |           2025 | Υ27Μ     | AXA                |                     1 |            1673.00 |              239.00 |       1912.00
+ Pulmonology               |           2025 | Φ01Α     | Eurolife FFH       |                     1 |           12204.00 |                0.00 |      12204.00
+ Pulmonology               |           2025 | Φ02Μ     | AIG                |                     1 |            9426.00 |                0.00 |       9426.00
+ Pulmonology               |           2025 | Φ03Α     | ERGO               |                     1 |            5386.00 |                0.00 |       5386.00
+ Pulmonology               |           2025 | Φ24Μ     | Eurolife FFH       |                     1 |            2785.00 |                0.00 |       2785.00
+ Pulmonology               |           2025 | Φ62Χ     | Uninsured          |                     1 |             374.00 |              187.00 |        561.00
+ Pulmonology               |           2025 | Φ63Χ     | Allianz            |                     1 |             506.00 |              337.34 |        843.34
+ Pulmonology               |           2025 | Χ46Α     | Ethniki Insurance  |                     1 |            4171.00 |                0.00 |       4171.00
+ Pulmonology               |           2025 | Χ48Α     | Generali           |                     1 |            3261.00 |                0.00 |       3261.00
+ Pulmonology               |           2025 | Χ48Α     | NN Hellas          |                     1 |            3261.00 |                0.00 |       3261.00
+ Pulmonology               |           2025 | Ω02Χ     | Generali           |                     1 |            1609.00 |             4827.00 |       6436.00
+ Pulmonology               |           2025 | Ω06Α     | ERGO               |                     1 |            1125.00 |             3375.00 |       4500.00
+ Pulmonology               |           2025 | Ω31Α     | AXA                |                     1 |             444.00 |             1776.00 |       2220.00
+ Pulmonology               |           2026 | Α31Χ     | Eurolife FFH       |                     1 |             910.00 |                0.00 |        910.00
+ Pulmonology               |           2026 | Δ13Χ     | Ethniki Insurance  |                     1 |             915.00 |                0.00 |        915.00
+ Pulmonology               |           2026 | Δ25Χ     | Allianz            |                     1 |             350.00 |              350.00 |        700.00
+ Pulmonology               |           2026 | Κ06Χ     | AXA                |                     1 |            5077.00 |                0.00 |       5077.00
+ Pulmonology               |           2026 | Κ13Μ     | Ethniki Insurance  |                     1 |            3969.00 |                0.00 |       3969.00
+ Pulmonology               |           2026 | Κ15Μ     | Uninsured          |                     1 |            2728.00 |             2046.00 |       4774.00
+ Pulmonology               |           2026 | Κ21Χ     | AXA                |                     1 |            1494.00 |                0.00 |       1494.00
+ Pulmonology               |           2026 | Λ01Μ     | AXA                |                     1 |            2171.00 |             1240.56 |       3411.56
+ Pulmonology               |           2026 | Μ05Μ     | Groupama           |                     1 |            7705.00 |                0.00 |       7705.00
+ Pulmonology               |           2026 | Μ12Χ     | AIG                |                     1 |            1665.00 |                0.00 |       1665.00
+ Pulmonology               |           2026 | Μ73Μ     | Uninsured          |                     1 |            2249.00 |                0.00 |       2249.00
+ Pulmonology               |           2026 | Μ74Α     | Interamerican      |                     1 |             350.00 |              875.00 |       1225.00
+ Pulmonology               |           2026 | Ν36Χ     | Eurolife FFH       |                     1 |             482.00 |              964.00 |       1446.00
+ Pulmonology               |           2026 | Ο01Α     | AIG                |                     1 |            1395.00 |             2790.00 |       4185.00
+ Pulmonology               |           2026 | Π05Χ     | Ethniki Insurance  |                     1 |            1379.00 |                0.00 |       1379.00
+ Pulmonology               |           2026 | Π50Χ     | Groupama           |                     1 |             374.00 |                0.00 |        374.00
+ Pulmonology               |           2026 | Ρ05Μβ    | Allianz            |                     1 |             305.00 |                0.00 |        305.00
+ Pulmonology               |           2026 | Ρ20Α     | EOPYY              |                     1 |            6023.00 |                0.00 |       6023.00
+ Pulmonology               |           2026 | Τ23Α     | Allianz            |                     1 |            7359.00 |                0.00 |       7359.00
+ Pulmonology               |           2026 | Υ20Χ     | AXA                |                     1 |             584.00 |                0.00 |        584.00
+ Pulmonology               |           2026 | Χ43Α     | ERGO               |                     1 |            2568.00 |                0.00 |       2568.00
+ Pulmonology               |           2026 | Χ46Α     | AIG                |                     1 |            4171.00 |                0.00 |       4171.00
+ Urology                   |           2025 | S01Α     | Generali           |                     1 |             540.00 |              540.00 |       1080.00
+ Urology                   |           2025 | S25Α     | Ethniki Insurance  |                     1 |            1082.00 |                0.00 |       1082.00
+ Urology                   |           2025 | W11Α     | AXA                |                     1 |             991.00 |              495.50 |       1486.50
+ Urology                   |           2025 | W13Α     | AIG                |                     1 |             685.00 |              685.00 |       1370.00
+ Urology                   |           2025 | Α02Μβ    | Generali           |                     1 |            1595.00 |              319.00 |       1914.00
+ Urology                   |           2025 | Α12Χ     | Interamerican      |                     1 |            1798.00 |                0.00 |       1798.00
+ Urology                   |           2025 | Α22Μα    | AIG                |                     1 |            1938.00 |                0.00 |       1938.00
+ Urology                   |           2025 | Α24Μ     | Interamerican      |                     1 |            1821.00 |                0.00 |       1821.00
+ Urology                   |           2025 | Α26Μα    | Uninsured          |                     1 |            2467.00 |                0.00 |       2467.00
+ Urology                   |           2025 | Β03Α     | Ethniki Insurance  |                     1 |             771.00 |              385.50 |       1156.50
+ Urology                   |           2025 | Β22Α     | Uninsured          |                     1 |             545.00 |                0.00 |        545.00
+ Urology                   |           2025 | Β24Α     | Groupama           |                     1 |             296.00 |              592.00 |        888.00
+ Urology                   |           2025 | Γ04Χ     | NN Hellas          |                     1 |            1525.00 |             2541.65 |       4066.65
+ Urology                   |           2025 | Γ05Μ     | Uninsured          |                     1 |            2147.00 |                0.00 |       2147.00
+ Urology                   |           2025 | Γ07Α     | AIG                |                     1 |             742.00 |             5936.00 |       6678.00
+ Urology                   |           2025 | Δ07Α     | AIG                |                     1 |             605.00 |             4235.00 |       4840.00
+ Urology                   |           2025 | Δ14Α     | Uninsured          |                     1 |            4198.00 |                0.00 |       4198.00
+ Urology                   |           2025 | Δ29Μ     | EOPYY              |                     1 |            2171.00 |                0.00 |       2171.00
+ Urology                   |           2025 | Ε03Α     | Generali           |                     1 |           50379.00 |                0.00 |      50379.00
+ Urology                   |           2025 | Ε08Μ     | AXA                |                     1 |           10017.00 |                0.00 |      10017.00
+ Urology                   |           2025 | Ε08Μ     | ERGO               |                     1 |           10017.00 |                0.00 |      10017.00
+ Urology                   |           2025 | Ε09Β     | AIG                |                     1 |            9669.00 |                0.00 |       9669.00
+ Urology                   |           2025 | Ε11Χ     | Groupama           |                     1 |            5302.00 |                0.00 |       5302.00
+ Urology                   |           2025 | Ζ21Α     | Interamerican      |                     1 |             848.00 |              636.00 |       1484.00
+ Urology                   |           2025 | Ι24Α     | Generali           |                     1 |             599.00 |                0.00 |        599.00
+ Urology                   |           2025 | Κ09Μα    | AIG                |                     1 |            6413.00 |                0.00 |       6413.00
+ Urology                   |           2025 | Κ09Μβ    | Groupama           |                     1 |            3617.00 |                0.00 |       3617.00
+ Urology                   |           2025 | Κ12Χ     | AIG                |                     1 |            3694.00 |                0.00 |       3694.00
+ Urology                   |           2025 | Κ21Χ     | Generali           |                     1 |            1494.00 |             1120.50 |       2614.50
+ Urology                   |           2025 | Κ34Χ     | Groupama           |                     1 |             981.00 |                0.00 |        981.00
+ Urology                   |           2025 | Κ40Χ     | Interamerican      |                     1 |             794.00 |              794.01 |       1588.01
+ Urology                   |           2025 | Κ47Α     | Ethniki Insurance  |                     1 |            2423.00 |                0.00 |       2423.00
+ Urology                   |           2025 | Λ02Χ     | AXA                |                     1 |            1175.00 |                0.00 |       1175.00
+ Urology                   |           2025 | Λ21Α     | ERGO               |                     1 |             420.00 |              630.00 |       1050.00
+ Urology                   |           2025 | Μ05Μ     | ERGO               |                     1 |            7705.00 |                0.00 |       7705.00
+ Urology                   |           2025 | Μ13Χ     | Eurolife FFH       |                     1 |            2083.00 |             2083.00 |       4166.00
+ Urology                   |           2025 | Μ30Α     | Uninsured          |                     1 |             891.00 |             1782.00 |       2673.00
+ Urology                   |           2025 | Μ31Μ     | Eurolife FFH       |                     1 |           11675.00 |                0.00 |      11675.00
+ Urology                   |           2025 | Μ31Χ     | NN Hellas          |                     1 |            8533.00 |                0.00 |       8533.00
+ Urology                   |           2025 | Μ63Μ     | Interamerican      |                     1 |            1198.00 |                0.00 |       1198.00
+ Urology                   |           2025 | Μ68Α     | Interamerican      |                     1 |             151.00 |              453.00 |        604.00
+ Urology                   |           2025 | Μ72Μ     | Eurolife FFH       |                     1 |            1681.00 |                0.00 |       1681.00
+ Urology                   |           2025 | Μ75Μ     | Uninsured          |                     1 |            1455.00 |                0.00 |       1455.00
+ Urology                   |           2025 | Μ76Χ     | ERGO               |                     1 |             389.00 |              778.00 |       1167.00
+ Urology                   |           2025 | Μ77Μ     | AXA                |                     1 |            2257.00 |                0.00 |       2257.00
+ Urology                   |           2025 | Ν11Α     | Eurolife FFH       |                     1 |            1331.00 |                0.00 |       1331.00
+ Urology                   |           2025 | Ν21Χ     | Ethniki Insurance  |                     1 |            1885.00 |                0.00 |       1885.00
+ Urology                   |           2025 | Ν24Μ     | Interamerican      |                     1 |            2389.00 |                0.00 |       2389.00
+ Urology                   |           2025 | Ν24Χ     | Interamerican      |                     1 |            1159.00 |              193.17 |       1352.17
+ Urology                   |           2025 | Ν30Χ     | Groupama           |                     1 |            1191.00 |                0.00 |       1191.00
+ Urology                   |           2025 | Ν34Χ     | ERGO               |                     1 |             374.00 |                0.00 |        374.00
+ Urology                   |           2025 | Ν38Μ     | ERGO               |                     1 |            2327.00 |                0.00 |       2327.00
+ Urology                   |           2025 | Ν40Α     | Interamerican      |                     1 |             272.00 |             2720.00 |       2992.00
+ Urology                   |           2025 | Ν42Μα    | NN Hellas          |                     1 |            5805.00 |                0.00 |       5805.00
+ Urology                   |           2025 | Ν42Μα    | Uninsured          |                     1 |            5805.00 |                0.00 |       5805.00
+ Urology                   |           2025 | Ν82Μβ    | AIG                |                     1 |            2475.00 |                0.00 |       2475.00
+ Urology                   |           2025 | Ξ01Α     | Allianz            |                     1 |            3476.00 |                0.00 |       3476.00
+ Urology                   |           2025 | Ξ20Χα    | AIG                |                     1 |             786.00 |             1048.00 |       1834.00
+ Urology                   |           2025 | Ξ20Χα    | Ethniki Insurance  |                     1 |             786.00 |                0.00 |        786.00
+ Urology                   |           2025 | Ξ20Χβ    | AXA                |                     1 |             257.00 |              257.00 |        514.00
+ Urology                   |           2025 | Π02Μ     | Allianz            |                     1 |            5741.00 |                0.00 |       5741.00
+ Urology                   |           2025 | Π04Μα    | ERGO               |                     1 |            4847.00 |                0.00 |       4847.00
+ Urology                   |           2025 | Π04Μβ    | Uninsured          |                     1 |             271.00 |                0.00 |        271.00
+ Urology                   |           2025 | Π06Α     | AXA                |                     1 |            1037.00 |             1382.68 |       2419.68
+ Urology                   |           2025 | Π27Α     | AIG                |                     1 |             265.00 |             1590.00 |       1855.00
+ Urology                   |           2025 | Π40Μ     | Uninsured          |                     1 |            1673.00 |                0.00 |       1673.00
+ Urology                   |           2025 | Π44Μ     | AXA                |                     1 |            1097.00 |                0.00 |       1097.00
+ Urology                   |           2025 | Ρ10Μβ    | AIG                |                     1 |            2688.00 |                0.00 |       2688.00
+ Urology                   |           2025 | Ρ20Α     | Groupama           |                     1 |            6023.00 |                0.00 |       6023.00
+ Urology                   |           2025 | Ρ21Χ     | Interamerican      |                     1 |             778.00 |              194.50 |        972.50
+ Urology                   |           2025 | Ρ24Μβ    | Interamerican      |                     1 |            1401.00 |                0.00 |       1401.00
+ Urology                   |           2025 | Σ21Μ     | AXA                |                     1 |            3782.00 |                0.00 |       3782.00
+ Urology                   |           2025 | Σ21Χ     | ERGO               |                     1 |            1886.00 |                0.00 |       1886.00
+ Urology                   |           2025 | Σ21Χ     | Groupama           |                     1 |            1886.00 |              754.40 |       2640.40
+ Urology                   |           2025 | Τ20Χ     | Ethniki Insurance  |                     1 |             512.00 |             1536.00 |       2048.00
+ Urology                   |           2025 | Τ24Α     | Groupama           |                     1 |            5818.00 |                0.00 |       5818.00
+ Urology                   |           2025 | Τ27Μα    | Generali           |                     1 |            3076.00 |                0.00 |       3076.00
+ Urology                   |           2025 | Υ03Μβ    | AXA                |                     1 |            4426.00 |                0.00 |       4426.00
+ Urology                   |           2025 | Υ09Μ     | Ethniki Insurance  |                     1 |            4729.00 |                0.00 |       4729.00
+ Urology                   |           2025 | Υ22Α     | Groupama           |                     1 |             482.00 |              482.00 |        964.00
+ Urology                   |           2025 | Υ23Χ     | Eurolife FFH       |                     1 |             560.00 |             1120.02 |       1680.02
+ Urology                   |           2025 | Υ27Χ     | EOPYY              |                     1 |             358.00 |              179.00 |        537.00
+ Urology                   |           2025 | Υ28Α     | Interamerican      |                     1 |             296.00 |              592.00 |        888.00
+ Urology                   |           2025 | Φ62Χ     | Interamerican      |                     1 |             374.00 |              187.00 |        561.00
+ Urology                   |           2025 | Χ40Α     | Interamerican      |                     1 |             140.00 |              420.00 |        560.00
+ Urology                   |           2025 | Χ43Α     | Interamerican      |                     1 |            2568.00 |                0.00 |       2568.00
+ Urology                   |           2025 | Ω02Μβ    | Uninsured          |                     1 |             257.00 |                0.00 |        257.00
+ Urology                   |           2025 | Ω05Α     | Groupama           |                     1 |            1859.00 |                0.00 |       1859.00
+ Urology                   |           2025 | Ω34Α     | ERGO               |                     1 |             288.00 |              864.00 |       1152.00
+ Urology                   |           2026 | Α21Χ     | EOPYY              |                     1 |            1035.00 |                0.00 |       1035.00
+ Urology                   |           2026 | Α22Μβ    | AXA                |                     1 |            1144.00 |                0.00 |       1144.00
+ Urology                   |           2026 | Α28Χ     | Ethniki Insurance  |                     1 |             623.00 |              830.68 |       1453.68
+ Urology                   |           2026 | Α29Χ     | EOPYY              |                     1 |             397.00 |              397.00 |        794.00
+ Urology                   |           2026 | Δ10Α     | AIG                |                     1 |             672.00 |              672.00 |       1344.00
+ Urology                   |           2026 | Δ25Μ     | Uninsured          |                     1 |            1105.00 |                0.00 |       1105.00
+ Urology                   |           2026 | Ε06Χγ    | Groupama           |                     1 |            8261.00 |                0.00 |       8261.00
+ Urology                   |           2026 | Ζ03Α     | ERGO               |                     1 |            2312.00 |              462.40 |       2774.40
+ Urology                   |           2026 | Η07Μ     | AIG                |                     1 |            4299.00 |                0.00 |       4299.00
+ Urology                   |           2026 | Η44Χ     | AXA                |                     1 |             436.00 |                0.00 |        436.00
+ Urology                   |           2026 | Θ01Μ     | Ethniki Insurance  |                     1 |            6202.00 |                0.00 |       6202.00
+ Urology                   |           2026 | Ι20Α     | AIG                |                     1 |             366.00 |              366.00 |        732.00
+ Urology                   |           2026 | Κ01Μ     | Allianz            |                     1 |           16215.00 |                0.00 |      16215.00
+ Urology                   |           2026 | Κ06Μ     | Interamerican      |                     1 |            7182.00 |                0.00 |       7182.00
+ Urology                   |           2026 | Κ07Χ     | Ethniki Insurance  |                     1 |            5354.00 |                0.00 |       5354.00
+ Urology                   |           2026 | Κ13Μ     | ERGO               |                     1 |            3969.00 |                0.00 |       3969.00
+ Urology                   |           2026 | Κ13Χ     | Allianz            |                     1 |             166.00 |                0.00 |        166.00
+ Urology                   |           2026 | Κ18Χ     | AIG                |                     1 |            1146.00 |             1719.00 |       2865.00
+ Urology                   |           2026 | Κ30Μ     | Uninsured          |                     1 |            6295.00 |                0.00 |       6295.00
+ Urology                   |           2026 | Κ38Χ     | AIG                |                     1 |             627.00 |              627.00 |       1254.00
+ Urology                   |           2026 | Κ41Μ     | AXA                |                     1 |            4801.00 |                0.00 |       4801.00
+ Urology                   |           2026 | Κ44Α     | NN Hellas          |                     1 |             311.00 |             1244.00 |       1555.00
+ Urology                   |           2026 | Λ01Χ     | EOPYY              |                     1 |            1541.00 |                0.00 |       1541.00
+ Urology                   |           2026 | Λ03Χ     | AXA                |                     1 |             886.00 |             1329.00 |       2215.00
+ Urology                   |           2026 | Μ09Μ     | Uninsured          |                     1 |            1472.00 |                0.00 |       1472.00
+ Urology                   |           2026 | Μ12Μβ    | AXA                |                     1 |            2993.00 |                0.00 |       2993.00
+ Urology                   |           2026 | Μ65Μ     | Ethniki Insurance  |                     1 |             256.00 |                0.00 |        256.00
+ Urology                   |           2026 | Μ78Χ     | AXA                |                     1 |             475.00 |             1187.50 |       1662.50
+ Urology                   |           2026 | Ν37Α     | Eurolife FFH       |                     1 |             335.00 |              335.00 |        670.00
+ Urology                   |           2026 | Ξ01Α     | AIG                |                     1 |            3476.00 |                0.00 |       3476.00
+ Urology                   |           2026 | Ο15Β     | Allianz            |                     1 |             687.00 |             1374.00 |       2061.00
+ Urology                   |           2026 | Π05Μα    | AXA                |                     1 |            3329.00 |                0.00 |       3329.00
+ Urology                   |           2026 | Π10Χ     | Groupama           |                     1 |             868.00 |              868.00 |       1736.00
+ Urology                   |           2026 | Π26Χ     | AIG                |                     1 |            1245.00 |              249.00 |       1494.00
+ Urology                   |           2026 | Π27Χ     | Groupama           |                     1 |             988.00 |                0.00 |        988.00
+ Urology                   |           2026 | Ρ05Χ     | NN Hellas          |                     1 |             214.00 |                0.00 |        214.00
+ Urology                   |           2026 | Ρ10Μβ    | AXA                |                     1 |            2688.00 |                0.00 |       2688.00
+ Urology                   |           2026 | Σ21Α     | ERGO               |                     1 |             294.00 |             2058.00 |       2352.00
+ Urology                   |           2026 | Υ21Α     | NN Hellas          |                     1 |             231.00 |             2310.00 |       2541.00
+ Urology                   |           2026 | Φ10Α     | EOPYY              |                     1 |            1472.00 |             4416.00 |       5888.00
+ Urology                   |           2026 | Φ62Μ     | Uninsured          |                     2 |            2366.00 |                0.00 |       2366.00
+ Urology                   |           2026 | Χ40Α     | Ethniki Insurance  |                     1 |             140.00 |              980.00 |       1120.00
+ Urology                   |           2026 | Ω02Μα    | AIG                |                     1 |             542.00 |                0.00 |        542.00
+ Urology                   |           2026 | Ω33Α     | Interamerican      |                     1 |             397.00 |                0.00 |        397.00
+ Urology                   |           2026 | Ω37Β     | Uninsured          |                     1 |             661.00 |                0.00 |        661.00
+(1190 rows)
+

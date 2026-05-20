@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-import argparse
 import csv
 import random
 from datetime import datetime, timedelta
 from pathlib import Path
+
+DATA_DIR = Path("data")
+OUT_PATH = DATA_DIR / "hospitalization_reviews.csv"
+COVERAGE = 0.90
+SEED = 71
 
 def read_csv(path):
     with open(path, encoding="utf-8-sig", newline="") as f:
@@ -35,15 +39,8 @@ def correlated_scores():
     return nursing, cleanliness, food, overall
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--data-dir", default="data")
-    parser.add_argument("--out", default="data/hospitalization_reviews.csv")
-    parser.add_argument("--coverage", type=float, default=0.75)
-    parser.add_argument("--seed", type=int, default=71)
-    args = parser.parse_args()
-
-    random.seed(args.seed)
-    data = Path(args.data_dir)
+    random.seed(SEED)
+    data = DATA_DIR
 
     hospitalizations = read_csv(data / "hospitalizations.csv")
     if not hospitalizations:
@@ -56,7 +53,7 @@ def main():
         if not discharge_raw:
             continue
 
-        if random.random() > args.coverage:
+        if random.random() > COVERAGE:
             continue
 
         hospitalization_id = h.get("hospitalization_id") or str(idx)
@@ -77,7 +74,7 @@ def main():
             review_date.isoformat()
         ])
 
-    with open(args.out, "w", encoding="utf-8", newline="") as f:
+    with open(OUT_PATH, "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
         w.writerow([
             "patient_id",
@@ -90,7 +87,7 @@ def main():
         ])
         w.writerows(rows)
 
-    print(f"Wrote {len(rows)} rows to {args.out}")
+    print(f"Wrote {len(rows)} rows to {OUT_PATH}")
 
 if __name__ == "__main__":
     main()

@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
-import argparse, csv, glob, itertools
+import csv
+import glob
+import itertools
 from collections import defaultdict
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
 PER_SHIFT=3; MONTH_LIMIT=15; REST_HOURS=8; MAX_NIGHTS=3
 SENIOR={'CONSULTANT_A','DIRECTOR'}
+DATA_DIR = Path('data')
+OUT_PATH = DATA_DIR / 'doctor_shift_assignments_by_license.csv'
+START_DATE = None
+END_DATE = None
 STAFF_COLS=['amka','first_name','last_name','age','email','phone','hire_date','staff_type']
 DOC_COLS=['medical_license_num','specialty','rank']
 DIR_COLS=['staff_id','medical_license_num','specialty','rank','supervisor_doc_id']
@@ -133,13 +139,9 @@ def capacity_check(bydep,shifts):
         if seniors<1 and nonres<PER_SHIFT: die(f'{dep}: add at least 1 CONSULTANT_A/DIRECTOR or enough non-resident doctors')
 
 def main():
-    ap=argparse.ArgumentParser()
-    ap.add_argument('--data-dir',default='data')
-    ap.add_argument('--out',default='data/doctor_shift_assignments_by_license.csv')
-    ap.add_argument('--start-date'); ap.add_argument('--end-date')
-    a=ap.parse_args(); data=Path(a.data_dir)
-    start=date.fromisoformat(a.start_date) if a.start_date else None
-    end=date.fromisoformat(a.end_date) if a.end_date else None
+    data = DATA_DIR
+    start = date.fromisoformat(START_DATE) if START_DATE else None
+    end = date.fromisoformat(END_DATE) if END_DATE else None
     id2,manager2=load_departments(data)
     shifts=load_shifts(data,id2,start,end)
     bydep=assign_local(load_doctors(data,manager2,load_map(data)),shifts)
@@ -155,8 +157,8 @@ def main():
             last_end[d['id']]=s['end']
             if s['type']=='NIGHT': nights[d['id']].add(s['date'])
             out.append([s['type'],s['dep'],s['date'].isoformat(),d['id']])
-    Path(a.out).parent.mkdir(parents=True,exist_ok=True)
-    with open(a.out,'w',encoding='utf-8',newline='') as fp:
+    OUT_PATH.parent.mkdir(parents=True,exist_ok=True)
+    with open(OUT_PATH,'w',encoding='utf-8',newline='') as fp:
         w=csv.writer(fp); w.writerow(['shift_type','department_name','date','medical_license_num']); w.writerows(out)
-    print(f'Wrote {len(out)} rows to {a.out}')
+    print(f'Wrote {len(out)} rows to {OUT_PATH}')
 if __name__=='__main__': main()

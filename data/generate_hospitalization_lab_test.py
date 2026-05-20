@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-import argparse
 import csv
 import random
 from datetime import datetime, timedelta
 from pathlib import Path
+
+DATA_DIR = Path("data")
+OUT_PATH = DATA_DIR / "hospitalization_lab_tests.csv"
+COUNT = 900
+SEED = 21
 
 def read_dict_csv(path):
     with open(path, encoding="utf-8-sig", newline="") as f:
@@ -37,15 +41,8 @@ def parse_datetime(value):
     return datetime.fromisoformat(value)
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--data-dir", default="data")
-    parser.add_argument("--out", default="data/hospitalization_lab_tests.csv")
-    parser.add_argument("--count", type=int, default=200)
-    parser.add_argument("--seed", type=int, default=21)
-    args = parser.parse_args()
-
-    random.seed(args.seed)
-    data = Path(args.data_dir)
+    random.seed(SEED)
+    data = DATA_DIR
 
     hospitalizations = read_dict_csv(data / "hospitalizations.csv")
     lab_tests = read_lab_tests(data / "lab_tests.csv")
@@ -66,7 +63,7 @@ def main():
 
     output_rows = []
 
-    for _ in range(args.count):
+    for _ in range(COUNT):
         h_index = random.randrange(len(hospitalizations))
         h = hospitalizations[h_index]
         test = random.choice(lab_tests)
@@ -123,7 +120,7 @@ def main():
             f"{actual_cost:.2f}"
         ])
 
-    with open(args.out, "w", encoding="utf-8", newline="") as f:
+    with open(OUT_PATH, "w", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
         writer.writerow([
             "hospitalization_id",
@@ -137,7 +134,7 @@ def main():
         ])
         writer.writerows(output_rows)
 
-    print(f"Wrote {len(output_rows)} rows to {args.out}")
+    print(f"Wrote {len(output_rows)} rows to {OUT_PATH}")
 
 if __name__ == "__main__":
     main()

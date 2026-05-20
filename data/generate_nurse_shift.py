@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-import argparse, csv, glob
+import csv
+import glob
 from collections import defaultdict, deque
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -8,6 +9,10 @@ PER_SHIFT = 6
 MONTH_LIMIT = 20
 REST_HOURS = 8
 MAX_NIGHTS = 3
+DATA_DIR = Path('data')
+OUT_PATH = DATA_DIR / 'nurse_shift_assignments_by_amka.csv'
+START_DATE = None
+END_DATE = None
 STAFF_COLS = ['amka','first_name','last_name','age','email','phone','hire_date','staff_type']
 NURSE_COLS = ['rank','department']
 
@@ -71,14 +76,9 @@ def can(n, s, count, last_end, nights):
     return True
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument('--data-dir', default='data')
-    ap.add_argument('--out', default='data/nurse_shift_assignments_by_amka.csv')
-    ap.add_argument('--start-date')
-    ap.add_argument('--end-date')
-    a = ap.parse_args(); data = Path(a.data_dir)
-    start = date.fromisoformat(a.start_date) if a.start_date else None
-    end = date.fromisoformat(a.end_date) if a.end_date else None
+    data = DATA_DIR
+    start = date.fromisoformat(START_DATE) if START_DATE else None
+    end = date.fromisoformat(END_DATE) if END_DATE else None
 
     shifts = load_shifts(data, dep_map(data), start, end)
     nurses = load_nurses(data)
@@ -109,9 +109,9 @@ def main():
             if s['type'] == 'NIGHT': nights[n['id']].add(s['date'])
             out.append([s['type'], s['dep'], s['date'].isoformat(), n['id']])
 
-    Path(a.out).parent.mkdir(parents=True, exist_ok=True)
-    with open(a.out, 'w', newline='', encoding='utf-8') as fp:
+    OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with open(OUT_PATH, 'w', newline='', encoding='utf-8') as fp:
         w = csv.writer(fp); w.writerow(['shift_type','department_name','date','nurse_amka']); w.writerows(out)
-    print(f'Wrote {len(out)} rows to {a.out}')
+    print(f'Wrote {len(out)} rows to {OUT_PATH}')
 
 if __name__ == '__main__': main()

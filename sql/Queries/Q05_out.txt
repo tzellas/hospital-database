@@ -1,0 +1,4 @@
+ doctor_id | first_name | last_name | age | specialty | rank | main_surgery_count 
+-----------+------------+-----------+-----+-----------+------+--------------------
+(0 rows)
+

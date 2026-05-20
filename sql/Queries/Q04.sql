@@ -1,3 +1,4 @@
+\encoding UTF8
 /*
 Q04
 Για συγκεκριμένο ιατρό, βρίσκουμε:
@@ -51,7 +52,7 @@ JOIN hospitalization_review AS hr
    AND hr.hospitalization_id = dr.hospitalization_id
 
 -- Εδώ βάζουμε τον συγκεκριμένο ιατρό
-WHERE doc.staff_id = 1
+WHERE doc.staff_id = 671
 
 GROUP BY
     doc.staff_id,

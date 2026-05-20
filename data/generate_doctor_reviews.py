@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
-import argparse
 import csv
 import random
 from collections import defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path
+
+DATA_DIR = Path("data")
+OUT_PATH = DATA_DIR / "doctor_reviews.csv"
+COVERAGE = 0.94
+SEED = 72
 
 def read_csv(path):
     with open(path, encoding="utf-8-sig", newline="") as f:
@@ -24,15 +28,8 @@ def doctor_score():
     return random.choices([1, 2, 3, 4, 5], weights=[3, 6, 18, 38, 35], k=1)[0]
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--data-dir", default="data")
-    parser.add_argument("--out", default="data/doctor_reviews.csv")
-    parser.add_argument("--coverage", type=float, default=0.80)
-    parser.add_argument("--seed", type=int, default=72)
-    args = parser.parse_args()
-
-    random.seed(args.seed)
-    data = Path(args.data_dir)
+    random.seed(SEED)
+    data = DATA_DIR
 
     hospitalizations = read_csv(data / "hospitalizations.csv")
     prescriptions = read_csv(data / "prescriptions.csv")
@@ -69,7 +66,7 @@ def main():
             continue
 
         for doctor_id in sorted(doctors, key=lambda x: int(x)):
-            if random.random() > args.coverage:
+            if random.random() > COVERAGE:
                 continue
 
             key = (patient_by_hosp[hid], doctor_id, hid)
@@ -87,7 +84,7 @@ def main():
                 review_date.isoformat()
             ])
 
-    with open(args.out, "w", encoding="utf-8", newline="") as f:
+    with open(OUT_PATH, "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
         w.writerow([
             "patient_id",
@@ -98,7 +95,7 @@ def main():
         ])
         w.writerows(rows)
 
-    print(f"Wrote {len(rows)} rows to {args.out}")
+    print(f"Wrote {len(rows)} rows to {OUT_PATH}")
 
 if __name__ == "__main__":
     main()

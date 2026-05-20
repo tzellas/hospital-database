@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
-import argparse
 import csv
 import random
 from pathlib import Path
+
+DATA_DIR = Path("data")
+OUT_PATH = DATA_DIR / "allergies.csv"
+COUNT = 250
+SEED = 31
 
 def count_data_rows(path, has_header=True):
     with open(path, encoding="utf-8-sig", newline="") as f:
@@ -12,15 +16,8 @@ def count_data_rows(path, has_header=True):
     return len([r for r in rows if r and str(r[0]).strip()])
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--data-dir", default="data")
-    parser.add_argument("--out", default="data/allergies.csv")
-    parser.add_argument("--count", type=int, default=250)
-    parser.add_argument("--seed", type=int, default=31)
-    args = parser.parse_args()
-
-    random.seed(args.seed)
-    data = Path(args.data_dir)
+    random.seed(SEED)
+    data = DATA_DIR
 
     patient_count = count_data_rows(data / "patients.csv", has_header=True)
     substance_count = count_data_rows(data / "active_substances_unique.csv", has_header=False)
@@ -31,7 +28,7 @@ def main():
         raise SystemExit("active_substances_unique.csv has no active substances")
 
     max_pairs = patient_count * substance_count
-    target = min(args.count, max_pairs)
+    target = min(COUNT, max_pairs)
 
     pairs = set()
     while len(pairs) < target:
@@ -41,12 +38,12 @@ def main():
 
     rows = sorted(pairs)
 
-    with open(args.out, "w", encoding="utf-8", newline="") as f:
+    with open(OUT_PATH, "w", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["patient_id", "substance_id"])
         writer.writerows(rows)
 
-    print(f"Wrote {len(rows)} rows to {args.out}")
+    print(f"Wrote {len(rows)} rows to {OUT_PATH}")
 
 if __name__ == "__main__":
     main()

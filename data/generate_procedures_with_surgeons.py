@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-import argparse
 import csv
 import random
 from collections import defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path
+
+DATA_DIR = Path("data")
+COUNT = 600
+SEED = 44
 
 SURGICAL_SPECIALTIES = {
     "General Surgery",
@@ -56,14 +59,8 @@ def is_free(staff_id, start, end, busy):
     return all(not overlaps(start, end, s, e) for s, e in busy[staff_id])
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--data-dir", default="data")
-    ap.add_argument("--count", type=int, default=150)
-    ap.add_argument("--seed", type=int, default=44)
-    args = ap.parse_args()
-
-    random.seed(args.seed)
-    data = Path(args.data_dir)
+    random.seed(SEED)
+    data = DATA_DIR
 
     hospitalizations = read_dict(data / "hospitalizations.csv")
     departments = read_dict(data / "departments.csv")
@@ -146,9 +143,9 @@ def main():
     assistant_rows = []
 
     attempts = 0
-    max_attempts = args.count * 400
+    max_attempts = COUNT * 400
 
-    while len(proc_rows) < args.count and attempts < max_attempts:
+    while len(proc_rows) < COUNT and attempts < max_attempts:
         attempts += 1
 
         h_index = random.randrange(len(hospitalizations))
@@ -259,8 +256,8 @@ def main():
             staff_busy[nurse_id].append((start, end))
             used_staff.add(nurse_id)
 
-    if len(proc_rows) < args.count:
-        raise SystemExit(f"Could only create {len(proc_rows)} procedures, requested {args.count}")
+    if len(proc_rows) < COUNT:
+        raise SystemExit(f"Could only create {len(proc_rows)} procedures, requested {COUNT}")
 
     out1 = data / "hospitalization_medical_procedures.csv"
     out2 = data / "procedure_room_schedule.csv"

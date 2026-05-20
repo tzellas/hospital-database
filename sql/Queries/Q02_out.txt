@@ -1,0 +1,12 @@
+ doctor_id | first_name | last_name | specialty  |     rank     | had_duty_current_year | duty_count_current_year | main_procedure_count_current_year 
+-----------+------------+-----------+------------+--------------+-----------------------+-------------------------+-----------------------------------
+       187 | Linnie     | Klaff     | Cardiology | CONSULTANT_A | YES                   |                      36 |                                 1
+       671 | Morgana    | Topliss   | Cardiology | CONSULTANT_A | YES                   |                      34 |                                 1
+       816 | Deane      | Waeland   | Cardiology | RESIDENT     | YES                   |                      36 |                                 1
+       725 | Jordanna   | Gaitung   | Cardiology | CONSULTANT_B | YES                   |                      36 |                                 0
+       790 | Lorrayne   | Greedyer  | Cardiology | CONSULTANT_B | YES                   |                      36 |                                 0
+       672 | Merissa    | Hourston  | Cardiology | CONSULTANT_A | YES                   |                      36 |                                 0
+        26 | Nettie     | Polin     | Cardiology | DIRECTOR     | YES                   |                      34 |                                 0
+       761 | Frederich  | Raiker    | Cardiology | CONSULTANT_A | YES                   |                      35 |                                 0
+(8 rows)
+

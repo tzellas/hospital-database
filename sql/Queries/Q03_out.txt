@@ -1,0 +1,43 @@
+ patient_id | first_name |  last_name  |    amka     | department_id |   department_name    | hospitalization_count | total_hospitalization_cost 
+------------+------------+-------------+-------------+---------------+----------------------+-----------------------+----------------------------
+         96 | Wallas     | Parrish     | 07082431545 |             4 | Orthopedics          |                     6 |                   20636.00
+         58 | Audry      | Stodhart    | 24052228864 |             3 | General Surgery      |                     5 |                   41549.00
+        116 | Talyah     | Conor       | 20021380787 |             4 | Orthopedics          |                     5 |                   25973.33
+         26 | Essy       | Addison     | 22035375151 |             8 | Oncology             |                     5 |                   14213.00
+         65 | Ambrosi    | Earle       | 02086136241 |             2 | Cardiology           |                     5 |                   12887.67
+        124 | Catarina   | Stansbie    | 18080959421 |             4 | Orthopedics          |                     5 |                    9066.75
+         71 | Jacqueline | Tournay     | 03110521606 |            14 | Urology              |                     5 |                    8668.17
+         86 | Giorgia    | Cosley      | 24060795133 |             6 | Neurosurgery         |                     5 |                    7930.14
+         20 | Alisun     | Faier       | 16023864382 |             4 | Orthopedics          |                     4 |                   44501.00
+        164 | Floria     | Castiblanco | 19066164020 |             4 | Orthopedics          |                     4 |                   24880.00
+         42 | Francyne   | Mauvin      | 10081181866 |             3 | General Surgery      |                     4 |                   21015.50
+         68 | Dawna      | Hiscoe      | 24109933556 |             8 | Oncology             |                     4 |                   17889.50
+        132 | Ronny      | Keppy       | 30050592296 |             1 | Emergency Department |                     4 |                   15220.00
+        193 | Corbie     | Belden      | 26024599307 |            11 | Pathology            |                     4 |                   15201.00
+         26 | Essy       | Addison     | 22035375151 |            14 | Urology              |                     4 |                   14853.40
+         93 | Hermann    | Gehrels     | 28129024365 |             8 | Oncology             |                     4 |                   13230.00
+        130 | Urson      | Reade       | 25101386742 |             4 | Orthopedics          |                     4 |                   12539.50
+        100 | Gaelan     | Bray        | 20123570001 |             4 | Orthopedics          |                     4 |                   12204.75
+         94 | Mariya     | Houchen     | 30094110989 |             3 | General Surgery      |                     4 |                   11612.00
+        167 | Nichole    | Sivewright  | 26119358506 |             4 | Orthopedics          |                     4 |                    9654.40
+        131 | Drake      | Colquhoun   | 18072194925 |            12 | Pulmonology          |                     4 |                    9156.50
+         15 | Jed        | Meadowcroft | 06099640551 |             6 | Neurosurgery         |                     4 |                    8934.33
+        100 | Gaelan     | Bray        | 20123570001 |            11 | Pathology            |                     4 |                    8543.00
+        195 | Barris     | Strippel    | 06038393868 |             4 | Orthopedics          |                     4 |                    8320.00
+        143 | Tammy      | Glennon     | 26050129067 |             6 | Neurosurgery         |                     4 |                    8276.00
+        137 | Ermina     | Abbe        | 28073379332 |            14 | Urology              |                     4 |                    8183.67
+         17 | Vera       | Rooke       | 04062841197 |             4 | Orthopedics          |                     4 |                    8039.50
+        185 | Rourke     | Pigden      | 01068146605 |             5 | Neurology            |                     4 |                    7627.67
+         17 | Vera       | Rooke       | 04062841197 |             2 | Cardiology           |                     4 |                    6990.00
+         94 | Mariya     | Houchen     | 30094110989 |             6 | Neurosurgery         |                     4 |                    6986.00
+        141 | Jaine      | Helstrom    | 04075161203 |             8 | Oncology             |                     4 |                    6972.40
+        143 | Tammy      | Glennon     | 26050129067 |             5 | Neurology            |                     4 |                    6335.50
+         99 | Matthew    | Charters    | 06043611290 |             8 | Oncology             |                     4 |                    5619.00
+        190 | Creigh     | Blazejewski | 20126290189 |            14 | Urology              |                     4 |                    5300.00
+        134 | Hebert     | Gould       | 05056718740 |             6 | Neurosurgery         |                     4 |                    5201.20
+          5 | Dolli      | Crisford    | 27109478738 |             2 | Cardiology           |                     4 |                    4960.00
+        161 | Dacia      | Ragles      | 22104491210 |             8 | Oncology             |                     4 |                    4950.75
+        158 | Ross       | Byles       | 28090036213 |             8 | Oncology             |                     4 |                    4251.00
+        110 | Elihu      | Dagon       | 24087229002 |             4 | Orthopedics          |                     4 |                    3934.50
+(39 rows)
+

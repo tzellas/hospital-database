@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
-import argparse
 import csv
 import random
 from collections import defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path
+
+DATA_DIR = Path("data")
+OUT_PATH = DATA_DIR / "prescriptions.csv"
+COUNT = 1200
+SEED = 55
 
 def read_dict(path):
     with open(path, encoding="utf-8-sig", newline="") as f:
@@ -36,15 +40,8 @@ def parse_dt(x):
     return datetime.fromisoformat(x)
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--data-dir", default="data")
-    ap.add_argument("--out", default="data/prescriptions.csv")
-    ap.add_argument("--count", type=int, default=300)
-    ap.add_argument("--seed", type=int, default=55)
-    args = ap.parse_args()
-
-    random.seed(args.seed)
-    data = Path(args.data_dir)
+    random.seed(SEED)
+    data = DATA_DIR
 
     hospitalizations = read_dict(data / "hospitalizations.csv")
     staff = read_dict(data / "staff.csv")
@@ -149,9 +146,9 @@ def main():
     prescriptions = []
     used_unique = set()
     attempts = 0
-    max_attempts = args.count * 200
+    max_attempts = COUNT * 200
 
-    while len(prescriptions) < args.count and attempts < max_attempts:
+    while len(prescriptions) < COUNT and attempts < max_attempts:
         attempts += 1
 
         h_index = random.randrange(len(hospitalizations))
@@ -203,10 +200,10 @@ def main():
             end_date.isoformat(),
         ])
 
-    if len(prescriptions) < args.count:
-        raise SystemExit(f"Could only create {len(prescriptions)} prescriptions, requested {args.count}")
+    if len(prescriptions) < COUNT:
+        raise SystemExit(f"Could only create {len(prescriptions)} prescriptions, requested {COUNT}")
 
-    with open(args.out, "w", encoding="utf-8", newline="") as f:
+    with open(OUT_PATH, "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
         w.writerow([
             "hospitalization_id",
@@ -220,7 +217,7 @@ def main():
         ])
         w.writerows(prescriptions)
 
-    print(f"Wrote {len(prescriptions)} rows to {args.out}")
+    print(f"Wrote {len(prescriptions)} rows to {OUT_PATH}")
     print("All prescriptions avoid patient active-substance allergies.")
 
 if __name__ == "__main__":

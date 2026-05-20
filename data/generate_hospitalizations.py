@@ -6,7 +6,7 @@ from pathlib import Path
 
 DATA_DIR = Path('data')
 OUT_PATH = DATA_DIR / 'hospitalizations.csv'
-N = 500
+N = 1450
 SEED = 42
 START_DATE = '2025-03-20'
 END_DATE = '2026-03-19'
@@ -39,11 +39,67 @@ def read_rows(path, fallback=None):
             return [{clean(k): clean(v) for k, v in r.items()} for r in csv.DictReader(fp)]
         return [dict(zip(fallback, map(clean, r))) for r in csv.reader(fp)]
 
+def make_row(patient_id, dep, bed, adm, dis, dep_name_to_id, icds, kens):
+    ken_code, base, avg_los = random.choice(kens)
+    stay_days = max(1, (dis.date() - adm.date()).days)
+    extra_days = max(0, stay_days - avg_los)
+    extra = round(extra_days * (base / avg_los), 2)
+    total = round(base + extra, 2)
+
+    return [
+        patient_id,
+        dep_name_to_id[dep],
+        bed,
+        adm.strftime('%Y-%m-%d %H:%M:%S'),
+        dis.strftime('%Y-%m-%d %H:%M:%S'),
+        random.choice(icds),
+        random.choice(icds),
+        ken_code,
+        f'{total:.2f}',
+        f'{extra:.2f}',
+    ]
+
+def build_patient_profiles(patient_ids, departments):
+    profiles = {}
+    for patient_id in patient_ids:
+        roll = random.random()
+        if roll < 0.55:
+            base_weight = 1.0
+        elif roll < 0.80:
+            base_weight = 1.7
+        elif roll < 0.94:
+            base_weight = 2.6
+        else:
+            base_weight = 3.8
+
+        profiles[patient_id] = {
+            'base_weight': base_weight,
+            'home_department': random.choice(departments),
+        }
+    return profiles
+
+def choose_patient(patient_ids, patient_profiles, patient_total_stays, patient_dep_stays, dep):
+    weighted = []
+    for patient_id in patient_ids:
+        profile = patient_profiles[patient_id]
+        total_stays = patient_total_stays[patient_id]
+        same_dep_stays = patient_dep_stays[(patient_id, dep)]
+
+        score = profile['base_weight']
+        if profile['home_department'] == dep:
+            score *= 2.1
+        if same_dep_stays:
+            score *= 1.35 + min(same_dep_stays, 3) * 0.15
+
+        score /= (1 + 0.22 * total_stays)
+        weighted.append(score)
+
+    return random.choices(patient_ids, weights=weighted, k=1)[0]
+
 def main():
     random.seed(SEED)
     data = DATA_DIR
 
-    # ids after COPY into serial tables follow file row order, assuming clean DB/load order.
     patients = read_rows(find_file(data, 'patients.csv'))
     if not patients: die('patients.csv is empty')
     patient_ids = list(range(1, len(patients) + 1))
@@ -51,8 +107,10 @@ def main():
     deps = read_rows(find_file(data, 'departments.csv'))
     dep_name_to_id = {}
     for i, r in enumerate(deps, 1):
+        dep_id = int(clean(r.get('department_id')) or i)
         name = clean(r.get('name') or r.get('department_name'))
-        if name: dep_name_to_id[name] = i
+        if name:
+            dep_name_to_id[name] = dep_id
     if not dep_name_to_id: die('no departments found')
 
     beds_by_dep = defaultdict(list)
@@ -62,6 +120,7 @@ def main():
         status = clean(r.get('status')).upper()
         if dep in dep_name_to_id and bed and status != 'UNDER_MAINTENANCE':
             beds_by_dep[dep].append(bed)
+
     beds_by_dep = {d: sorted(set(bs)) for d, bs in beds_by_dep.items() if bs}
     if not beds_by_dep: die('no usable beds found in beds.csv')
 
@@ -88,7 +147,6 @@ def main():
     if end < start: die('end-date before start-date')
     total_days = (end - start).days + 1
 
-    # Track latest discharge per bed. This simple rule guarantees no overlapping bed stays.
     next_free = {}
     all_beds = []
     for dep, beds in beds_by_dep.items():
@@ -98,50 +156,57 @@ def main():
     if not all_beds: die('no beds available')
 
     out = []
-    for i in range(N):
+    patient_profiles = build_patient_profiles(patient_ids, list(dep_name_to_id))
+    patient_total_stays = defaultdict(int)
+    patient_dep_stays = defaultdict(int)
+
+    i = 0
+    while len(out) < N:
         dep, bed = all_beds[i % len(all_beds)]
         ken_code, base, avg_los = random.choice(kens)
-        stay_days = random.randint(1, max(2, min(14, avg_los + 5)))
+        stay_days = random.randint(1, max(2, min(10, avg_los + 2)))
 
-        # Spread admissions, but never before bed is free.
-        wanted = datetime.combine(start + timedelta(days=random.randint(0, max(0, total_days - 2))), time(random.choice([7,9,11,13,15,17]), 0))
+        wanted = datetime.combine(
+            start + timedelta(days=random.randint(0, max(0, total_days - 2))),
+            time(random.choice([7,9,11,13,15,17]), 0)
+        )
+
         adm = max(wanted, next_free[(dep, bed)] + timedelta(hours=1))
-        dis = adm + timedelta(days=stay_days, hours=random.choice([8,10,12]))
-
-        # Keep generated completed stays inside a sane range; if near end, shorten.
         hard_end = datetime.combine(end + timedelta(days=1), time(23, 0))
+        if adm >= hard_end:
+            i += 1
+            continue
+
+        dis = adm + timedelta(days=stay_days, hours=random.choice([8,10,12]))
         if dis > hard_end:
             dis = hard_end
-            if dis <= adm:
-                adm = dis - timedelta(days=1)
+        if dis <= adm:
+            i += 1
+            continue
 
         next_free[(dep, bed)] = dis
-        extra_days = max(0, stay_days - avg_los)
-        extra = round(extra_days * (base / avg_los), 2)
-        total = round(base + extra, 2)
-        adm_icd = random.choice(icds)
-        dis_icd = random.choice(icds)
-        patient_id = patient_ids[i % len(patient_ids)]
 
-        out.append([
-            patient_id,
-            dep_name_to_id[dep],
-            bed,
-            adm.strftime('%Y-%m-%d %H:%M:%S'),
-            dis.strftime('%Y-%m-%d %H:%M:%S'),
-            adm_icd,
-            dis_icd,
-            ken_code,
-            f'{total:.2f}',
-            f'{extra:.2f}',
-        ])
+        patient_id = choose_patient(
+            patient_ids,
+            patient_profiles,
+            patient_total_stays,
+            patient_dep_stays,
+            dep,
+        )
+
+        out.append(make_row(patient_id, dep, bed, adm, dis, dep_name_to_id, icds, kens))
+        patient_total_stays[patient_id] += 1
+        patient_dep_stays[(patient_id, dep)] += 1
+        i += 1
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     with open(OUT_PATH, 'w', newline='', encoding='utf-8') as fp:
         w = csv.writer(fp)
         w.writerow(HOSP_COLS)
         w.writerows(out)
+
     print(f'Wrote {len(out)} rows to {OUT_PATH}')
+    print('Hospitalizations now emerge from weighted patient reuse and department affinity.')
 
 if __name__ == '__main__':
     main()
