@@ -1,0 +1,128 @@
+ patient_id | first_name | last_name |    amka     | hospitalization_id |      department_name      |   admission_date    |   discharge_date    | admission_icd10_code |                                  admission_diagnosis_description                                   | discharge_icd10_code |                                     discharge_diagnosis_description                                     | total_cost | avg_hospitalization_review_score 
+------------+------------+-----------+-------------+--------------------+---------------------------+---------------------+---------------------+----------------------+----------------------------------------------------------------------------------------------------+----------------------+---------------------------------------------------------------------------------------------------------+------------+----------------------------------
+          1 | Bram       | Hosby     | 19090795837 |                144 | Orthopedics               | 2025-06-01 11:00:00 | 2025-06-05 21:00:00 | I99                  | Άλλες και μη καθορισμένες διαταραχές του κυκλοφορικού συστήματος                                   | T85.7                | Λοίμωξη και φλεγμονώδης αντίδραση από άλλες εσωτερικές προσθετικές συσκευές, εμφυτεύματα και μοσχεύματα |    2572.00 |               1.7500000000000000
+          1 | Bram       | Hosby     | 19090795837 |                613 | Obstetrics and Gynecology | 2025-11-06 13:00:00 | 2025-11-12 23:00:00 | K92.0                | Αιματέμεση                                                                                         | W54                  | Δήγμα ή κτύπημα από σκύλο                                                                               |     539.00 |               4.7500000000000000
+          1 | Bram       | Hosby     | 19090795837 |               1181 | Urology                   | 2025-11-07 02:00:00 | 2025-11-15 10:00:00 | T82.9                | Μη καθορισμένη επιπλοκή καρδιακής και αγγειακής προσθετικής συσκευής, εμφυτεύματος και μοσχεύματος | O75.9                | Επιπλοκή του τοκετού, μη καθορισμένη                                                                    |    9426.00 |               4.0000000000000000
+          1 | Bram       | Hosby     | 19090795837 |               1229 | Emergency Department      | 2025-12-29 05:00:00 | 2025-12-31 13:00:00 | A83.0                | Ιαπωνική εγκεφαλίτιδα                                                                              | I49.5                | Σύνδρομο νοσούντος φλεβοκόμβου                                                                          |    2054.00 |               4.7500000000000000
+(4 rows)
+
+                                                                                   QUERY PLAN                                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=164.89..164.90 rows=5 width=487) (actual time=0.296..0.298 rows=4.00 loops=1)
+   Sort Key: h.admission_date
+   Sort Method: quicksort  Memory: 26kB
+   Buffers: shared hit=56
+   ->  Nested Loop Left Join  (cost=18.40..164.83 rows=5 width=487) (actual time=0.130..0.280 rows=4.00 loops=1)
+         Join Filter: (hr.hospitalization_id = h.hospitalization_id)
+         Rows Removed by Join Filter: 6
+         Buffers: shared hit=56
+         ->  Nested Loop Left Join  (cost=14.09..150.76 rows=5 width=459) (actual time=0.104..0.247 rows=4.00 loops=1)
+               Buffers: shared hit=50
+               ->  Nested Loop  (cost=13.81..109.24 rows=5 width=373) (actual time=0.091..0.216 rows=4.00 loops=1)
+                     Buffers: shared hit=38
+                     ->  Hash Join  (cost=13.52..67.73 rows=5 width=287) (actual time=0.075..0.180 rows=4.00 loops=1)
+                           Hash Cond: (h.department_id = d.department_id)
+                           Buffers: shared hit=26
+                           ->  Nested Loop  (cost=0.15..54.34 rows=5 width=73) (actual time=0.051..0.154 rows=4.00 loops=1)
+                                 Buffers: shared hit=25
+                                 ->  Index Scan using patient_pkey on patient p  (cost=0.15..8.17 rows=1 width=30) (actual time=0.016..0.016 rows=1.00 loops=1)
+                                       Index Cond: (patient_id = 1)
+                                       Index Searches: 1
+                                       Buffers: shared hit=2
+                                 ->  Seq Scan on hospitalization h  (cost=0.00..46.12 rows=5 width=43) (actual time=0.034..0.135 rows=4.00 loops=1)
+                                       Filter: (patient_id = 1)
+                                       Rows Removed by Filter: 1846
+                                       Buffers: shared hit=23
+                           ->  Hash  (cost=11.50..11.50 rows=150 width=222) (actual time=0.015..0.015 rows=15.00 loops=1)
+                                 Buckets: 1024  Batches: 1  Memory Usage: 9kB
+                                 Buffers: shared hit=1
+                                 ->  Seq Scan on department d  (cost=0.00..11.50 rows=150 width=222) (actual time=0.006..0.008 rows=15.00 loops=1)
+                                       Buffers: shared hit=1
+                     ->  Index Scan using icd10_diagnosis_pkey on icd10_diagnosis icd_in  (cost=0.29..8.30 rows=1 width=91) (actual time=0.008..0.008 rows=1.00 loops=4)
+                           Index Cond: ((icd10_code)::text = (h.admission_icd10_code)::text)
+                           Index Searches: 4
+                           Buffers: shared hit=12
+               ->  Index Scan using icd10_diagnosis_pkey on icd10_diagnosis icd_out  (cost=0.29..8.30 rows=1 width=91) (actual time=0.007..0.007 rows=1.00 loops=4)
+                     Index Cond: ((icd10_code)::text = (h.discharge_icd10_code)::text)
+                     Index Searches: 4
+                     Buffers: shared hit=12
+         ->  Materialize  (cost=4.31..13.72 rows=4 width=24) (actual time=0.006..0.007 rows=2.50 loops=4)
+               Storage: Memory  Maximum Storage: 17kB
+               Buffers: shared hit=6
+               ->  Bitmap Heap Scan on hospitalization_review hr  (cost=4.31..13.70 rows=4 width=24) (actual time=0.020..0.023 rows=4.00 loops=1)
+                     Recheck Cond: (patient_id = 1)
+                     Heap Blocks: exact=4
+                     Buffers: shared hit=6
+                     ->  Bitmap Index Scan on idx_hospitalization_review_patient_hospitalization  (cost=0.00..4.31 rows=4 width=0) (actual time=0.011..0.011 rows=4.00 loops=1)
+                           Index Cond: (patient_id = 1)
+                           Index Searches: 1
+                           Buffers: shared hit=2
+ Planning:
+   Buffers: shared hit=18
+ Planning Time: 1.077 ms
+ Execution Time: 0.434 ms
+(53 rows)
+
+SET
+                                                                                               QUERY PLAN                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=212.99..213.00 rows=5 width=487) (actual time=0.442..0.443 rows=4.00 loops=1)
+   Sort Key: h.admission_date
+   Sort Method: quicksort  Memory: 26kB
+   Buffers: shared hit=69
+   ->  Nested Loop Left Join  (cost=5.46..212.93 rows=5 width=487) (actual time=0.123..0.433 rows=4.00 loops=1)
+         Buffers: shared hit=69
+         ->  Nested Loop  (cost=5.17..171.36 rows=5 width=385) (actual time=0.112..0.403 rows=4.00 loops=1)
+               Buffers: shared hit=57
+               ->  Nested Loop  (cost=4.89..129.84 rows=5 width=299) (actual time=0.100..0.371 rows=4.00 loops=1)
+                     Buffers: shared hit=45
+                     ->  Nested Loop  (cost=4.73..108.88 rows=5 width=85) (actual time=0.058..0.321 rows=4.00 loops=1)
+                           Buffers: shared hit=37
+                           ->  Index Scan using patient_pkey on patient p  (cost=0.15..8.17 rows=1 width=30) (actual time=0.008..0.009 rows=1.00 loops=1)
+                                 Index Cond: (patient_id = 1)
+                                 Index Searches: 1
+                                 Buffers: shared hit=2
+                           ->  Nested Loop Left Join  (cost=4.59..100.66 rows=5 width=59) (actual time=0.049..0.310 rows=4.00 loops=1)
+                                 Join Filter: (hr.hospitalization_id = h.hospitalization_id)
+                                 Rows Removed by Join Filter: 6
+                                 Buffers: shared hit=35
+                                 ->  Index Scan using hospitalization_pkey on hospitalization h  (cost=0.28..86.65 rows=5 width=43) (actual time=0.027..0.278 rows=4.00 loops=1)
+                                       Filter: (patient_id = 1)
+                                       Rows Removed by Filter: 1846
+                                       Index Searches: 1
+                                       Buffers: shared hit=29
+                                 ->  Materialize  (cost=4.31..13.72 rows=4 width=24) (actual time=0.006..0.007 rows=2.50 loops=4)
+                                       Storage: Memory  Maximum Storage: 17kB
+                                       Buffers: shared hit=6
+                                       ->  Bitmap Heap Scan on hospitalization_review hr  (cost=4.31..13.70 rows=4 width=24) (actual time=0.019..0.023 rows=4.00 loops=1)
+                                             Recheck Cond: (patient_id = 1)
+                                             Heap Blocks: exact=4
+                                             Buffers: shared hit=6
+                                             ->  Bitmap Index Scan on idx_hospitalization_review_patient_hospitalization  (cost=0.00..4.31 rows=4 width=0) (actual time=0.007..0.007 rows=4.00 loops=1)
+                                                   Index Cond: (patient_id = 1)
+                                                   Index Searches: 1
+                                                   Buffers: shared hit=2
+                     ->  Memoize  (cost=0.15..4.97 rows=1 width=222) (actual time=0.011..0.012 rows=1.00 loops=4)
+                           Cache Key: h.department_id
+                           Cache Mode: logical
+                           Hits: 0  Misses: 4  Evictions: 0  Overflows: 0  Memory Usage: 1kB
+                           Buffers: shared hit=8
+                           ->  Index Scan using department_pkey on department d  (cost=0.14..4.96 rows=1 width=222) (actual time=0.010..0.010 rows=1.00 loops=4)
+                                 Index Cond: (department_id = h.department_id)
+                                 Index Searches: 4
+                                 Buffers: shared hit=8
+               ->  Index Scan using icd10_diagnosis_pkey on icd10_diagnosis icd_in  (cost=0.29..8.30 rows=1 width=91) (actual time=0.007..0.007 rows=1.00 loops=4)
+                     Index Cond: ((icd10_code)::text = (h.admission_icd10_code)::text)
+                     Index Searches: 4
+                     Buffers: shared hit=12
+         ->  Index Scan using icd10_diagnosis_pkey on icd10_diagnosis icd_out  (cost=0.29..8.30 rows=1 width=91) (actual time=0.006..0.006 rows=1.00 loops=4)
+               Index Cond: ((icd10_code)::text = (h.discharge_icd10_code)::text)
+               Index Searches: 4
+               Buffers: shared hit=12
+ Planning:
+   Buffers: shared hit=18
+ Planning Time: 0.852 ms
+ Execution Time: 0.523 ms
+(57 rows)
+
+RESET

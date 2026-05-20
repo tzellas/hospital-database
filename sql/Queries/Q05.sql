@@ -37,8 +37,8 @@ JOIN staff AS st
 JOIN hospitalization_medical_procedure AS hmp
     ON hmp.main_doctor_id = doc.staff_id
 
-JOIN medical_procedure AS mp
-    ON mp.procedure_id = hmp.procedure_id
+JOIN all_medical_procedures AS mp
+    ON mp.procedure_code = hmp.procedure_code
 
 -- Κρατάμε μόνο νέους ιατρούς
 WHERE st.age < 35

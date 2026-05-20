@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 DATA_DIR = Path("data")
-COUNT = 600
+COUNT = 750
 SEED = 44
 
 SURGICAL_SPECIALTIES = {

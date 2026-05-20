@@ -1,3 +1,4 @@
+\encoding UTF8
 /*
 Q07
 Για κάθε δραστική ουσία βρίσκουμε:
@@ -16,8 +17,8 @@ drg = drug
 
 SELECT
     -- Στοιχεία δραστικής ουσίας
-    acs.active_substance_id,
-    acs.name AS active_substance_name,
+    acs.substance_id,
+    acs.substance_name AS active_substance_name,
 
     -- Πλήθος διαφορετικών ασθενών που έχουν δηλώσει αλλεργία
     COUNT(DISTINCT al.patient_id) AS allergic_patient_count,
@@ -29,20 +30,20 @@ FROM active_substance AS acs
 
 -- Σύνδεση με αλλεργίες ασθενών
 LEFT JOIN allergy AS al
-    ON al.active_substance_id = acs.active_substance_id
+    ON al.substance_id = acs.substance_id
 
 -- Σύνδεση δραστικής ουσίας με φάρμακα
 LEFT JOIN drug_active_substance AS das
-    ON das.active_substance_id = acs.active_substance_id
+    ON das.substance_id = acs.substance_id
 
 LEFT JOIN drug AS drg
     ON drg.drug_id = das.drug_id
 
 GROUP BY
-    acs.active_substance_id,
-    acs.name
+    acs.substance_id,
+    acs.substance_name
 
 ORDER BY
     allergic_patient_count DESC,
     drug_count DESC,
-    acs.name;
+    acs.substance_name;

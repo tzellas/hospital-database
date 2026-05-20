@@ -7,7 +7,7 @@ from pathlib import Path
 
 DATA_DIR = Path("data")
 OUT_PATH = DATA_DIR / "doctor_reviews.csv"
-COVERAGE = 0.94
+COVERAGE = 0.95
 SEED = 72
 
 def read_csv(path):

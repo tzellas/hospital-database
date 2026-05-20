@@ -6,7 +6,7 @@ from pathlib import Path
 
 DATA_DIR = Path("data")
 OUT_PATH = DATA_DIR / "hospitalization_lab_tests.csv"
-COUNT = 900
+COUNT = 1150
 SEED = 21
 
 def read_dict_csv(path):

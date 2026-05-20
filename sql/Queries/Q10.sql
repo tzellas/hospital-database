@@ -1,3 +1,4 @@
+\encoding UTF8
 /*
 Q10
 Βρίσκουμε τα top-3 ζεύγη δραστικών ουσιών
@@ -25,12 +26,12 @@ as2 = active_substance για τη δεύτερη δραστική ουσία
 
 SELECT
     -- Πρώτη δραστική ουσία του ζεύγους
-    as1.active_substance_id AS active_substance_1_id,
-    as1.name AS active_substance_1_name,
+    as1.substance_id AS active_substance_1_id,
+    as1.substance_name AS active_substance_1_name,
 
     -- Δεύτερη δραστική ουσία του ζεύγους
-    as2.active_substance_id AS active_substance_2_id,
-    as2.name AS active_substance_2_name,
+    as2.substance_id AS active_substance_2_id,
+    as2.substance_name AS active_substance_2_name,
 
     -- Πόσες φορές εμφανίστηκε αυτός ο συνδυασμός
     -- στον ίδιο ασθενή και στην ίδια νοσηλεία
@@ -53,21 +54,21 @@ JOIN drug_active_substance AS das2
 
 -- Κρατάμε μόνο διαφορετικές δραστικές ουσίες και αποφεύγουμε διπλά ζεύγη ουσιών.
 JOIN active_substance AS as1
-    ON as1.active_substance_id = das1.active_substance_id
+    ON as1.substance_id = das1.substance_id
 
 JOIN active_substance AS as2
-    ON as2.active_substance_id = das2.active_substance_id
-   AND as2.active_substance_id > as1.active_substance_id
+    ON as2.substance_id = das2.substance_id
+   AND as2.substance_id > as1.substance_id
 
 GROUP BY
-    as1.active_substance_id,
-    as1.name,
-    as2.active_substance_id,
-    as2.name
+    as1.substance_id,
+    as1.substance_name,
+    as2.substance_id,
+    as2.substance_name
 
 ORDER BY
     pair_frequency DESC,
-    as1.name,
-    as2.name
+    as1.substance_name,
+    as2.substance_name
 
 LIMIT 3;

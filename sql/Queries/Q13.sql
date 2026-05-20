@@ -1,3 +1,4 @@
+\encoding UTF8
 /*
 Q13
 Για κάθε ιατρό βρίσκουμε όλη την ιεραρχία εποπτείας του,
@@ -41,12 +42,12 @@ WITH RECURSIVE supervision_hierarchy AS (
         ON st.staff_id = doc.staff_id
 
     JOIN doctor AS sup
-        ON sup.staff_id = doc.supervisor_id
+        ON sup.staff_id = doc.supervisor_doc_id
 
     JOIN staff AS sst
         ON sst.staff_id = sup.staff_id
 
-    WHERE doc.supervisor_id IS NOT NULL
+    WHERE doc.supervisor_doc_id IS NOT NULL
 
 
     UNION ALL
@@ -76,7 +77,7 @@ WITH RECURSIVE supervision_hierarchy AS (
         ON current_sup.staff_id = sh.supervisor_id
 
     JOIN doctor AS sup
-        ON sup.staff_id = current_sup.supervisor_id
+        ON sup.staff_id = current_sup.supervisor_doc_id
 
     JOIN staff AS sst
         ON sst.staff_id = sup.staff_id

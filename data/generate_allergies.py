@@ -5,8 +5,15 @@ from pathlib import Path
 
 DATA_DIR = Path("data")
 OUT_PATH = DATA_DIR / "allergies.csv"
-COUNT = 250
+COUNT = 380
 SEED = 31
+
+def find_patient_file(data):
+    for name in ("patients.csv", "patient.csv"):
+        path = data / name
+        if path.exists():
+            return path
+    raise SystemExit("missing patients.csv / patient.csv")
 
 def count_data_rows(path, has_header=True):
     with open(path, encoding="utf-8-sig", newline="") as f:
@@ -19,11 +26,11 @@ def main():
     random.seed(SEED)
     data = DATA_DIR
 
-    patient_count = count_data_rows(data / "patients.csv", has_header=True)
+    patient_count = count_data_rows(find_patient_file(data), has_header=True)
     substance_count = count_data_rows(data / "active_substances_unique.csv", has_header=False)
 
     if patient_count == 0:
-        raise SystemExit("patients.csv has no patients")
+        raise SystemExit("patients file has no patients")
     if substance_count == 0:
         raise SystemExit("active_substances_unique.csv has no active substances")
 

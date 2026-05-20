@@ -1,3 +1,4 @@
+\encoding UTF8
 /*
 Q08
 Βρίσκουμε το προσωπικό
@@ -25,7 +26,7 @@ SELECT
     st.last_name,
     st.staff_type,
     st.email,
-    st.phone_number,
+    st.phone,
 
     -- Πληροφορίες ανά κατηγορία προσωπικού
     doc.specialty,

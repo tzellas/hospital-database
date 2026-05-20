@@ -6,7 +6,7 @@ from pathlib import Path
 
 DATA_DIR = Path('data')
 OUT_PATH = DATA_DIR / 'hospitalizations.csv'
-N = 1450
+N = 1850
 SEED = 42
 START_DATE = '2025-03-20'
 END_DATE = '2026-03-19'
@@ -27,6 +27,9 @@ def find_file(data, name):
     if p.exists(): return p
     hits = sorted(glob.glob(str(data / (name.replace('.csv','') + '*.csv'))))
     if hits: return Path(hits[0])
+    if name == 'patients.csv':
+        alt = data / 'patient.csv'
+        if alt.exists(): return alt
     die(f'missing {name}')
 
 def read_rows(path, fallback=None):

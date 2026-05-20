@@ -1,4 +1,24 @@
- doctor_id | first_name | last_name | age | specialty | rank | main_surgery_count 
------------+------------+-----------+-----+-----------+------+--------------------
-(0 rows)
+ doctor_id | first_name |  last_name  | age |         specialty         |     rank     | main_surgery_count 
+-----------+------------+-------------+-----+---------------------------+--------------+--------------------
+       845 | Winona     | Grigolli    |  27 | Oncology                  | CONSULTANT_A |                 17
+       832 | Lorne      | Winspeare   |  32 | Radiation Oncology        | RESIDENT     |                 13
+       663 | Dayle      | McDuff      |  29 | Anesthesiology            | CONSULTANT_A |                 12
+       661 | Niall      | Ronchetti   |  32 | General Surgery           | CONSULTANT_A |                 11
+       311 | Fania      | Donaway     |  27 | Neurology                 | CONSULTANT_A |                 10
+       677 | Maxine     | Cropper     |  27 | Traumatology              | CONSULTANT_B |                  9
+       429 | Pearla     | Kramer      |  33 | Intensive Care Medicine   | CONSULTANT_A |                  8
+       328 | Skelly     | Maffy       |  33 | Spine Surgery             | CONSULTANT_B |                  8
+       768 | Michele    | Stovine     |  26 | Spine Surgery             | CONSULTANT_A |                  8
+       684 | Paxon      | Menichillo  |  28 | Neurosurgery              | CONSULTANT_B |                  7
+       736 | Jemima     | Ivanyutin   |  32 | Obstetrics and Gynecology | RESIDENT     |                  5
+       757 | Britni     | Brailsford  |  28 | Anesthesiology            | CONSULTANT_A |                  4
+       616 | Linzy      | Garioch     |  31 | General Surgery           | RESIDENT     |                  4
+       629 | Charmion   | Johnys      |  33 | Obstetrics and Gynecology | CONSULTANT_A |                  4
+       836 | Vinni      | Schirach    |  31 | Gynecologic Oncology      | RESIDENT     |                  4
+       713 | Truda      | Elwel       |  26 | Endourology               | CONSULTANT_B |                  3
+       837 | Dolley     | Maeer       |  31 | Trauma Surgery            | RESIDENT     |                  3
+       714 | Queenie    | McCallister |  30 | Urologic Oncology         | CONSULTANT_B |                  2
+       765 | Delia      | Vipan       |  29 | Neurology                 | CONSULTANT_A |                  2
+       783 | Harlan     | Glander     |  26 | Obstetrics and Gynecology | CONSULTANT_B |                  1
+(20 rows)
 

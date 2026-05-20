@@ -1,0 +1,4 @@
+ icd10_category | first_year | second_year | first_year_admission_count | second_year_admission_count 
+----------------+------------+-------------+----------------------------+-----------------------------
+(0 rows)
+

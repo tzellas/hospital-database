@@ -1,0 +1,110 @@
+ doctor_id | first_name  |  last_name  |         specialty         |     rank     | procedure_count | max_procedure_count | difference_from_top 
+-----------+-------------+-------------+---------------------------+--------------+-----------------+---------------------+---------------------
+       292 | Alisander   | Alberts     | Traumatology              | CONSULTANT_B |               1 |                   9 |                   8
+       739 | Huntley     | Allsepp     | General Surgery           | RESIDENT     |               1 |                   9 |                   8
+       490 | Lothario    | Bigly       | Laboratory Medicine       | CONSULTANT_B |               1 |                   9 |                   8
+       216 | August      | Bodell      | Intensive Care Medicine   | RESIDENT     |               1 |                   9 |                   8
+       651 | Ryon        | Brotherheed | Emergency Medicine        | CONSULTANT_A |               1 |                   9 |                   8
+       809 | Jorge       | Buff        | Stroke Medicine           | CONSULTANT_B |               1 |                   9 |                   8
+       846 | Orsola      | Calken      | Hematology                | CONSULTANT_B |               1 |                   9 |                   8
+       796 | Suki        | Carmel      | Neurosurgery              | CONSULTANT_B |               1 |                   9 |                   8
+       844 | Sara        | Clare       | Surgical Oncology         | CONSULTANT_A |               1 |                   9 |                   8
+       784 | Tessie      | Clibbery    | Maternal-Fetal Medicine   | CONSULTANT_B |               1 |                   9 |                   8
+       727 | Clementine  | Curror      | Neurology                 | RESIDENT     |               1 |                   9 |                   8
+       153 | Emelina     | Danilowicz  | Internal Medicine         | CONSULTANT_B |               1 |                   9 |                   8
+       704 | Misti       | Drane       | Pulmonology               | CONSULTANT_B |               1 |                   9 |                   8
+       352 | Dody        | Eastmond    | Neonatology               | CONSULTANT_B |               1 |                   9 |                   8
+       657 | Lucius      | Elloway     | Internal Medicine         | CONSULTANT_A |               1 |                   9 |                   8
+       833 | Ezri        | Ethridge    | Sleep Medicine            | RESIDENT     |               1 |                   9 |                   8
+       760 | Annis       | Farraway    | Intensive Care Medicine   | CONSULTANT_A |               1 |                   9 |                   8
+       678 | Val         | Grima       | Sports Medicine           | CONSULTANT_B |               1 |                   9 |                   8
+       705 | Noell       | Grocutt     | Respiratory Medicine      | CONSULTANT_B |               1 |                   9 |                   8
+       506 | Theobald    | Guillou     | Pathology                 | CONSULTANT_B |               1 |                   9 |                   8
+       314 | Koenraad    | Helkin      | Clinical Neurophysiology  | CONSULTANT_B |               1 |                   9 |                   8
+       770 | Willi       | Heppenspall | Neonatology               | CONSULTANT_A |               1 |                   9 |                   8
+       848 | Janeen      | Jewes       | Surgical Oncology         | CONSULTANT_B |               1 |                   9 |                   8
+       629 | Charmion    | Johnys      | Obstetrics and Gynecology | CONSULTANT_A |               1 |                   9 |                   8
+       842 | Terrence    | Kemmish     | Hematology                | CONSULTANT_A |               1 |                   9 |                   8
+       722 | Yank        | Kerslake    | General Surgery           | CONSULTANT_B |               1 |                   9 |                   8
+       807 | Ruby        | Kubelka     | Trauma Surgery            | CONSULTANT_B |               1 |                   9 |                   8
+       694 | Brunhilde   | Lewton      | Surgical Oncology         | CONSULTANT_B |               1 |                   9 |                   8
+       840 | Alia        | Llopis      | Neurocritical Care        | RESIDENT     |               1 |                   9 |                   8
+       758 | Christopher | Loadwick    | Anesthesiology            | CONSULTANT_A |               1 |                   9 |                   8
+       818 | Ly          | Macrow      | Neurology                 | RESIDENT     |               1 |                   9 |                   8
+       837 | Dolley      | Maeer       | Trauma Surgery            | RESIDENT     |               1 |                   9 |                   8
+       820 | Charmane    | Mahon       | Oncology                  | RESIDENT     |               1 |                   9 |                   8
+       537 | Joni        | Mattschas   | Gastroenterology          | CONSULTANT_A |               1 |                   9 |                   8
+       714 | Queenie     | McCallister | Urologic Oncology         | CONSULTANT_B |               1 |                   9 |                   8
+       370 | Jerrie      | Mehew       | Oncology                  | CONSULTANT_A |               1 |                   9 |                   8
+       679 | Constantia  | Meyer       | Neurology                 | CONSULTANT_B |               1 |                   9 |                   8
+       366 | Willdon     | Mineghelli  | Emergency Medicine        | RESIDENT     |               1 |                   9 |                   8
+       680 | Sondra      | Morrice     | Neurology                 | CONSULTANT_B |               1 |                   9 |                   8
+       861 | Bryna       | Moscrop     | Radiology                 | RESIDENT     |               1 |                   9 |                   8
+       773 | Selinda     | Muldoon     | Radiology                 | CONSULTANT_B |               1 |                   9 |                   8
+       731 | Boone       | Muncey      | Radiology                 | RESIDENT     |               1 |                   9 |                   8
+       738 | Spence      | Nutbeem     | Internal Medicine         | RESIDENT     |               1 |                   9 |                   8
+       759 | Chadd       | Popping     | Intensive Care Medicine   | CONSULTANT_A |               1 |                   9 |                   8
+       769 | Nedda       | Rassell     | Pediatrics                | CONSULTANT_A |               1 |                   9 |                   8
+       482 | Franciskus  | Reyna       | Pathology                 | CONSULTANT_A |               1 |                   9 |                   8
+       654 | Tammie      | Rogger      | Emergency Medicine        | CONSULTANT_A |               1 |                   9 |                   8
+       730 | Lebbie      | Scadden     | Oncology                  | RESIDENT     |               1 |                   9 |                   8
+       440 | Constantia  | Slewcock    | Pulmonology               | CONSULTANT_B |               1 |                   9 |                   8
+       779 | Lyndell     | Tollett     | Gastroenterology          | CONSULTANT_B |               1 |                   9 |                   8
+       671 | Morgana     | Topliss     | Cardiology                | CONSULTANT_A |               1 |                   9 |                   8
+       169 | Howey       | Tremblot    | General Surgery           | CONSULTANT_B |               1 |                   9 |                   8
+       741 | Erda        | Turnor      | Intensive Care Medicine   | RESIDENT     |               1 |                   9 |                   8
+       743 | Josefa      | Vaissiere   | Hematology                | RESIDENT     |               1 |                   9 |                   8
+       765 | Delia       | Vipan       | Neurology                 | CONSULTANT_A |               1 |                   9 |                   8
+       924 | Francois    | Baurerich   | Spine Surgery             | CONSULTANT_A |               2 |                   9 |                   7
+       717 | Raychel     | Bayston     | Maternal-Fetal Medicine   | CONSULTANT_B |               2 |                   9 |                   7
+       681 | Tirrell     | Bertomeu    | Clinical Neurophysiology  | CONSULTANT_B |               2 |                   9 |                   7
+       642 | Lianna      | Bizley      | Emergency Medicine        | RESIDENT     |               2 |                   9 |                   7
+       615 | Tybi        | Bowland     | Urologic Oncology         | CONSULTANT_B |               2 |                   9 |                   7
+       757 | Britni      | Brailsford  | Anesthesiology            | CONSULTANT_A |               2 |                   9 |                   7
+       729 | Venus       | Brasner     | Pediatrics                | RESIDENT     |               2 |                   9 |                   7
+       720 | Abby        | Broadhurst  | Emergency Medicine        | CONSULTANT_B |               2 |                   9 |                   7
+       811 | Whit        | Butters     | Emergency Medicine        | CONSULTANT_B |               2 |                   9 |                   7
+       716 | Eugine      | Climpson    | Obstetrics and Gynecology | CONSULTANT_B |               2 |                   9 |                   7
+       838 | Odelle      | Fergie      | Sports Medicine           | RESIDENT     |               2 |                   9 |                   7
+       725 | Jordanna    | Gaitung     | Cardiology                | CONSULTANT_B |               2 |                   9 |                   7
+       790 | Lorrayne    | Greedyer    | Cardiology                | CONSULTANT_B |               2 |                   9 |                   7
+       826 | Linc        | Hancock     | Obstetrics and Gynecology | RESIDENT     |               2 |                   9 |                   7
+       536 | Rawley      | Handke      | Pulmonology               | CONSULTANT_B |               2 |                   9 |                   7
+       362 | Anatollo    | Janczyk     | Pediatric Endocrinology   | CONSULTANT_B |               2 |                   9 |                   7
+       328 | Skelly      | Maffy       | Spine Surgery             | CONSULTANT_B |               2 |                   9 |                   7
+       819 | Daniele     | McCluin     | Pediatrics                | RESIDENT     |               2 |                   9 |                   7
+       925 | Tresa       | Meric       | Neurocritical Care        | CONSULTANT_A |               2 |                   9 |                   7
+       808 | Ewart       | Penketh     | Sports Medicine           | CONSULTANT_B |               2 |                   9 |                   7
+       686 | Desiree     | Petrichat   | Neurocritical Care        | CONSULTANT_B |               2 |                   9 |                   7
+       847 | Hercules    | Pitkeathley | Radiation Oncology        | CONSULTANT_B |               2 |                   9 |                   7
+       285 | Vinny       | Pryde       | Orthopedics               | CONSULTANT_A |               2 |                   9 |                   7
+       701 | Jorey       | Roberts     | Laboratory Medicine       | CONSULTANT_B |               2 |                   9 |                   7
+       715 | Sibby       | Simononsky  | Obstetrics and Gynecology | CONSULTANT_B |               2 |                   9 |                   7
+       795 | Barty       | Snalum      | Neurology                 | CONSULTANT_B |               2 |                   9 |                   7
+       747 | Sophie      | Weinham     | Spine Surgery             | RESIDENT     |               2 |                   9 |                   7
+       926 | Bink        | Bampkin     | Gynecologic Oncology      | CONSULTANT_A |               3 |                   9 |                   6
+       712 | Alla        | Barsby      | Urology                   | CONSULTANT_B |               3 |                   9 |                   6
+       782 | Vina        | Bleacher    | Endourology               | CONSULTANT_B |               3 |                   9 |                   6
+       723 | Tedman      | Dalton      | Anesthesiology            | CONSULTANT_B |               3 |                   9 |                   6
+       827 | Coralyn     | Drysdall    | Interventional Cardiology | RESIDENT     |               3 |                   9 |                   6
+       713 | Truda       | Elwel       | Endourology               | CONSULTANT_B |               3 |                   9 |                   6
+       676 | Cornall     | Firle       | Orthopedics               | CONSULTANT_B |               3 |                   9 |                   6
+       736 | Jemima      | Ivanyutin   | Obstetrics and Gynecology | RESIDENT     |               3 |                   9 |                   6
+       797 | Kristian    | Norridge    | Oncology                  | CONSULTANT_B |               3 |                   9 |                   6
+       836 | Vinni       | Schirach    | Gynecologic Oncology      | RESIDENT     |               3 |                   9 |                   6
+       668 | Rossy       | Schofield   | Intensive Care Medicine   | CONSULTANT_A |               3 |                   9 |                   6
+       719 | Aldo        | Wildbore    | Trauma Surgery            | CONSULTANT_B |               3 |                   9 |                   6
+       295 | Drugi       | Wreight     | Sports Medicine           | CONSULTANT_B |               3 |                   9 |                   6
+       849 | Collete     | Carhart     | Oncology                  | CONSULTANT_B |               4 |                   9 |                   5
+       334 | Zonda       | Ciobutaro   | Neurocritical Care        | CONSULTANT_B |               4 |                   9 |                   5
+       677 | Maxine      | Cropper     | Traumatology              | CONSULTANT_B |               4 |                   9 |                   5
+       617 | Nealy       | Djorevic    | Urology                   | CONSULTANT_B |               4 |                   9 |                   5
+       634 | Lucais      | Fattorini   | Maternal-Fetal Medicine   | CONSULTANT_B |               4 |                   9 |                   5
+       814 | Teador      | Heijnen     | Anesthesiology            | CONSULTANT_B |               4 |                   9 |                   5
+       853 | Domenic     | Huison      | Radiology                 | CONSULTANT_A |               4 |                   9 |                   5
+       788 | Rafaellle   | Lazar       | Anesthesiology            | CONSULTANT_B |               4 |                   9 |                   5
+       684 | Paxon       | Menichillo  | Neurosurgery              | CONSULTANT_B |               4 |                   9 |                   5
+       748 | Winnifred   | Muneely     | Neonatology               | RESIDENT     |               4 |                   9 |                   5
+       745 | Shurwood    | Tutchings   | Radiation Oncology        | RESIDENT     |               4 |                   9 |                   5
+(106 rows)
+

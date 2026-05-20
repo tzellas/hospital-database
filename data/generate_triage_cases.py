@@ -6,8 +6,8 @@ from collections import defaultdict
 DATA_DIR = Path('data')
 HOSPITALIZATIONS_PATH = DATA_DIR / 'hospitalizations.csv'
 OUT_PATH = DATA_DIR / 'triage_cases.csv'
-TOTAL = 2050
-REFERRED = 1450
+TOTAL = 2550
+REFERRED = 1850
 SEED = 43
 YEAR_START = datetime(2025, 3, 20, 0, 0)
 YEAR_END = datetime(2026, 3, 19, 23, 59)

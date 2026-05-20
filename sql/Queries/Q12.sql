@@ -1,3 +1,4 @@
+\encoding UTF8
 /*
 Q12
 Βρίσκουμε τον απαιτούμενο αριθμό προσωπικού
@@ -13,8 +14,8 @@ Q12
 στις εφημερίες της συγκεκριμένης εβδομάδας.
 
 ΑΛΛΑΖΟΥΜΕ ΕΔΩ ΤΗΝ ΕΒΔΟΜΑΔΑ:
-WHERE ds.shift_date >= DATE '2026-05-04'
-  AND ds.shift_date <  DATE '2026-05-11'
+WHERE ds.shift_date >= DATE '2026-03-09'
+  AND ds.shift_date <  DATE '2026-03-16'
 
 ALIASES:
 ds  = duty_shift
@@ -73,8 +74,8 @@ LEFT JOIN administrative AS adm
 
 -- Συγκεκριμένη εβδομάδα:
 -- από 2026-05-04 έως πριν 2026-05-11
-WHERE ds.shift_date >= DATE '2026-05-04'
-  AND ds.shift_date <  DATE '2026-05-11'
+WHERE ds.shift_date >= DATE '2026-03-09'
+  AND ds.shift_date <  DATE '2026-03-16'
 
 GROUP BY
     dep.department_id,

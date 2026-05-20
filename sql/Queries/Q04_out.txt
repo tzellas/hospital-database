@@ -1,75 +1,81 @@
  doctor_id | first_name | last_name | specialty  |     rank     | avg_medical_care_score | avg_overall_experience_score | review_count 
 -----------+------------+-----------+------------+--------------+------------------------+------------------------------+--------------
-       671 | Morgana    | Topliss   | Cardiology | CONSULTANT_A |     4.3076923076923077 |           3.7692307692307692 |           13
+       671 | Morgana    | Topliss   | Cardiology | CONSULTANT_A |     3.8000000000000000 |           3.2000000000000000 |            5
 (1 row)
 
-                                                                               QUERY PLAN                                                                               
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- GroupAggregate  (cost=33.21..33.25 rows=1 width=117) (actual time=0.012..0.012 rows=0.00 loops=1)
+                                                                                     QUERY PLAN                                                                                     
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ GroupAggregate  (cost=52.92..52.96 rows=1 width=117) (actual time=0.049..0.050 rows=0.00 loops=1)
    Group Key: st.first_name, st.last_name
    Buffers: shared hit=2
-   ->  Sort  (cost=33.21..33.22 rows=1 width=53) (actual time=0.011..0.011 rows=0.00 loops=1)
+   ->  Sort  (cost=52.92..52.93 rows=1 width=53) (actual time=0.048..0.049 rows=0.00 loops=1)
          Sort Key: st.first_name, st.last_name
          Sort Method: quicksort  Memory: 25kB
          Buffers: shared hit=2
-         ->  Nested Loop  (cost=1.11..33.20 rows=1 width=53) (actual time=0.007..0.007 rows=0.00 loops=1)
+         ->  Nested Loop  (cost=5.13..52.91 rows=1 width=53) (actual time=0.040..0.040 rows=0.00 loops=1)
                Buffers: shared hit=2
-               ->  Nested Loop  (cost=0.83..24.90 rows=1 width=57) (actual time=0.006..0.007 rows=0.00 loops=1)
+               ->  Nested Loop  (cost=4.85..44.61 rows=1 width=39) (actual time=0.039..0.040 rows=0.00 loops=1)
                      Buffers: shared hit=2
-                     ->  Nested Loop  (cost=0.55..16.59 rows=1 width=45) (actual time=0.006..0.007 rows=0.00 loops=1)
+                     ->  Nested Loop  (cost=4.58..36.31 rows=1 width=12) (actual time=0.039..0.040 rows=0.00 loops=1)
                            Buffers: shared hit=2
-                           ->  Index Scan using doctor_pkey on doctor doc  (cost=0.27..8.29 rows=1 width=31) (actual time=0.006..0.006 rows=0.00 loops=1)
-                                 Index Cond: (staff_id = 1)
-                                 Index Searches: 1
+                           ->  Bitmap Heap Scan on doctor_review dr  (cost=4.30..11.41 rows=3 width=16) (actual time=0.039..0.039 rows=0.00 loops=1)
+                                 Recheck Cond: (doctor_id = 1)
                                  Buffers: shared hit=2
-                           ->  Index Scan using staff_pkey on staff st  (cost=0.28..8.29 rows=1 width=18) (never executed)
-                                 Index Cond: (staff_id = 1)
+                                 ->  Bitmap Index Scan on idx_doctor_review_doctor_id  (cost=0.00..4.30 rows=3 width=0) (actual time=0.009..0.010 rows=0.00 loops=1)
+                                       Index Cond: (doctor_id = 1)
+                                       Index Searches: 1
+                                       Buffers: shared hit=2
+                           ->  Index Scan using idx_hospitalization_review_patient_hospitalization on hospitalization_review hr  (cost=0.28..8.30 rows=1 width=12) (never executed)
+                                 Index Cond: ((patient_id = dr.patient_id) AND (hospitalization_id = dr.hospitalization_id))
                                  Index Searches: 0
-                     ->  Index Scan using idx_doctor_review_doctor_id on doctor_review dr  (cost=0.28..8.29 rows=1 width=16) (never executed)
-                           Index Cond: (doctor_id = 1)
+                     ->  Index Scan using doctor_pkey on doctor doc  (cost=0.27..8.29 rows=1 width=31) (never executed)
+                           Index Cond: (staff_id = 1)
                            Index Searches: 0
-               ->  Index Scan using idx_hospitalization_review_patient_hospitalization on hospitalization_review hr  (cost=0.28..8.30 rows=1 width=12) (never executed)
-                     Index Cond: ((patient_id = dr.patient_id) AND (hospitalization_id = dr.hospitalization_id))
+               ->  Index Scan using staff_pkey on staff st  (cost=0.28..8.29 rows=1 width=18) (never executed)
+                     Index Cond: (staff_id = 1)
                      Index Searches: 0
  Planning:
    Buffers: shared hit=12
- Planning Time: 0.427 ms
- Execution Time: 0.052 ms
-(30 rows)
+ Planning Time: 0.626 ms
+ Execution Time: 0.183 ms
+(33 rows)
 
 SET
-                                                                               QUERY PLAN                                                                               
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- GroupAggregate  (cost=33.21..33.25 rows=1 width=117) (actual time=0.008..0.009 rows=0.00 loops=1)
+                                                                                     QUERY PLAN                                                                                     
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ GroupAggregate  (cost=52.92..52.96 rows=1 width=117) (actual time=0.024..0.024 rows=0.00 loops=1)
    Group Key: st.first_name, st.last_name
    Buffers: shared hit=2
-   ->  Sort  (cost=33.21..33.22 rows=1 width=53) (actual time=0.008..0.008 rows=0.00 loops=1)
+   ->  Sort  (cost=52.92..52.93 rows=1 width=53) (actual time=0.023..0.024 rows=0.00 loops=1)
          Sort Key: st.first_name, st.last_name
          Sort Method: quicksort  Memory: 25kB
          Buffers: shared hit=2
-         ->  Nested Loop  (cost=1.11..33.20 rows=1 width=53) (actual time=0.004..0.005 rows=0.00 loops=1)
+         ->  Nested Loop  (cost=5.13..52.91 rows=1 width=53) (actual time=0.018..0.019 rows=0.00 loops=1)
                Buffers: shared hit=2
-               ->  Nested Loop  (cost=0.83..24.90 rows=1 width=57) (actual time=0.004..0.005 rows=0.00 loops=1)
+               ->  Nested Loop  (cost=4.85..44.61 rows=1 width=39) (actual time=0.018..0.019 rows=0.00 loops=1)
                      Buffers: shared hit=2
-                     ->  Nested Loop  (cost=0.55..16.59 rows=1 width=45) (actual time=0.004..0.004 rows=0.00 loops=1)
+                     ->  Nested Loop  (cost=4.58..36.31 rows=1 width=12) (actual time=0.018..0.018 rows=0.00 loops=1)
                            Buffers: shared hit=2
-                           ->  Index Scan using doctor_pkey on doctor doc  (cost=0.27..8.29 rows=1 width=31) (actual time=0.004..0.004 rows=0.00 loops=1)
-                                 Index Cond: (staff_id = 1)
-                                 Index Searches: 1
+                           ->  Bitmap Heap Scan on doctor_review dr  (cost=4.30..11.41 rows=3 width=16) (actual time=0.018..0.018 rows=0.00 loops=1)
+                                 Recheck Cond: (doctor_id = 1)
                                  Buffers: shared hit=2
-                           ->  Index Scan using staff_pkey on staff st  (cost=0.28..8.29 rows=1 width=18) (never executed)
-                                 Index Cond: (staff_id = 1)
+                                 ->  Bitmap Index Scan on idx_doctor_review_doctor_id  (cost=0.00..4.30 rows=3 width=0) (actual time=0.004..0.004 rows=0.00 loops=1)
+                                       Index Cond: (doctor_id = 1)
+                                       Index Searches: 1
+                                       Buffers: shared hit=2
+                           ->  Index Scan using idx_hospitalization_review_patient_hospitalization on hospitalization_review hr  (cost=0.28..8.30 rows=1 width=12) (never executed)
+                                 Index Cond: ((patient_id = dr.patient_id) AND (hospitalization_id = dr.hospitalization_id))
                                  Index Searches: 0
-                     ->  Index Scan using idx_doctor_review_doctor_id on doctor_review dr  (cost=0.28..8.29 rows=1 width=16) (never executed)
-                           Index Cond: (doctor_id = 1)
+                     ->  Index Scan using doctor_pkey on doctor doc  (cost=0.27..8.29 rows=1 width=31) (never executed)
+                           Index Cond: (staff_id = 1)
                            Index Searches: 0
-               ->  Index Scan using idx_hospitalization_review_patient_hospitalization on hospitalization_review hr  (cost=0.28..8.30 rows=1 width=12) (never executed)
-                     Index Cond: ((patient_id = dr.patient_id) AND (hospitalization_id = dr.hospitalization_id))
+               ->  Index Scan using staff_pkey on staff st  (cost=0.28..8.29 rows=1 width=18) (never executed)
+                     Index Cond: (staff_id = 1)
                      Index Searches: 0
  Planning:
    Buffers: shared hit=12
- Planning Time: 0.333 ms
- Execution Time: 0.042 ms
-(30 rows)
+ Planning Time: 0.465 ms
+ Execution Time: 0.066 ms
+(33 rows)
 
 RESET

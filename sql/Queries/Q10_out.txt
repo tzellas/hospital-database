@@ -1,0 +1,7 @@
+ active_substance_1_id | active_substance_1_name | active_substance_2_id |  active_substance_2_name  | pair_frequency 
+-----------------------+-------------------------+-----------------------+---------------------------+----------------
+                    67 | Amlodipine Besilate     |                  1492 | Terbinafine Hydrochloride |              2
+                   427 | Diclofenac Sodium       |                  1122 | Omeprazole                |              2
+                  1095 | Nimesulide              |                  1153 | Paracetamol               |              2
+(3 rows)
+
