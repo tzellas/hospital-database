@@ -1,4 +1,5 @@
-\encoding UTF8
+\encoding UTF8 -- Όταν το τρέχουμε σε pgAdmin σβήνουμε αυτή τη γραμμή 
+
 /*
 Q15
 Βρίσκουμε την κατανομή των περιστατικών triage ανά επίπεδο επείγοντος.
@@ -20,58 +21,91 @@ tc = triage_case
 dep = department
 */
 
-SELECT
-    -- Επίπεδο επείγοντος triage
-    tc.urgency_level,
+WITH level_stats AS (
 
-    -- Περιγραφή επιπέδου επείγοντος για πιο καθαρό αποτέλεσμα
+    SELECT
+        tc.urgency_level,
+
+        -- Συνολικό πλήθος triage περιστατικών στο συγκεκριμένο επίπεδο
+        COUNT(*) AS total_triage_cases,
+
+        -- Μέσος χρόνος αναμονής.
+        -- Το AVG αγνοεί NULL τιμές, άρα αν κάποιο service_datetime είναι NULL,
+        -- δεν επηρεάζει τον μέσο όρο.
+        AVG(tc.service_datetime - tc.arrival_datetime) AS avg_waiting_time,
+
+        -- Πλήθος περιστατικών που οδήγησαν σε νοσηλεία
+        COUNT(*) FILTER (
+            WHERE tc.outcome = 'REFERRED_FOR_HOSPITALIZATION'
+        ) AS hospitalized_cases,
+
+        -- Ποσοστό περιστατικών που οδήγησαν σε νοσηλεία
+        ROUND(
+            100.0 * COUNT(*) FILTER (
+                WHERE tc.outcome = 'REFERRED_FOR_HOSPITALIZATION'
+            ) / COUNT(*),
+            2
+        ) AS hospitalization_percentage
+
+    FROM triage_case AS tc
+
+    GROUP BY
+        tc.urgency_level
+),
+
+referral_distribution AS (
+
+    SELECT
+        tc.urgency_level,
+
+        -- Τμήμα στο οποίο παραπέμφθηκε το περιστατικό
+        dep.name AS referred_department_name,
+
+        -- Πλήθος παραπομπών στο συγκεκριμένο τμήμα
+        COUNT(*) AS referral_count
+
+    FROM triage_case AS tc
+
+    JOIN department AS dep
+        ON dep.department_id = tc.referred_department_id
+
+    -- Εδώ κρατάμε μόνο όσα οδήγησαν σε νοσηλεία,
+    -- γιατί μόνο αυτά έχουν νόημα ως referrals.
+    WHERE tc.outcome = 'REFERRED_FOR_HOSPITALIZATION'
+
+    GROUP BY
+        tc.urgency_level,
+        dep.name
+)
+
+SELECT
+    -- Επίπεδο επείγοντος
+    ls.urgency_level,
+
     CASE
-        WHEN tc.urgency_level = 1 THEN 'Άμεσο'
-        WHEN tc.urgency_level = 2 THEN 'Επείγον'
-        WHEN tc.urgency_level = 3 THEN 'Επιτακτικό'
-        WHEN tc.urgency_level = 4 THEN 'Λιγότερο επείγον'
-        WHEN tc.urgency_level = 5 THEN 'Μη επείγον'
+        WHEN ls.urgency_level = 1 THEN 'Άμεσο'
+        WHEN ls.urgency_level = 2 THEN 'Επείγον'
+        WHEN ls.urgency_level = 3 THEN 'Επιτακτικό'
+        WHEN ls.urgency_level = 4 THEN 'Λιγότερο επείγον'
+        WHEN ls.urgency_level = 5 THEN 'Μη επείγον'
     END AS urgency_description,
 
-    -- Τμήμα παραπομπής
-    -- Αν το περιστατικό δεν οδήγησε σε νοσηλεία,
-    -- τότε δεν υπάρχει τμήμα παραπομπής.
-    dep.name AS referred_department_name,
+    -- Συνολικά στοιχεία ανά επίπεδο
+    ls.total_triage_cases,
+    ls.avg_waiting_time,
+    ls.hospitalized_cases,
+    ls.hospitalization_percentage,
 
-    -- Πλήθος περιστατικών για αυτό το urgency level
-    -- και αυτό το τμήμα παραπομπής
-    COUNT(*) AS triage_case_count,
+    -- Κατανομή παραπομπών ανά τμήμα
+    rd.referred_department_name,
+    COALESCE(rd.referral_count, 0) AS referral_count
 
-    -- Μέσος χρόνος αναμονής
-    AVG(tc.service_datetime - tc.arrival_datetime) AS avg_waiting_time,
+FROM level_stats AS ls
 
-    -- Πλήθος περιστατικών που οδήγησαν σε νοσηλεία
-    COUNT(*) FILTER (
-        WHERE tc.outcome = 'REFERRED_FOR_HOSPITALIZATION'
-    ) AS hospitalized_case_count,
-
-    -- Ποσοστό περιστατικών που οδήγησαν σε νοσηλεία
-    ROUND(
-        100.0 * COUNT(*) FILTER (
-            WHERE tc.outcome = 'REFERRED_FOR_HOSPITALIZATION'
-        ) / COUNT(*),
-        2
-    ) AS hospitalization_percentage
-
-FROM triage_case AS tc
-
-LEFT JOIN department AS dep
-    ON dep.department_id = tc.referred_department_id
-
--- Μετράμε μόνο περιστατικά που έχουν εξυπηρετηθεί,
--- ώστε να μπορεί να υπολογιστεί χρόνος αναμονής.
-WHERE tc.service_datetime IS NOT NULL
-
-GROUP BY
-    tc.urgency_level,
-    dep.name
+LEFT JOIN referral_distribution AS rd
+    ON rd.urgency_level = ls.urgency_level
 
 ORDER BY
-    tc.urgency_level,
-    triage_case_count DESC,
-    dep.name;
+    ls.urgency_level,
+    referral_count DESC,
+    rd.referred_department_name;
