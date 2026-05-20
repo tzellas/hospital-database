@@ -1,3 +1,5 @@
+\encoding UTF8
+
 DROP TABLE IF EXISTS
 all_lab_tests,
 hospitalization_lab_test,

@@ -440,3 +440,36 @@ JOIN department dep ON dep.department_id = ds.department_id
 JOIN staff s ON s.staff_id = dss.staff_id
 JOIN administrative a ON a.staff_id = s.staff_id
 WHERE a.department_id <> dep.department_id;
+
+-- HOSPITALIZATIONS --
+\copy hospitalization(patient_id,department_id,bed_num,admission_date,discharge_date,admission_icd10_code,discharge_icd10_code,ken_code,total_cost,extra_charge) FROM 'data/hospitalizations.csv' DELIMITER ',' CSV HEADER;
+
+-- TRIAGE CASES --
+\copy triage_case(patient_id,triage_nurse_id,arrival_datetime,service_datetime,symptoms,urgency_level,outcome,referred_department_id,hospitalization_id) FROM 'data/triage_cases.csv' DELIMITER ',' CSV HEADER;
+
+-- PROCEDURE_ROOMS --
+\copy procedure_room(room_name, room_type) FROM 'data/procedure_rooms.csv' DELIMITER ',' CSV HEADER;
+
+-- HOSPITALIZATION LAB TESTS --
+\copy hospitalization_lab_test(hospitalization_id,ordered_by_doctor_id,test_code,test_date,result_text,result_value,result_unit,actual_cost) FROM 'data/hospitalization_lab_tests.csv' DELIMITER ',' CSV HEADER;
+
+-- ALLERGIES --
+\copy allergy(patient_id,substance_id) FROM 'data/allergies.csv' DELIMITER ',' CSV HEADER;
+
+-- HOSPITALIZATION_MEDICAL_PROCEDURE --
+\copy hospitalization_medical_procedure(hospitalization_id,procedure_code,main_doctor_id,actual_duration_minutes,actual_cost) FROM 'data/hospitalization_medical_procedures.csv' DELIMITER ',' CSV HEADER;
+
+-- PROCEDURE_ROOM_SCHEDUULE --
+\copy procedure_room_schedule(procedure_id,room_id,start_datetime,end_datetime) FROM 'data/procedure_room_schedule.csv' DELIMITER ',' CSV HEADER;
+
+-- ASSISTANT_PROCEDURE_STAFF --
+\copy assistant_procedure_staff(procedure_id,staff_id,role_in_procedure) FROM 'data/assistant_procedure_staff.csv' DELIMITER ',' CSV HEADER;
+
+-- PRESCRIPTIONS --
+\copy prescription(hospitalization_id,patient_id,doctor_id,drug_id,dosage,frequency,start_date,end_date) FROM 'data/prescriptions.csv' DELIMITER ',' CSV HEADER;
+
+-- HOSPITALIZATION_REVIW --
+\copy hospitalization_review(patient_id,hospitalization_id,nursing_care_score,cleanliness_score,food_score,overall_experience_score,review_date) FROM 'data/hospitalization_reviews.csv' DELIMITER ',' CSV HEADER;
+
+-- DOCTOR_REVIEW --
+\copy doctor_review(patient_id,doctor_id,hospitalization_id,medical_care_score,review_date) FROM 'data/doctor_reviews.csv' DELIMITER ',' CSV HEADER;
