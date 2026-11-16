@@ -1,0 +1,4 @@
+# Only needed for generate_procedures_and_lab_csvs.py (reads the raw .xls list).
+# Every other generator uses the Python standard library only.
+pandas
+xlrd

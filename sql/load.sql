@@ -1,3 +1,10 @@
+-- Loads every CSV in data/ into the schema created by sql/schema.sql.
+--
+-- Run from the repository root (the \copy paths are relative) and as a
+-- superuser such as postgres: the bulk shift load below temporarily disables
+-- all triggers on duty_shift_staff and audits the result afterwards.
+
+-- Empty every table first so the script can be re-run on an existing database.
 TRUNCATE TABLE
 active_substance,
 administrative,
@@ -18,8 +25,6 @@ hospitalization,
 hospitalization_review,
 icd10_diagnosis,
 ken,
-lab_test,
-medical_procedure,
 nurse,
 patient,
 prescription,
@@ -332,6 +337,11 @@ ALTER TABLE duty_shift_staff ENABLE TRIGGER ALL;
 
 COMMIT;
 
+-- POST-LOAD AUDIT --
+-- The triggers were disabled for the bulk load, so the staffing rules are
+-- re-checked here. Each query lists violations of one rule:
+-- an empty result means the data is clean.
+
 -- 1. exact staffing: 3 doctors, 6 nurses, 2 admins
 SELECT dep.name, ds.shift_date, ds.shift_type,
        COUNT(doc.staff_id) doctors,
@@ -459,7 +469,7 @@ WHERE a.department_id <> dep.department_id;
 -- HOSPITALIZATION_MEDICAL_PROCEDURE --
 \copy hospitalization_medical_procedure(hospitalization_id,procedure_code,main_doctor_id,actual_duration_minutes,actual_cost) FROM 'data/hospitalization_medical_procedures.csv' DELIMITER ',' CSV HEADER;
 
--- PROCEDURE_ROOM_SCHEDUULE --
+-- PROCEDURE_ROOM_SCHEDULE --
 \copy procedure_room_schedule(procedure_id,room_id,start_datetime,end_datetime) FROM 'data/procedure_room_schedule.csv' DELIMITER ',' CSV HEADER;
 
 -- ASSISTANT_PROCEDURE_STAFF --
@@ -468,7 +478,7 @@ WHERE a.department_id <> dep.department_id;
 -- PRESCRIPTIONS --
 \copy prescription(hospitalization_id,patient_id,doctor_id,drug_id,dosage,frequency,start_date,end_date) FROM 'data/prescriptions.csv' DELIMITER ',' CSV HEADER;
 
--- HOSPITALIZATION_REVIW --
+-- HOSPITALIZATION_REVIEW --
 \copy hospitalization_review(patient_id,hospitalization_id,nursing_care_score,cleanliness_score,food_score,overall_experience_score,review_date) FROM 'data/hospitalization_reviews.csv' DELIMITER ',' CSV HEADER;
 
 -- DOCTOR_REVIEW --
