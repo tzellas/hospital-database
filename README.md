@@ -1,4 +1,6 @@
-# Hospital Database
+<div align="center">
+
+# 🏥 Hospital Database
 
 A PostgreSQL database for a hospital information system: schema, seed data and loader.
 
@@ -6,6 +8,10 @@ A PostgreSQL database for a hospital information system: schema, seed data and l
 ![Python](https://img.shields.io/badge/Python_3-3776AB?logo=python&logoColor=white)
 
 <sub>Authors · [Apostolos Stefanos Tzellas](https://github.com/tzellas) · [Nikos Liagkas](https://github.com/NikosLiagkas)</sub>
+
+</div>
+
+---
 
 ## What it does
 
