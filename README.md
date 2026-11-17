@@ -7,7 +7,7 @@ A PostgreSQL database for a hospital information system: schema, seed data and l
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
 ![Python](https://img.shields.io/badge/Python_3-3776AB?logo=python&logoColor=white)
 
-<sub>Authors · [Apostolos Stefanos Tzellas](https://github.com/tzellas) · [Nikos Liagkas](https://github.com/NikosLiagkas)</sub>
+<sub>Authors · [Apostolos Tzellas](https://github.com/tzellas) · [Nikos Liagkas](https://github.com/NikosLiagkas)</sub>
 
 </div>
 
